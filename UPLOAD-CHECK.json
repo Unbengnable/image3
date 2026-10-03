@@ -1,0 +1,12 @@
+{
+  "manifest_and_Git_index_hashes": "passed",
+  "archive_matches_review_folder": "passed",
+  "generated_PNGs_and_prompts_preserved": "passed",
+  "markdown_and_html_links": "passed",
+  "format_and_local_path_issues": [],
+  "PNG_count": 12,
+  "review_files": 55,
+  "archive_MiB": 13.87,
+  "archive_sha256": "1eae2906f20dd016ee0b8b24ed1ad03e56f13491944b3bc43dd5607ebb468393",
+  "notes": "Git attributes preserve payload bytes, including original prompt line endings."
+}
