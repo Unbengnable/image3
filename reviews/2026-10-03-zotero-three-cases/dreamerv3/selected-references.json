@@ -1,0 +1,10 @@
+[
+  {
+    "id": "DB241",
+    "content": "Paper title: From Observations to Events: Event-Aware World Models for Reinforcement Learning\nSource abstract (not a Methods section): While model-based reinforcement learning (MBRL) improves sample efficiency by learning world models from raw observations, existing methods struggle to generalize across structurally similar scenes and remain vulnerable to spurious variations such as textures or color shifts. From a cognitive science perspective, humans segment continuous sensory streams into discrete events and rely on these key events for decision-making. Motivated by this principle, we propose the Event-Aware World Model (EAWM), a general framework that learns event-aware representations to streamline policy learning without requiring handcrafted labels. EAWM employs an automated event generator to derive events from raw observations and introduces a Generic Event Segmentor (GES) to identify event boundaries, which mark the start and end time of event segments. Through event prediction, the representation space is shaped to capture meaningful spatio-temporal transitions. Beyond this, we present a unified formulation of seemingly distinct world model architectures and show the broad applicability of our methods. Experiments on Atari 100K, Craftax 1M, and DeepMind Control 500K, DMC-GB2 500K demonstrate that EAWM consistently boosts the performance of strong MBRL baselines by 10\\%–45\\%, setting new state-of-the-art results across benchmarks. Our code is released at [https://github.com/MarquisDarwin/EAWM](https://github.com/MarquisDarwin/EAWM).",
+    "visual_intent": "Figure 6. RSSM with observation prediction.",
+    "reference_bank_image": "DB241.png",
+    "image_exported": false,
+    "use_mode": "textual visual principles only"
+  }
+]

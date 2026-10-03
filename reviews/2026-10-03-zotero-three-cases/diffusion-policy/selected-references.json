@@ -1,0 +1,10 @@
+[
+  {
+    "id": "DB005",
+    "content": "Paper title: DiffEdit: Diffusion-based semantic image editing with mask guidance\nSource abstract (not a Methods section): Image generation has recently seen tremendous advances, with diffusion models allowing to synthesize convincing images for a large variety of text prompts. In this article, we propose DiffEdit, a method to take advantage of text-conditioned diffusion models for the task of semantic image editing, where the goal is to edit an image based on a text query. Semantic image editing is an extension of image generation, with the additional constraint that the generated image should be as similar as possible to a given input image. \nCurrent editing methods based on diffusion models usually require to provide a mask, making the task much easier by treating it as a conditional inpainting task. In contrast, our main contribution is able to automatically generate a mask highlighting regions of the input image that need to be edited, by contrasting predictions of a diffusion model conditioned on different text prompts. Moreover, we rely on latent inference to preserve content in those regions of interest and show excellent synergies with mask-based diffusion. \nDiffEdit achieves state-of-the-art editing performance on ImageNet. In addition, we evaluate semantic image editing in more challenging settings, using images from the COCO dataset as well as text-based generated images.",
+    "visual_intent": "Figure 2: The three steps of DIFFEDIT. Step 1: we add noise to the input image, and denoise it: once conditioned on the query text, and once conditioned on a reference text (or unconditionally). We derive a mask based on the difference in the denoising results. Step 2: we encode the input image with DDIM, to estimate the latents corresponding to the input image. Step 3: we perform DDIM decoding conditioned on the text query, using the inferred mask to replace the background with pixel values coming from the encoding process at the corresponding timestep.",
+    "reference_bank_image": "DB005.png",
+    "image_exported": false,
+    "use_mode": "textual visual principles only"
+  }
+]

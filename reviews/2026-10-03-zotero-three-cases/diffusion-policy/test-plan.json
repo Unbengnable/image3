@@ -1,0 +1,13 @@
+{
+  "pages": [
+    2,
+    3,
+    4
+  ],
+  "section": "Sections 2.3 and 3.1/3.2",
+  "figure": "Figure 2 on PDF page 3",
+  "reference": "DB005",
+  "request": "根据 Diffusion Policy 论文方法文字绘制观测条件、动作序列迭代去噪与滚动执行闭环图，区分观测/预测/执行 horizon。仅生成 PNG，后验比较论文 Figure 2。",
+  "context": "At environment time t, the latest To observations condition a distribution over Tp future actions. RGB images are encoded once per policy query, independent of the number of denoising iterations, and proprioceptive observations can form conditioning too. Start an entire action sequence A_t^K from Gaussian noise. At each diffusion index k, a noise-prediction network epsilon_theta receives the fixed observation conditioning, noisy action sequence A_t^k, and k; a scheduled denoising update yields A_t^(k-1), eventually A_t^0. Observations are conditioning and are not diffused; no future images are generated. Noise-prediction alternatives are temporal CNN with FiLM or transformer with observation cross-attention, not a serial combination. Predict Tp steps and execute only Ta current/future actions then acquire fresh observations and replan. To observation horizon, Tp prediction horizon, Ta execution horizon. To=2, Tp=8, Ta=4 may be used only as an illustrative diagram configuration, not reported settings. Keep diffusion iteration k distinct from environment time t. Do not imply all predicted actions are executed open-loop. Avoid exact DDPM update if schedule coefficients are not displayed. No numerical success-rate claims.",
+  "principles": "DB005: iterative noisy-to-clean representations and explicit step labels. Do not inherit image editing, masks, horse/zebra assets, or any conditioning pathway from DiffEdit."
+}

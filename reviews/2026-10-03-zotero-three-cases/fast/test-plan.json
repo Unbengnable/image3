@@ -1,0 +1,12 @@
+{
+  "pages": [
+    4,
+    5
+  ],
+  "section": "Section V-A/V-B, Algorithm 1",
+  "figure": "Figure 4 on PDF page 5",
+  "reference": "DB179",
+  "request": "根据 FAST 论文 Section V-A/V-B 绘制动作编码与近似解码机制图，说明按时间做 DCT、量化、按频率交错展开和 BPE。仅生成 PNG，以论文 Figure 4 为后验对照。",
+  "context": "FAST encodes a continuous action chunk with H time steps and D dimensions. Quantile normalization maps per-dimension 1st/99th quantiles to -1/+1. Apply DCT along time separately for each action dimension. Scale coefficients by gamma then round; quantization is lossy. Coefficient matrix is D by H, rows=dimensions, columns=frequency. Flatten column-first: all dimensions at frequency 0, then all dimensions at frequency 1, etc. BPE is lossless over the quantized integer sequence and has a learned vocabulary. It produces variable-length discrete tokens. Decode by inverse BPE, restoring the matrix, divide by gamma, inverse DCT, and undo normalization. Reconstructed continuous actions are approximate because quantization is lossy. No VQ network or diffusion decoder is part of this pipeline. A toy D=2, H=4 quantized matrix [[12,4,0,0],[9,-2,0,0]] flattens to [12,9,4,-2,0,0,0,0]; these numbers are illustrative, not measured or computed from a displayed trajectory. Arbitrary token glyphs should be labeled symbolic. Exclude performance numbers and pi0 architecture.",
+  "principles": "DB179: modest category colors, distinguish transform representations from discrete token glyphs. Do not reuse its Fourier/VLP architecture, assets, or layout."
+}

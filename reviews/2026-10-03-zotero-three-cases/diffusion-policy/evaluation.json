@@ -1,0 +1,72 @@
+{
+  "title": "Diffusion Policy",
+  "status": "core_scope_reviewed",
+  "scope": "固定观测条件、动作迭代去噪、部分执行与再次观察",
+  "summary": "限定核心机制通过；不是原论文完整网络结构图的替代。",
+  "first_draft_defects": [
+    "反馈端点在动作序列",
+    "额外简化公式缺少完整调度定义",
+    "未来动作使用机器人场景strip，易与未来图像混淆"
+  ],
+  "edit1_defects": [
+    "新观测源端残留逆向箭头"
+  ],
+  "remaining": [
+    "机器人到新观测的短线无明显箭头头部",
+    "共享denoiser下方紫色路线不够简洁",
+    "缺少causal mask和逐层FiLM等内部机制，无法替代完整Figure 2"
+  ],
+  "checks": {
+    "encode_once_per_policy_query": "pass",
+    "observations_condition_not_diffused": "pass",
+    "Gaussian_action_initialization": "pass",
+    "denoiser_uses_condition_action_k": "pass",
+    "k_and_t_distinct": "pass",
+    "To_Tp_Ta_distinct_and_illustrative": "pass",
+    "partial_execute_then_new_query": "pass",
+    "feedback_to_observation": "pass",
+    "alternative_CNN_transformer_not_serial": "pass",
+    "full_network_detail_coverage": "partial"
+  },
+  "original_comparison": [
+    "原图一般策略加两类denoiser内部结构，信息密度更高",
+    "生成图强调闭环叙事和解释；数值horizon是新示意而非实际超参数",
+    "原图所含causal mask和FiLM细节没有被保留"
+  ],
+  "coverage_omissions": [
+    "Transformer causal attention mask",
+    "k embedding具体结构",
+    "逐层FiLM a*x+b",
+    "warm start细节"
+  ],
+  "visual": "闭环与horizon比初稿清楚，画面较拥挤，不能据大图预览验收栏宽。",
+  "review_mode": "same Codex agent manual visual/scientific inspection, not independent scoring",
+  "imagegen_calls": 3,
+  "edit_budget": 2,
+  "target_original_viewed_after_all_generation": true,
+  "target_image_conditioning": false,
+  "new_SVG_created": false,
+  "publication_size_review": "not performed",
+  "source": {
+    "item_key": "ILNUZULC",
+    "attachment_key": "KQXJ6KL3",
+    "pages": 19,
+    "source_pdf_sha256": "b65c474b696a4802d8f1457d86b637ce2c5521412570d3aa928cd54563babc8f",
+    "render_engine": "existing bundled pypdfium2",
+    "render_scale": 2.2,
+    "figure_crop_pixels": [
+      105,
+      116,
+      1202,
+      430
+    ],
+    "target_figure": "Figure 2 on PDF page 3",
+    "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+    "caption_images_supplied_to_imagegen": false,
+    "source_url": "https://arxiv.org/abs/2303.04137v5",
+    "full_pdf_exported": false,
+    "original_page_exported": false,
+    "original_figure_exported": true,
+    "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+  }
+}

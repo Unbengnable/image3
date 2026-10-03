@@ -1,0 +1,1 @@
+根据 FAST 论文 Section V-A/V-B 绘制动作编码与近似解码机制图，说明按时间做 DCT、量化、按频率交错展开和 BPE。仅生成 PNG，以论文 Figure 4 为后验对照。

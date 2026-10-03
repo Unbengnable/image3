@@ -1,0 +1,1 @@
+根据 Zotero 内 DreamerV3 附件方法正文生成世界模型学习、潜空间想象和 actor-critic 学习机制图。仅生成 PNG，后验比较 Figure 3。

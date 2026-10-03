@@ -1,0 +1,1 @@
+根据 Diffusion Policy 论文方法文字绘制观测条件、动作序列迭代去噪与滚动执行闭环图，区分观测/预测/执行 horizon。仅生成 PNG，后验比较论文 Figure 2。

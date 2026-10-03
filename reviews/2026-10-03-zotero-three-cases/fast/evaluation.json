@@ -1,0 +1,66 @@
+{
+  "title": "FAST",
+  "status": "not_accepted",
+  "scope": "动作编码、低频优先展开、近似解码",
+  "summary": "主机制和教学 inset 正确；上方展开列仍缺一个零。",
+  "first_draft_defects": [
+    "3维量化矩阵与解码整数序列不一致"
+  ],
+  "edit1_defects": [
+    "上方展开列缺一个零",
+    "DCT轴重复频率3"
+  ],
+  "remaining": [
+    "上方数值列只显示3个零而不是4个，不能通过精确数组一致性",
+    "示意波形未根据给定系数计算，不可用于数值 DCT 验证"
+  ],
+  "checks": {
+    "quantile_normalization": "pass",
+    "DCT_per_dimension_along_time": "pass",
+    "scale_and_round_lossy": "pass",
+    "column_first_interleaving": "pass",
+    "all_numeric_arrays_consistent": "fail",
+    "BPE_lossless_over_quantized_sequence": "pass",
+    "approximate_decode": "pass",
+    "illustrative_not_measured": "pass"
+  },
+  "original_comparison": [
+    "原图紧凑地展现五步编码与BPE分组合并",
+    "生成图补充归一化和解码，但有重复、文字负担较大",
+    "语义顺序来自方法必需步骤，图像布局和素材未用作输入"
+  ],
+  "coverage_omissions": [
+    "没有具体BPE合并映射示例",
+    "没有给出DCT基函数或严格计算的曲线/系数对应"
+  ],
+  "visual": "大图可读，但长说明占用很大空间；精确数字仍不稳定。",
+  "review_mode": "same Codex agent manual visual/scientific inspection, not independent scoring",
+  "imagegen_calls": 3,
+  "edit_budget": 2,
+  "target_original_viewed_after_all_generation": true,
+  "target_image_conditioning": false,
+  "new_SVG_created": false,
+  "publication_size_review": "not performed",
+  "source": {
+    "item_key": "FS8G6Q34",
+    "attachment_key": "7W4YFC8Q",
+    "pages": 19,
+    "source_pdf_sha256": "3739b31f5fecdde371509ff5bb13619979734e894a255a9b264253f4cc53934a",
+    "render_engine": "existing bundled pypdfium2",
+    "render_scale": 2.2,
+    "figure_crop_pixels": [
+      105,
+      125,
+      1240,
+      530
+    ],
+    "target_figure": "Figure 4 on PDF page 5",
+    "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+    "caption_images_supplied_to_imagegen": false,
+    "source_url": "https://arxiv.org/abs/2501.09747v1",
+    "full_pdf_exported": false,
+    "original_page_exported": false,
+    "original_figure_exported": true,
+    "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+  }
+}

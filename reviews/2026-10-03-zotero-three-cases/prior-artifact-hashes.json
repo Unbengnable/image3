@@ -1,0 +1,12 @@
+{
+  "codex-pi0": {
+    "figure.png": "c684937b2dcbb3c680e0f7034c01c20a2ad23b6fa442a7358a72e1eb0803ea48",
+    "figure.svg": "4cc932dbf56e7943317a34adcab442e173ddeb5e5f26b41ef49be7551e369f6c",
+    "svg-preview.png": "a0dc6a8a7326f3c80300da0a939caf316bd3a78a237297e81db8456c2a88efe7"
+  },
+  "codex-attention": {
+    "figure.png": "7baea81e7f1306dfa3084191a1746f4051bd390bb912c97aa57e4bcee5ace0b7",
+    "figure.svg": "3a53a947b4162030259dcba807007e472f5b412c126c8b8e596c2676bfb8c79d",
+    "svg-preview.png": "9613bfdd2bf07f192191aafaaad0d52af89ce316fc9a4e3bb95da66ae204f38c"
+  }
+}

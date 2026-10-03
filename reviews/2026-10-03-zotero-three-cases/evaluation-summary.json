@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "cases": [
+    {
+      "title": "FAST",
+      "status": "not_accepted",
+      "scope": "动作编码、低频优先展开、近似解码",
+      "summary": "主机制和教学 inset 正确；上方展开列仍缺一个零。"
+    },
+    {
+      "title": "Diffusion Policy",
+      "status": "core_scope_reviewed",
+      "scope": "固定观测条件、动作迭代去噪、部分执行与再次观察",
+      "summary": "限定核心机制通过；不是原论文完整网络结构图的替代。"
+    },
+    {
+      "title": "DreamerV3",
+      "status": "not_accepted",
+      "scope": "RSSM学习、latent imagination、actor/critic与在线交互",
+      "summary": "actor动作方向和state标签改善，prior和在线反馈仍未完整通过。"
+    }
+  ],
+  "generation_calls": 3,
+  "edit_calls": 6,
+  "Stage2_executed": false,
+  "selection": "purposive three-method sample, not random",
+  "no_total_score": true
+}

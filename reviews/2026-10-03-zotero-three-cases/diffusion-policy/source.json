@@ -1,0 +1,22 @@
+{
+  "item_key": "ILNUZULC",
+  "attachment_key": "KQXJ6KL3",
+  "pages": 19,
+  "source_pdf_sha256": "b65c474b696a4802d8f1457d86b637ce2c5521412570d3aa928cd54563babc8f",
+  "render_engine": "existing bundled pypdfium2",
+  "render_scale": 2.2,
+  "figure_crop_pixels": [
+    105,
+    116,
+    1202,
+    430
+  ],
+  "target_figure": "Figure 2 on PDF page 3",
+  "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+  "caption_images_supplied_to_imagegen": false,
+  "source_url": "https://arxiv.org/abs/2303.04137v5",
+  "full_pdf_exported": false,
+  "original_page_exported": false,
+  "original_figure_exported": true,
+  "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+}

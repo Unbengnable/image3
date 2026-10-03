@@ -1,0 +1,78 @@
+{
+  "title": "DreamerV3",
+  "status": "not_accepted",
+  "scope": "RSSM学习、latent imagination、actor/critic与在线交互",
+  "summary": "actor动作方向和state标签改善，prior和在线反馈仍未完整通过。",
+  "first_draft_defects": [
+    "动作箭头进入actor",
+    "reward/continuation被连入critic",
+    "训练state合入prior样本",
+    "Gaussian图形代替categorical状态",
+    "在线反馈来自replay"
+  ],
+  "edit1_defects": [
+    "actor箭头仍反向",
+    "部分critic仍接受continuation",
+    "state标签被改成(h,x)",
+    "prior无h输入线",
+    "在线反馈仍从replay"
+  ],
+  "remaining": [
+    "prior p(z|h)公式正确但缺少h输入路径",
+    "在线new observation路线实际仍从replay buffer出发",
+    "critic只有terminal state输入清楚，未给出各时刻value",
+    "起始replay-inferred state没有清楚连接第一想象state"
+  ],
+  "checks": {
+    "h_recurrence": "pass",
+    "posterior_h_and_x": "pass",
+    "prior_h_input_visual": "fail",
+    "training_state_uses_posterior": "pass",
+    "future_imagination_prior_no_real_encoder": "pass",
+    "actor_action_transition_direction": "pass",
+    "critic_state_not_reward_input": "pass",
+    "per_state_value_and_bootstrap_coverage": "partial",
+    "online_current_observation_route": "fail",
+    "state_h_z_label": "pass"
+  },
+  "original_comparison": [
+    "原图并排三步时间展开，真实阶段/想象起始才有encoder",
+    "生成图新增head/return/在线解释却产生了更多连线",
+    "原图科学拓扑与表达经济性更可靠"
+  ],
+  "coverage_omissions": [
+    "真实观测posterior三步时间展开",
+    "每个想象时间点value路径",
+    "辅助critic replay loss与robustness只在文字中说明未覆盖"
+  ],
+  "visual": "三区层次清晰、文字密度高，箭头科学可靠性不足。",
+  "review_mode": "same Codex agent manual visual/scientific inspection, not independent scoring",
+  "imagegen_calls": 3,
+  "edit_budget": 2,
+  "target_original_viewed_after_all_generation": true,
+  "target_image_conditioning": false,
+  "new_SVG_created": false,
+  "publication_size_review": "not performed",
+  "source": {
+    "item_key": "RWS3QYN9",
+    "attachment_key": "AKLG5XL5",
+    "pages": 40,
+    "source_pdf_sha256": "d0385798e8bada8e81b915c1743be81d9ce8776f12ed937e09351995e099ce37",
+    "render_engine": "existing bundled pypdfium2",
+    "render_scale": 2.2,
+    "figure_crop_pixels": [
+      150,
+      126,
+      1205,
+      552
+    ],
+    "target_figure": "Figure 3 on PDF page 3",
+    "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+    "caption_images_supplied_to_imagegen": false,
+    "source_url": "https://arxiv.org/abs/2301.04104v2",
+    "full_pdf_exported": false,
+    "original_page_exported": false,
+    "original_figure_exported": true,
+    "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+  }
+}

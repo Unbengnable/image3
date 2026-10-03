@@ -1,0 +1,22 @@
+{
+  "item_key": "RWS3QYN9",
+  "attachment_key": "AKLG5XL5",
+  "pages": 40,
+  "source_pdf_sha256": "d0385798e8bada8e81b915c1743be81d9ce8776f12ed937e09351995e099ce37",
+  "render_engine": "existing bundled pypdfium2",
+  "render_scale": 2.2,
+  "figure_crop_pixels": [
+    150,
+    126,
+    1205,
+    552
+  ],
+  "target_figure": "Figure 3 on PDF page 3",
+  "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+  "caption_images_supplied_to_imagegen": false,
+  "source_url": "https://arxiv.org/abs/2301.04104v2",
+  "full_pdf_exported": false,
+  "original_page_exported": false,
+  "original_figure_exported": true,
+  "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+}

@@ -1,0 +1,23 @@
+{
+  "built_in_imagegen": true,
+  "cli_fallback": false,
+  "generated_images": [
+    "exec-36cb4fbe-99b6-4bbe-9505-1df4d911b018.png",
+    "exec-a6f40645-59cc-41bc-931c-a8177958d311.png",
+    "exec-d7a93c6f-7425-42ba-ad6e-32c6f8b6258a.png"
+  ],
+  "inputs": "method-derived text and abstracted visual reference principles; edits reference own draft only",
+  "files_sha256": {
+    "draft-1.png": "eaed1d3771679f4416a121971b7a6861352825baf2a5b4d616f973c9093c1497",
+    "draft-2.png": "45d68b93b1b659e1d9b225b264e71c827a1a4e0d1c7e2d61657577258b67c59c",
+    "figure.png": "6639ee5ed7525cbfa98473e35cc76ca2d06470871bdfa871ad1258099aefe1a1",
+    "generation-prompt.txt": "7df96d5d6717e0da540e9595008d6fc9c252e9f63776ef7f594cc1f93cd429b9",
+    "image-edit-1.txt": "220e7691a7beb41fb9301b92fd2ed5ab242d1ec4e21398e92b36760e00447fe6",
+    "image-edit-2.txt": "0ee53ec8839fa08138c5f2ee6327dad895fb05b2e40d7442a9c45a161d0922df",
+    "context.md": "115261db9f971aed22782d1c7982eb5c5620ba73b0408a859e92f77abdacf63d",
+    "selected-references.json": "16e7a2ff97a06e162627270920a1313bb6e5c7f7f81279d47a67e6911c9d9eb9",
+    "original-figure.png": "bbc147abc289d200f15335e2ce46ab1588815289f6f11aa8ccff5f6445063640"
+  },
+  "status": "core_scope_reviewed",
+  "export_note": "Generated PNGs and prompts unchanged. Source/evaluation/selected-reference metadata rewritten for portable review; original PDF and whole-library data not exported."
+}

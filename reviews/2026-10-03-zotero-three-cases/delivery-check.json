@@ -1,0 +1,56 @@
+{
+  "prior_artifacts_unchanged": {
+    "codex-pi0": {
+      "figure.png": true,
+      "figure.svg": true,
+      "svg-preview.png": true
+    },
+    "codex-attention": {
+      "figure.png": true,
+      "figure.svg": true,
+      "svg-preview.png": true
+    }
+  },
+  "new_artifact_hashes": {
+    "fast": {
+      "draft-1.png": true,
+      "draft-2.png": true,
+      "figure.png": true,
+      "generation-prompt.txt": true,
+      "image-edit-1.txt": true,
+      "image-edit-2.txt": true,
+      "context.md": true,
+      "selected-references.json": true,
+      "original-figure.png": true
+    },
+    "diffusion-policy": {
+      "draft-1.png": true,
+      "draft-2.png": true,
+      "figure.png": true,
+      "generation-prompt.txt": true,
+      "image-edit-1.txt": true,
+      "image-edit-2.txt": true,
+      "context.md": true,
+      "selected-references.json": true,
+      "original-figure.png": true
+    },
+    "dreamerv3": {
+      "draft-1.png": true,
+      "draft-2.png": true,
+      "figure.png": true,
+      "generation-prompt.txt": true,
+      "image-edit-1.txt": true,
+      "image-edit-2.txt": true,
+      "context.md": true,
+      "selected-references.json": true,
+      "original-figure.png": true
+    }
+  },
+  "format_issues": [],
+  "comparison_images": 6,
+  "missing_comparison_paths": [],
+  "raw_pdf_text_exception": "Original extraction preserves PDF layout/control characters; no global formatting cleanup applied to source text.",
+  "rendered_originals_reviewed": true,
+  "generated_all_three_stages_reviewed": true,
+  "Stage2_executed": false
+}

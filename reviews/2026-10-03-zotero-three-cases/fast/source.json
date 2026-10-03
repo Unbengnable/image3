@@ -1,0 +1,22 @@
+{
+  "item_key": "FS8G6Q34",
+  "attachment_key": "7W4YFC8Q",
+  "pages": 19,
+  "source_pdf_sha256": "3739b31f5fecdde371509ff5bb13619979734e894a255a9b264253f4cc53934a",
+  "render_engine": "existing bundled pypdfium2",
+  "render_scale": 2.2,
+  "figure_crop_pixels": [
+    105,
+    125,
+    1240,
+    530
+  ],
+  "target_figure": "Figure 4 on PDF page 5",
+  "figures_first_viewed": "after all three initial generations and all six text-derived edits",
+  "caption_images_supplied_to_imagegen": false,
+  "source_url": "https://arxiv.org/abs/2501.09747v1",
+  "full_pdf_exported": false,
+  "original_page_exported": false,
+  "original_figure_exported": true,
+  "export_note": "Local attachment path omitted; extracted figure only. PDF hash and attachment key retained."
+}
