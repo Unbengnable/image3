@@ -1,3 +1,11 @@
+# FigureCompose 人工复核资料
+
+最新：[2026-10-05 审阅导航](reviews/2026-10-05-reset-review/README.md) · [下载完整 ZIP](downloads/figurecompose-reset-review-2026-10-05.zip) · [实验报告](reviews/2026-10-05-reset-review/FigureCompose/outputs/reset-validation-2026-10-05/RESULTS.md) · [后续复核意见](reviews/2026-10-05-reset-review/FOLLOWUP-REVIEW.md)
+
+本轮包括 MAE 两条路线的全部草稿、提示词、语义修改、成本和原生工具失败证据，以及 Diffusion Policy Stage 2 成品和复审。MAE 两张候选均为 REVISE；原始生成 PNG 科学 FAIL。已有历史材料继续保留。审阅导航可直接查看图片；ZIP 可下载后离线阅读。
+
+以下为此前三案例记录。
+
 # FigureCompose：Zotero 三篇论文生图审阅
 
 2026-10-03 本轮结果：FAST、Diffusion Policy、DreamerV3。每例一次生图、两轮修订，共九次内置 imagegen 调用。先按方法正文生成和修订，最后查看论文原图比较；目标原图未作为生成输入。

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-05 12:59:04 UTC",
+  "ended_utc": "2026-10-05 12:59:58 UTC",
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "edit_calls": 0,
+  "reference_images": 0,
+  "output_hint": "Generated images are saved to LOCAL_CODEX\\generated_images\\01a10c24-3e1f-7d82-b87a-3eb3c15b2e48 as LOCAL_CODEX\\generated_images\\01a10c24-3e1f-7d82-b87a-3eb3c15b2e48\\exec-3739497e-c329-4efe-89d7-0f022af3cc24.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "prompt_path": "generation-prompt.txt"
+}

@@ -1,0 +1,410 @@
+{
+  "draft-01.svg": {
+    "width": "178mm",
+    "height": "99.68mm",
+    "viewBox": "0 0 1000 560",
+    "native_text_count": 114,
+    "embedded_raster_image_count": 2,
+    "visible_positions": [
+      1,
+      6,
+      11,
+      12
+    ],
+    "latent_positions": [
+      1,
+      6,
+      11,
+      12
+    ],
+    "mask_token_count": 12,
+    "restored_positions": [
+      [
+        1,
+        "encoded-visible"
+      ],
+      [
+        2,
+        "mask-token"
+      ],
+      [
+        3,
+        "mask-token"
+      ],
+      [
+        4,
+        "mask-token"
+      ],
+      [
+        5,
+        "mask-token"
+      ],
+      [
+        6,
+        "encoded-visible"
+      ],
+      [
+        7,
+        "mask-token"
+      ],
+      [
+        8,
+        "mask-token"
+      ],
+      [
+        9,
+        "mask-token"
+      ],
+      [
+        10,
+        "mask-token"
+      ],
+      [
+        11,
+        "encoded-visible"
+      ],
+      [
+        12,
+        "encoded-visible"
+      ],
+      [
+        13,
+        "mask-token"
+      ],
+      [
+        14,
+        "mask-token"
+      ],
+      [
+        15,
+        "mask-token"
+      ],
+      [
+        16,
+        "mask-token"
+      ]
+    ],
+    "masked_loss_positions": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16
+    ],
+    "original_target_supervised_positions": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16
+    ],
+    "encoder_mask_tokens": 0,
+    "decoder_output_positions": 16
+  },
+  "final.svg": {
+    "width": "178mm",
+    "height": "99.68mm",
+    "viewBox": "0 0 1000 560",
+    "native_text_count": 114,
+    "embedded_raster_image_count": 2,
+    "visible_positions": [
+      1,
+      6,
+      11,
+      12
+    ],
+    "latent_positions": [
+      1,
+      6,
+      11,
+      12
+    ],
+    "mask_token_count": 12,
+    "restored_positions": [
+      [
+        1,
+        "encoded-visible"
+      ],
+      [
+        2,
+        "mask-token"
+      ],
+      [
+        3,
+        "mask-token"
+      ],
+      [
+        4,
+        "mask-token"
+      ],
+      [
+        5,
+        "mask-token"
+      ],
+      [
+        6,
+        "encoded-visible"
+      ],
+      [
+        7,
+        "mask-token"
+      ],
+      [
+        8,
+        "mask-token"
+      ],
+      [
+        9,
+        "mask-token"
+      ],
+      [
+        10,
+        "mask-token"
+      ],
+      [
+        11,
+        "encoded-visible"
+      ],
+      [
+        12,
+        "encoded-visible"
+      ],
+      [
+        13,
+        "mask-token"
+      ],
+      [
+        14,
+        "mask-token"
+      ],
+      [
+        15,
+        "mask-token"
+      ],
+      [
+        16,
+        "mask-token"
+      ]
+    ],
+    "masked_loss_positions": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16
+    ],
+    "original_target_supervised_positions": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16
+    ],
+    "encoder_mask_tokens": 0,
+    "decoder_output_positions": 16
+  },
+  "semantic-edit-50percent.svg": {
+    "width": "178mm",
+    "height": "99.68mm",
+    "viewBox": "0 0 1000 560",
+    "native_text_count": 122,
+    "embedded_raster_image_count": 2,
+    "visible_positions": [
+      1,
+      3,
+      6,
+      8,
+      9,
+      11,
+      12,
+      14
+    ],
+    "latent_positions": [
+      1,
+      3,
+      6,
+      8,
+      9,
+      11,
+      12,
+      14
+    ],
+    "mask_token_count": 8,
+    "restored_positions": [
+      [
+        1,
+        "encoded-visible"
+      ],
+      [
+        2,
+        "mask-token"
+      ],
+      [
+        3,
+        "encoded-visible"
+      ],
+      [
+        4,
+        "mask-token"
+      ],
+      [
+        5,
+        "mask-token"
+      ],
+      [
+        6,
+        "encoded-visible"
+      ],
+      [
+        7,
+        "mask-token"
+      ],
+      [
+        8,
+        "encoded-visible"
+      ],
+      [
+        9,
+        "encoded-visible"
+      ],
+      [
+        10,
+        "mask-token"
+      ],
+      [
+        11,
+        "encoded-visible"
+      ],
+      [
+        12,
+        "encoded-visible"
+      ],
+      [
+        13,
+        "mask-token"
+      ],
+      [
+        14,
+        "encoded-visible"
+      ],
+      [
+        15,
+        "mask-token"
+      ],
+      [
+        16,
+        "mask-token"
+      ]
+    ],
+    "masked_loss_positions": [
+      2,
+      4,
+      5,
+      7,
+      10,
+      13,
+      15,
+      16
+    ],
+    "original_target_supervised_positions": [
+      2,
+      4,
+      5,
+      7,
+      10,
+      13,
+      15,
+      16
+    ],
+    "encoder_mask_tokens": 0,
+    "decoder_output_positions": 16
+  },
+  "renders": {
+    "draft-01-preview.png": {
+      "size_px": [
+        2102,
+        1177
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "actual_visual_inspection": true
+    },
+    "preview-178mm.png": {
+      "size_px": [
+        2102,
+        1177
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "actual_visual_inspection": true
+    },
+    "semantic-edit-50percent-preview.png": {
+      "size_px": [
+        2102,
+        1177
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "actual_visual_inspection": true
+    }
+  },
+  "physical_metrics": {
+    "usual_label_pt": 7.063937007874016,
+    "heading_pt": 8.073070866141732,
+    "spatial_index_pt": 6.0548031496062995,
+    "route_stroke_pt": 0.9082204724409451
+  },
+  "native_editor_import": "NOT_TESTED",
+  "author_checks_are_acceptance": false,
+  "freeze_integrity": {
+    "final.svg": {
+      "expected": "8B4BBA428A222781AE5308A7D8573628B5CD9A4BE1CDE1EF74F0A0D7E307A21A",
+      "actual": "8B4BBA428A222781AE5308A7D8573628B5CD9A4BE1CDE1EF74F0A0D7E307A21A",
+      "unchanged": true
+    },
+    "preview-178mm.png": {
+      "expected": "C7D5DEC287FDE7BEF56A82C67F05FE16976CCC36102D8FB7699CDF49C7650012",
+      "actual": "C7D5DEC287FDE7BEF56A82C67F05FE16976CCC36102D8FB7699CDF49C7650012",
+      "unchanged": true
+    },
+    "caption.md": {
+      "expected": "F356AD9557AFFFEFAF591DF509E0C095B4CEDDD9B8FBA864FDBAB3DDCCDA86D7",
+      "actual": "F356AD9557AFFFEFAF591DF509E0C095B4CEDDD9B8FBA864FDBAB3DDCCDA86D7",
+      "unchanged": true
+    }
+  }
+}

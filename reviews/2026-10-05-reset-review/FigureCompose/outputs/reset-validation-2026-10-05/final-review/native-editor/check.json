@@ -1,0 +1,54 @@
+{
+  "X": {
+    "source_sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+    "native_text_count": 51,
+    "texts_preserved": true,
+    "input_image_count": 0,
+    "saved_image_count": 0,
+    "native_cli_parse_save_success": true,
+    "visual_compatibility": "FAIL: selected image crops overflow their frames in direct and roundtrip exports",
+    "interactive_editing": "NOT_TESTED",
+    "renders": {
+      "direct": {
+        "size": [
+          2102,
+          968
+        ],
+        "sha256": "db120caf5e9be9647cf0d7f0158e0b3df06bab0c760ef81a4acb4530390ee1c9"
+      },
+      "roundtrip": {
+        "size": [
+          2102,
+          968
+        ],
+        "sha256": "db120caf5e9be9647cf0d7f0158e0b3df06bab0c760ef81a4acb4530390ee1c9"
+      }
+    }
+  },
+  "Y": {
+    "source_sha256": "8b4bba428a222781ae5308a7d8573628b5cd9a4be1cde1ef74f0a0d7e307a21a",
+    "native_text_count": 114,
+    "texts_preserved": true,
+    "input_image_count": 2,
+    "saved_image_count": 2,
+    "native_cli_parse_save_success": true,
+    "visual_compatibility": "FAIL: selected image crops overflow their frames in direct and roundtrip exports",
+    "interactive_editing": "NOT_TESTED",
+    "renders": {
+      "direct": {
+        "size": [
+          2102,
+          1177
+        ],
+        "sha256": "b33903bc952aa7d9959d7b03498f28b8193ec01c106b5f4a2a10f99436e2ccf8"
+      },
+      "roundtrip": {
+        "size": [
+          2102,
+          1177
+        ],
+        "sha256": "b33903bc952aa7d9959d7b03498f28b8193ec01c106b5f4a2a10f99436e2ccf8"
+      }
+    }
+  }
+}

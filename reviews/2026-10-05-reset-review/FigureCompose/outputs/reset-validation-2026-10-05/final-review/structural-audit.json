@@ -1,0 +1,2375 @@
+{
+  "X-main": {
+    "root": {
+      "width": "178mm",
+      "height": "82mm",
+      "viewBox": "0 0 1780 820"
+    },
+    "hash": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+    "texts": [
+      "MAE pre-training",
+      "75% masked",
+      "encoded",
+      "mask token",
+      "Image",
+      "1",
+      "6",
+      "11",
+      "12",
+      "16 patches",
+      "Keep 4",
+      "1",
+      "6",
+      "11",
+      "12",
+      "Encoder",
+      "4 tokens",
+      "+ positions",
+      "z1",
+      "z6",
+      "z11",
+      "z12",
+      "Restore positions",
+      "z1",
+      "M",
+      "M",
+      "M",
+      "M",
+      "z6",
+      "M",
+      "M",
+      "M",
+      "M",
+      "z11",
+      "z12",
+      "M",
+      "M",
+      "M",
+      "M",
+      "4 encoded + 12 masks",
+      "12 \u00d7 M",
+      "Lightweight",
+      "decoder",
+      "+ positions",
+      "Predict pixels",
+      "16 patch predictions",
+      "target only",
+      "Original pixels",
+      "Masked MSE",
+      "12 patches",
+      "loss locations"
+    ],
+    "style": "\n    text{font-family:Arial,Helvetica,sans-serif;fill:#243341;font-size:27px}\n    .head{font-size:30px;font-weight:600}.small{font-size:23px}.id{font-size:23px;font-weight:600;fill:#243341}\n    .route{fill:none;stroke:#293849;stroke-width:2.5;marker-end:url(#arrow)}\n    .latent{fill:#3477a9;stroke:#245c85;stroke-width:1.5}.mask{fill:#e4e6e9;stroke:#b0b5bd;stroke-width:1.5}\n    .z{fill:white;font-size:27px}.m{fill:#596371;font-size:27px}.loss{fill:none;stroke:#be682b;stroke-width:4}\n  ",
+    "data_nodes": [
+      {
+        "id": "retained-1",
+        "data-patch": "1"
+      },
+      {
+        "id": "retained-6",
+        "data-patch": "6",
+        "transform": "translate(64 64)"
+      },
+      {
+        "id": "retained-11",
+        "data-patch": "11",
+        "transform": "translate(128 128)"
+      },
+      {
+        "id": "retained-12",
+        "data-patch": "12",
+        "transform": "translate(192 128)"
+      },
+      {
+        "id": "visible-1",
+        "data-patch": "1",
+        "transform": "translate(350 235)"
+      },
+      {
+        "id": "visible-6",
+        "data-patch": "6",
+        "transform": "translate(430 235)"
+      },
+      {
+        "id": "visible-11",
+        "data-patch": "11",
+        "transform": "translate(350 325)"
+      },
+      {
+        "id": "visible-12",
+        "data-patch": "12",
+        "transform": "translate(430 325)"
+      },
+      {
+        "id": "latent-1",
+        "data-patch": "1",
+        "class": "latent"
+      },
+      {
+        "id": "latent-6",
+        "data-patch": "6",
+        "class": "latent"
+      },
+      {
+        "id": "latent-11",
+        "data-patch": "11",
+        "class": "latent"
+      },
+      {
+        "id": "latent-12",
+        "data-patch": "12",
+        "class": "latent"
+      },
+      {
+        "id": "decoder-1",
+        "data-patch": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "decoder-2",
+        "data-patch": "2",
+        "data-kind": "mask",
+        "transform": "translate(64 0)"
+      },
+      {
+        "id": "decoder-3",
+        "data-patch": "3",
+        "data-kind": "mask",
+        "transform": "translate(128 0)"
+      },
+      {
+        "id": "decoder-4",
+        "data-patch": "4",
+        "data-kind": "mask",
+        "transform": "translate(192 0)"
+      },
+      {
+        "id": "decoder-5",
+        "data-patch": "5",
+        "data-kind": "mask",
+        "transform": "translate(0 64)"
+      },
+      {
+        "id": "decoder-6",
+        "data-patch": "6",
+        "data-kind": "visible",
+        "transform": "translate(64 64)"
+      },
+      {
+        "id": "decoder-7",
+        "data-patch": "7",
+        "data-kind": "mask",
+        "transform": "translate(128 64)"
+      },
+      {
+        "id": "decoder-8",
+        "data-patch": "8",
+        "data-kind": "mask",
+        "transform": "translate(192 64)"
+      },
+      {
+        "id": "decoder-9",
+        "data-patch": "9",
+        "data-kind": "mask",
+        "transform": "translate(0 128)"
+      },
+      {
+        "id": "decoder-10",
+        "data-patch": "10",
+        "data-kind": "mask",
+        "transform": "translate(64 128)"
+      },
+      {
+        "id": "decoder-11",
+        "data-patch": "11",
+        "data-kind": "visible",
+        "transform": "translate(128 128)"
+      },
+      {
+        "id": "decoder-12",
+        "data-patch": "12",
+        "data-kind": "visible",
+        "transform": "translate(192 128)"
+      },
+      {
+        "id": "decoder-13",
+        "data-patch": "13",
+        "data-kind": "mask",
+        "transform": "translate(0 192)"
+      },
+      {
+        "id": "decoder-14",
+        "data-patch": "14",
+        "data-kind": "mask",
+        "transform": "translate(64 192)"
+      },
+      {
+        "id": "decoder-15",
+        "data-patch": "15",
+        "data-kind": "mask",
+        "transform": "translate(128 192)"
+      },
+      {
+        "id": "decoder-16",
+        "data-patch": "16",
+        "data-kind": "mask",
+        "transform": "translate(192 192)"
+      },
+      {
+        "id": "loss-2",
+        "data-patch": "2",
+        "class": "loss"
+      },
+      {
+        "id": "loss-3",
+        "data-patch": "3",
+        "class": "loss"
+      },
+      {
+        "id": "loss-4",
+        "data-patch": "4",
+        "class": "loss"
+      },
+      {
+        "id": "loss-5",
+        "data-patch": "5",
+        "class": "loss"
+      },
+      {
+        "id": "loss-7",
+        "data-patch": "7",
+        "class": "loss"
+      },
+      {
+        "id": "loss-8",
+        "data-patch": "8",
+        "class": "loss"
+      },
+      {
+        "id": "loss-9",
+        "data-patch": "9",
+        "class": "loss"
+      },
+      {
+        "id": "loss-10",
+        "data-patch": "10",
+        "class": "loss"
+      },
+      {
+        "id": "loss-13",
+        "data-patch": "13",
+        "class": "loss"
+      },
+      {
+        "id": "loss-14",
+        "data-patch": "14",
+        "class": "loss"
+      },
+      {
+        "id": "loss-15",
+        "data-patch": "15",
+        "class": "loss"
+      },
+      {
+        "id": "loss-16",
+        "data-patch": "16",
+        "class": "loss"
+      }
+    ],
+    "native_text_count": 51,
+    "image_count": 0,
+    "routes": [
+      {
+        "class": "route",
+        "d": "M301 326H328"
+      },
+      {
+        "class": "route",
+        "d": "M502 326H526"
+      },
+      {
+        "class": "route",
+        "d": "M689 326H719"
+      },
+      {
+        "class": "route",
+        "d": "M805 326H852"
+      },
+      {
+        "class": "route",
+        "d": "M1071 568H1160V449H1127"
+      },
+      {
+        "class": "route",
+        "d": "M1140 326H1184"
+      },
+      {
+        "class": "route",
+        "d": "M1326 326H1395"
+      }
+    ],
+    "loss_outlines": [
+      {
+        "id": "loss-2",
+        "data-patch": "2",
+        "x": "65",
+        "y": "1",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-3",
+        "data-patch": "3",
+        "x": "129",
+        "y": "1",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-4",
+        "data-patch": "4",
+        "x": "193",
+        "y": "1",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-5",
+        "data-patch": "5",
+        "x": "1",
+        "y": "65",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-7",
+        "data-patch": "7",
+        "x": "129",
+        "y": "65",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-8",
+        "data-patch": "8",
+        "x": "193",
+        "y": "65",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-9",
+        "data-patch": "9",
+        "x": "1",
+        "y": "129",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-10",
+        "data-patch": "10",
+        "x": "65",
+        "y": "129",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-13",
+        "data-patch": "13",
+        "x": "1",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-14",
+        "data-patch": "14",
+        "x": "65",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-15",
+        "data-patch": "15",
+        "x": "129",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-16",
+        "data-patch": "16",
+        "x": "193",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "x": "1428",
+        "y": "753",
+        "width": "26",
+        "height": "23",
+        "class": "loss"
+      }
+    ],
+    "symbols": [
+      {
+        "id": "scene",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "prediction-scene",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "grid",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "crop-1",
+        "viewBox": "0 0 64 64"
+      },
+      {
+        "id": "crop-6",
+        "viewBox": "64 64 64 64"
+      },
+      {
+        "id": "crop-11",
+        "viewBox": "128 128 64 64"
+      },
+      {
+        "id": "crop-12",
+        "viewBox": "192 128 64 64"
+      }
+    ]
+  },
+  "X-edit": {
+    "root": {
+      "width": "178mm",
+      "height": "82mm",
+      "viewBox": "0 0 1780 820"
+    },
+    "hash": "473bfecaaddb80f70090b5c9f609438dc305f87a2f368b49dbc2a327df171377",
+    "texts": [
+      "MAE pre-training",
+      "50% masked",
+      "encoded",
+      "mask token",
+      "Image",
+      "1",
+      "3",
+      "6",
+      "8",
+      "9",
+      "11",
+      "12",
+      "14",
+      "16 patches",
+      "Keep 8",
+      "1",
+      "3",
+      "6",
+      "8",
+      "9",
+      "11",
+      "12",
+      "14",
+      "Encoder",
+      "8 tokens",
+      "+ positions",
+      "z1",
+      "z3",
+      "z6",
+      "z8",
+      "z9",
+      "z11",
+      "z12",
+      "z14",
+      "Restore positions",
+      "z1",
+      "M",
+      "z3",
+      "M",
+      "M",
+      "z6",
+      "M",
+      "z8",
+      "z9",
+      "M",
+      "z11",
+      "z12",
+      "M",
+      "z14",
+      "M",
+      "M",
+      "8 encoded + 8 masks",
+      "8 \u00d7 M",
+      "Lightweight",
+      "decoder",
+      "+ positions",
+      "Predict pixels",
+      "16 patch predictions",
+      "target only",
+      "Original pixels",
+      "Masked MSE",
+      "8 patches",
+      "loss locations"
+    ],
+    "style": "\n    text{font-family:Arial,Helvetica,sans-serif;fill:#243341;font-size:27px}\n    .head{font-size:30px;font-weight:600}.small{font-size:23px}.id{font-size:23px;font-weight:600;fill:#243341}\n    .route{fill:none;stroke:#293849;stroke-width:2.5;marker-end:url(#arrow)}\n    .latent{fill:#3477a9;stroke:#245c85;stroke-width:1.5}.mask{fill:#e4e6e9;stroke:#b0b5bd;stroke-width:1.5}\n    .z{fill:white;font-size:27px}.m{fill:#596371;font-size:27px}.loss{fill:none;stroke:#be682b;stroke-width:4}\n  ",
+    "data_nodes": [
+      {
+        "id": "retained-1",
+        "data-patch": "1",
+        "transform": "translate(0 0)"
+      },
+      {
+        "id": "retained-3",
+        "data-patch": "3",
+        "transform": "translate(128 0)"
+      },
+      {
+        "id": "retained-6",
+        "data-patch": "6",
+        "transform": "translate(64 64)"
+      },
+      {
+        "id": "retained-8",
+        "data-patch": "8",
+        "transform": "translate(192 64)"
+      },
+      {
+        "id": "retained-9",
+        "data-patch": "9",
+        "transform": "translate(0 128)"
+      },
+      {
+        "id": "retained-11",
+        "data-patch": "11",
+        "transform": "translate(128 128)"
+      },
+      {
+        "id": "retained-12",
+        "data-patch": "12",
+        "transform": "translate(192 128)"
+      },
+      {
+        "id": "retained-14",
+        "data-patch": "14",
+        "transform": "translate(64 192)"
+      },
+      {
+        "id": "visible-1",
+        "data-patch": "1",
+        "transform": "translate(350 195)"
+      },
+      {
+        "id": "visible-3",
+        "data-patch": "3",
+        "transform": "translate(430 195)"
+      },
+      {
+        "id": "visible-6",
+        "data-patch": "6",
+        "transform": "translate(350 263)"
+      },
+      {
+        "id": "visible-8",
+        "data-patch": "8",
+        "transform": "translate(430 263)"
+      },
+      {
+        "id": "visible-9",
+        "data-patch": "9",
+        "transform": "translate(350 331)"
+      },
+      {
+        "id": "visible-11",
+        "data-patch": "11",
+        "transform": "translate(430 331)"
+      },
+      {
+        "id": "visible-12",
+        "data-patch": "12",
+        "transform": "translate(350 399)"
+      },
+      {
+        "id": "visible-14",
+        "data-patch": "14",
+        "transform": "translate(430 399)"
+      },
+      {
+        "id": "latent-1",
+        "data-patch": "1",
+        "class": "latent"
+      },
+      {
+        "id": "latent-3",
+        "data-patch": "3",
+        "class": "latent"
+      },
+      {
+        "id": "latent-6",
+        "data-patch": "6",
+        "class": "latent"
+      },
+      {
+        "id": "latent-8",
+        "data-patch": "8",
+        "class": "latent"
+      },
+      {
+        "id": "latent-9",
+        "data-patch": "9",
+        "class": "latent"
+      },
+      {
+        "id": "latent-11",
+        "data-patch": "11",
+        "class": "latent"
+      },
+      {
+        "id": "latent-12",
+        "data-patch": "12",
+        "class": "latent"
+      },
+      {
+        "id": "latent-14",
+        "data-patch": "14",
+        "class": "latent"
+      },
+      {
+        "id": "decoder-1",
+        "data-patch": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "decoder-2",
+        "data-patch": "2",
+        "data-kind": "mask",
+        "transform": "translate(64 0)"
+      },
+      {
+        "id": "decoder-3",
+        "data-patch": "3",
+        "data-kind": "visible",
+        "transform": "translate(128 0)"
+      },
+      {
+        "id": "decoder-4",
+        "data-patch": "4",
+        "data-kind": "mask",
+        "transform": "translate(192 0)"
+      },
+      {
+        "id": "decoder-5",
+        "data-patch": "5",
+        "data-kind": "mask",
+        "transform": "translate(0 64)"
+      },
+      {
+        "id": "decoder-6",
+        "data-patch": "6",
+        "data-kind": "visible",
+        "transform": "translate(64 64)"
+      },
+      {
+        "id": "decoder-7",
+        "data-patch": "7",
+        "data-kind": "mask",
+        "transform": "translate(128 64)"
+      },
+      {
+        "id": "decoder-8",
+        "data-patch": "8",
+        "data-kind": "visible",
+        "transform": "translate(192 64)"
+      },
+      {
+        "id": "decoder-9",
+        "data-patch": "9",
+        "data-kind": "visible",
+        "transform": "translate(0 128)"
+      },
+      {
+        "id": "decoder-10",
+        "data-patch": "10",
+        "data-kind": "mask",
+        "transform": "translate(64 128)"
+      },
+      {
+        "id": "decoder-11",
+        "data-patch": "11",
+        "data-kind": "visible",
+        "transform": "translate(128 128)"
+      },
+      {
+        "id": "decoder-12",
+        "data-patch": "12",
+        "data-kind": "visible",
+        "transform": "translate(192 128)"
+      },
+      {
+        "id": "decoder-13",
+        "data-patch": "13",
+        "data-kind": "mask",
+        "transform": "translate(0 192)"
+      },
+      {
+        "id": "decoder-14",
+        "data-patch": "14",
+        "data-kind": "visible",
+        "transform": "translate(64 192)"
+      },
+      {
+        "id": "decoder-15",
+        "data-patch": "15",
+        "data-kind": "mask",
+        "transform": "translate(128 192)"
+      },
+      {
+        "id": "decoder-16",
+        "data-patch": "16",
+        "data-kind": "mask",
+        "transform": "translate(192 192)"
+      },
+      {
+        "id": "loss-2",
+        "data-patch": "2",
+        "class": "loss"
+      },
+      {
+        "id": "loss-4",
+        "data-patch": "4",
+        "class": "loss"
+      },
+      {
+        "id": "loss-5",
+        "data-patch": "5",
+        "class": "loss"
+      },
+      {
+        "id": "loss-7",
+        "data-patch": "7",
+        "class": "loss"
+      },
+      {
+        "id": "loss-10",
+        "data-patch": "10",
+        "class": "loss"
+      },
+      {
+        "id": "loss-13",
+        "data-patch": "13",
+        "class": "loss"
+      },
+      {
+        "id": "loss-15",
+        "data-patch": "15",
+        "class": "loss"
+      },
+      {
+        "id": "loss-16",
+        "data-patch": "16",
+        "class": "loss"
+      }
+    ],
+    "native_text_count": 63,
+    "image_count": 0,
+    "routes": [
+      {
+        "class": "route",
+        "d": "M301 326H328"
+      },
+      {
+        "class": "route",
+        "d": "M502 326H526"
+      },
+      {
+        "class": "route",
+        "d": "M689 326H719"
+      },
+      {
+        "class": "route",
+        "d": "M805 326H852"
+      },
+      {
+        "class": "route",
+        "d": "M1071 568H1160V449H1127"
+      },
+      {
+        "class": "route",
+        "d": "M1140 326H1184"
+      },
+      {
+        "class": "route",
+        "d": "M1326 326H1395"
+      }
+    ],
+    "loss_outlines": [
+      {
+        "id": "loss-2",
+        "data-patch": "2",
+        "x": "65",
+        "y": "1",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-4",
+        "data-patch": "4",
+        "x": "193",
+        "y": "1",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-5",
+        "data-patch": "5",
+        "x": "1",
+        "y": "65",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-7",
+        "data-patch": "7",
+        "x": "129",
+        "y": "65",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-10",
+        "data-patch": "10",
+        "x": "65",
+        "y": "129",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-13",
+        "data-patch": "13",
+        "x": "1",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-15",
+        "data-patch": "15",
+        "x": "129",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "id": "loss-16",
+        "data-patch": "16",
+        "x": "193",
+        "y": "193",
+        "width": "62",
+        "height": "62",
+        "class": "loss"
+      },
+      {
+        "x": "1428",
+        "y": "753",
+        "width": "26",
+        "height": "23",
+        "class": "loss"
+      }
+    ],
+    "symbols": [
+      {
+        "id": "scene",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "prediction-scene",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "grid",
+        "viewBox": "0 0 256 256"
+      },
+      {
+        "id": "crop-1",
+        "viewBox": "0 0 64 64"
+      },
+      {
+        "id": "crop-6",
+        "viewBox": "64 64 64 64"
+      },
+      {
+        "id": "crop-11",
+        "viewBox": "128 128 64 64"
+      },
+      {
+        "id": "crop-12",
+        "viewBox": "192 128 64 64"
+      },
+      {
+        "id": "crop-3",
+        "viewBox": "128 0 64 64"
+      },
+      {
+        "id": "crop-8",
+        "viewBox": "192 64 64 64"
+      },
+      {
+        "id": "crop-9",
+        "viewBox": "0 128 64 64"
+      },
+      {
+        "id": "crop-14",
+        "viewBox": "64 192 64 64"
+      }
+    ]
+  },
+  "Y-main": {
+    "root": {
+      "width": "178mm",
+      "height": "99.68mm",
+      "viewBox": "0 0 1000 560",
+      "role": "img",
+      "aria-labelledby": "title desc"
+    },
+    "hash": "8b4bba428a222781ae5308a7d8573628b5cd9a4be1cde1ef74f0a0d7e307a21a",
+    "texts": [
+      "Image \u00b7 16 patches",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "12 / 16 masked",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "75%",
+      "4 visible",
+      "1",
+      "6",
+      "11",
+      "12",
+      "embed +",
+      "encoder positions",
+      "Encoder",
+      "visible only",
+      "4 latents",
+      "1",
+      "6",
+      "11",
+      "12",
+      "Restore 16 positions",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "12 \u00d7 m",
+      "learned",
+      "shared token",
+      "+ decoder",
+      "positions",
+      "Lightweight",
+      "decoder",
+      "16 pixel predictions",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "Original target",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "MSE",
+      "12 masked",
+      "positions only",
+      "visible position",
+      "encoded visible",
+      "mask token m",
+      "masked pixel supervision"
+    ],
+    "style": "text{font-family:Arial,Helvetica,sans-serif;fill:#21384b;font-size:14px} .heading{font-size:16px;font-weight:600}.small{font-size:12px}.index{font-size:12px;font-weight:500}.route{fill:none;stroke:#253c50;stroke-width:1.8;marker-end:url(#arrow);stroke-linejoin:round}.latent{fill:#305b80;stroke:#24425d;stroke-width:1}.mask{fill:#f6deb0;stroke:#c9912e;stroke-width:1}.tokenindex{fill:white;font-size:12px}.auxindex{fill:#74501d;font-size:12px}",
+    "data_nodes": [
+      {
+        "id": "original-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-3",
+        "data-position": "3",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-8",
+        "data-position": "8",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-9",
+        "data-position": "9",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-14",
+        "data-position": "14",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-2-removed",
+        "data-position": "2"
+      },
+      {
+        "id": "masked-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-3-removed",
+        "data-position": "3"
+      },
+      {
+        "id": "masked-position-3",
+        "data-position": "3",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-4-removed",
+        "data-position": "4"
+      },
+      {
+        "id": "masked-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-5-removed",
+        "data-position": "5"
+      },
+      {
+        "id": "masked-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-7-removed",
+        "data-position": "7"
+      },
+      {
+        "id": "masked-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-8-removed",
+        "data-position": "8"
+      },
+      {
+        "id": "masked-position-8",
+        "data-position": "8",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-9-removed",
+        "data-position": "9"
+      },
+      {
+        "id": "masked-position-9",
+        "data-position": "9",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-10-removed",
+        "data-position": "10"
+      },
+      {
+        "id": "masked-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-13-removed",
+        "data-position": "13"
+      },
+      {
+        "id": "masked-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-14-removed",
+        "data-position": "14"
+      },
+      {
+        "id": "masked-position-14",
+        "data-position": "14",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-15-removed",
+        "data-position": "15"
+      },
+      {
+        "id": "masked-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-16-removed",
+        "data-position": "16"
+      },
+      {
+        "id": "masked-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "visible-patch-1",
+        "data-position": "1"
+      },
+      {
+        "id": "visible-patch-6",
+        "data-position": "6"
+      },
+      {
+        "id": "visible-patch-11",
+        "data-position": "11"
+      },
+      {
+        "id": "visible-patch-12",
+        "data-position": "12"
+      },
+      {
+        "id": "latent-1",
+        "data-position": "1",
+        "class": "latent"
+      },
+      {
+        "id": "latent-6",
+        "data-position": "6",
+        "class": "latent"
+      },
+      {
+        "id": "latent-11",
+        "data-position": "11",
+        "class": "latent"
+      },
+      {
+        "id": "latent-12",
+        "data-position": "12",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-1",
+        "data-position": "1",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-2",
+        "data-position": "2",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-3",
+        "data-position": "3",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-4",
+        "data-position": "4",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-5",
+        "data-position": "5",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-6",
+        "data-position": "6",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-7",
+        "data-position": "7",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-8",
+        "data-position": "8",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-9",
+        "data-position": "9",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-10",
+        "data-position": "10",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-11",
+        "data-position": "11",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-12",
+        "data-position": "12",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-13",
+        "data-position": "13",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-14",
+        "data-position": "14",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-15",
+        "data-position": "15",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-16",
+        "data-position": "16",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "prediction-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-3",
+        "data-position": "3",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-8",
+        "data-position": "8",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-9",
+        "data-position": "9",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-14",
+        "data-position": "14",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-3",
+        "data-position": "3",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-8",
+        "data-position": "8",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-9",
+        "data-position": "9",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-14",
+        "data-position": "14",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      }
+    ],
+    "native_text_count": 114,
+    "image_count": 2,
+    "routes": [
+      {
+        "class": "route",
+        "id": "mask-route",
+        "d": "M203 136H260"
+      },
+      {
+        "class": "route",
+        "id": "gather-route",
+        "d": "M453 136H498"
+      },
+      {
+        "class": "route",
+        "id": "embed-route",
+        "d": "M626 136H650"
+      },
+      {
+        "class": "route",
+        "id": "encode-output-route",
+        "d": "M765 136H794"
+      },
+      {
+        "class": "route",
+        "id": "latent-to-restoration",
+        "d": "M853 168V237H778V294H804V299"
+      },
+      {
+        "class": "route",
+        "id": "mask-to-restoration",
+        "d": "M920 367H905"
+      },
+      {
+        "class": "route",
+        "id": "decoder-input-route",
+        "d": "M782 367H717"
+      },
+      {
+        "class": "route",
+        "id": "decode-output-route",
+        "d": "M603 367H560"
+      },
+      {
+        "class": "route",
+        "id": "original-target-route",
+        "d": "M108 231V250H10V372H18"
+      },
+      {
+        "class": "route",
+        "id": "target-loss-route",
+        "d": "M169 372H220"
+      },
+      {
+        "class": "route",
+        "id": "prediction-loss-route",
+        "d": "M366 372H322"
+      }
+    ],
+    "loss_outlines": [],
+    "symbols": [
+      {
+        "id": "original-scene",
+        "viewBox": "0 0 416 410"
+      },
+      {
+        "id": "prediction-scene",
+        "viewBox": "0 0 294 306"
+      }
+    ]
+  },
+  "Y-edit": {
+    "root": {
+      "width": "178mm",
+      "height": "99.68mm",
+      "viewBox": "0 0 1000 560",
+      "role": "img",
+      "aria-labelledby": "title desc"
+    },
+    "hash": "65b563469ebe915722eec34c7977e9e22e396109601d17917d8856cb47246633",
+    "texts": [
+      "Image \u00b7 16 patches",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "8 / 16 masked",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "50%",
+      "8 visible",
+      "1",
+      "3",
+      "6",
+      "8",
+      "9",
+      "11",
+      "12",
+      "14",
+      "embed +",
+      "encoder positions",
+      "Encoder",
+      "visible only",
+      "8 latents",
+      "1",
+      "3",
+      "6",
+      "8",
+      "9",
+      "11",
+      "12",
+      "14",
+      "Restore 16 positions",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "8 \u00d7 m",
+      "learned",
+      "shared token",
+      "+ decoder",
+      "positions",
+      "Lightweight",
+      "decoder",
+      "16 pixel predictions",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "Original target",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "MSE",
+      "8 masked",
+      "positions only",
+      "visible position",
+      "encoded visible",
+      "mask token m",
+      "masked pixel supervision"
+    ],
+    "style": "text{font-family:Arial,Helvetica,sans-serif;fill:#21384b;font-size:14px} .heading{font-size:16px;font-weight:600}.small{font-size:12px}.index{font-size:12px;font-weight:500}.route{fill:none;stroke:#253c50;stroke-width:1.8;marker-end:url(#arrow);stroke-linejoin:round}.latent{fill:#305b80;stroke:#24425d;stroke-width:1}.mask{fill:#f6deb0;stroke:#c9912e;stroke-width:1}.tokenindex{fill:white;font-size:12px}.auxindex{fill:#74501d;font-size:12px}",
+    "data_nodes": [
+      {
+        "id": "original-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-3",
+        "data-position": "3",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-8",
+        "data-position": "8",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-9",
+        "data-position": "9",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-14",
+        "data-position": "14",
+        "data-kind": "visible"
+      },
+      {
+        "id": "original-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "original-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-2-removed",
+        "data-position": "2"
+      },
+      {
+        "id": "masked-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-3",
+        "data-position": "3",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-4-removed",
+        "data-position": "4"
+      },
+      {
+        "id": "masked-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-5-removed",
+        "data-position": "5"
+      },
+      {
+        "id": "masked-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-7-removed",
+        "data-position": "7"
+      },
+      {
+        "id": "masked-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-8",
+        "data-position": "8",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-9",
+        "data-position": "9",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-10-removed",
+        "data-position": "10"
+      },
+      {
+        "id": "masked-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-13-removed",
+        "data-position": "13"
+      },
+      {
+        "id": "masked-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-14",
+        "data-position": "14",
+        "data-kind": "visible"
+      },
+      {
+        "id": "masked-position-15-removed",
+        "data-position": "15"
+      },
+      {
+        "id": "masked-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "masked-position-16-removed",
+        "data-position": "16"
+      },
+      {
+        "id": "masked-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "visible-patch-1",
+        "data-position": "1"
+      },
+      {
+        "id": "visible-patch-3",
+        "data-position": "3"
+      },
+      {
+        "id": "visible-patch-6",
+        "data-position": "6"
+      },
+      {
+        "id": "visible-patch-8",
+        "data-position": "8"
+      },
+      {
+        "id": "visible-patch-9",
+        "data-position": "9"
+      },
+      {
+        "id": "visible-patch-11",
+        "data-position": "11"
+      },
+      {
+        "id": "visible-patch-12",
+        "data-position": "12"
+      },
+      {
+        "id": "visible-patch-14",
+        "data-position": "14"
+      },
+      {
+        "id": "latent-1",
+        "data-position": "1",
+        "class": "latent"
+      },
+      {
+        "id": "latent-3",
+        "data-position": "3",
+        "class": "latent"
+      },
+      {
+        "id": "latent-6",
+        "data-position": "6",
+        "class": "latent"
+      },
+      {
+        "id": "latent-8",
+        "data-position": "8",
+        "class": "latent"
+      },
+      {
+        "id": "latent-9",
+        "data-position": "9",
+        "class": "latent"
+      },
+      {
+        "id": "latent-11",
+        "data-position": "11",
+        "class": "latent"
+      },
+      {
+        "id": "latent-12",
+        "data-position": "12",
+        "class": "latent"
+      },
+      {
+        "id": "latent-14",
+        "data-position": "14",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-1",
+        "data-position": "1",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-2",
+        "data-position": "2",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-3",
+        "data-position": "3",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-4",
+        "data-position": "4",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-5",
+        "data-position": "5",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-6",
+        "data-position": "6",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-7",
+        "data-position": "7",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-8",
+        "data-position": "8",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-9",
+        "data-position": "9",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-10",
+        "data-position": "10",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-11",
+        "data-position": "11",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-12",
+        "data-position": "12",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-13",
+        "data-position": "13",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-14",
+        "data-position": "14",
+        "data-kind": "encoded-visible",
+        "class": "latent"
+      },
+      {
+        "id": "restored-position-15",
+        "data-position": "15",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "restored-position-16",
+        "data-position": "16",
+        "data-kind": "mask-token",
+        "class": "mask"
+      },
+      {
+        "id": "prediction-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-3",
+        "data-position": "3",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-8",
+        "data-position": "8",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-9",
+        "data-position": "9",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-14",
+        "data-position": "14",
+        "data-kind": "visible"
+      },
+      {
+        "id": "prediction-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "prediction-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-1",
+        "data-position": "1",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-2",
+        "data-position": "2",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-3",
+        "data-position": "3",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-4",
+        "data-position": "4",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-5",
+        "data-position": "5",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-6",
+        "data-position": "6",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-7",
+        "data-position": "7",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-8",
+        "data-position": "8",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-9",
+        "data-position": "9",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-10",
+        "data-position": "10",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-11",
+        "data-position": "11",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-12",
+        "data-position": "12",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-13",
+        "data-position": "13",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-14",
+        "data-position": "14",
+        "data-kind": "visible"
+      },
+      {
+        "id": "target-position-15",
+        "data-position": "15",
+        "data-kind": "masked"
+      },
+      {
+        "id": "target-position-16",
+        "data-position": "16",
+        "data-kind": "masked"
+      }
+    ],
+    "native_text_count": 122,
+    "image_count": 2,
+    "routes": [
+      {
+        "class": "route",
+        "id": "mask-route",
+        "d": "M203 136H260"
+      },
+      {
+        "class": "route",
+        "id": "gather-route",
+        "d": "M453 136H498"
+      },
+      {
+        "class": "route",
+        "id": "embed-route",
+        "d": "M626 136H650"
+      },
+      {
+        "class": "route",
+        "id": "encode-output-route",
+        "d": "M765 136H794"
+      },
+      {
+        "class": "route",
+        "id": "latent-to-restoration",
+        "d": "M853 168V237H778V294H804V299"
+      },
+      {
+        "class": "route",
+        "id": "mask-to-restoration",
+        "d": "M920 367H905"
+      },
+      {
+        "class": "route",
+        "id": "decoder-input-route",
+        "d": "M782 367H717"
+      },
+      {
+        "class": "route",
+        "id": "decode-output-route",
+        "d": "M603 367H560"
+      },
+      {
+        "class": "route",
+        "id": "original-target-route",
+        "d": "M108 231V250H10V372H18"
+      },
+      {
+        "class": "route",
+        "id": "target-loss-route",
+        "d": "M169 372H220"
+      },
+      {
+        "class": "route",
+        "id": "prediction-loss-route",
+        "d": "M366 372H322"
+      }
+    ],
+    "loss_outlines": [],
+    "symbols": [
+      {
+        "id": "original-scene",
+        "viewBox": "0 0 416 410"
+      },
+      {
+        "id": "prediction-scene",
+        "viewBox": "0 0 294 306"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1807 @@
+{
+  "source": "DiagramBank",
+  "revision": "8d8d408b4ccff03d76e8cbd7b2f39a0914405c7e",
+  "count": 180,
+  "references": [
+    {
+      "id": "DB001",
+      "title": "MeshDiffusion: Score-based Generative 3D Mesh Modeling",
+      "paper_url": "https://openreview.net/forum?id=0cpM2ApF9p6",
+      "figure_number": "2",
+      "sha256": "c6e0d73b78cd2be9b23988c23490e3cb808af547dc989c010b7741a8f346bb89",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0cpM2ApF9p6/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB002",
+      "title": "MeshDiffusion: Score-based Generative 3D Mesh Modeling",
+      "paper_url": "https://openreview.net/forum?id=0cpM2ApF9p6",
+      "figure_number": "4",
+      "sha256": "4ad757c4dc4806fae0e524b16d647a3b79f2b8bf0b87291a51d2ecf68a44aa7f",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0cpM2ApF9p6/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB003",
+      "title": "MeshDiffusion: Score-based Generative 3D Mesh Modeling",
+      "paper_url": "https://openreview.net/forum?id=0cpM2ApF9p6",
+      "figure_number": "5",
+      "sha256": "106d859824fa6afb55e2fa2c64ebbab478e4a8613a51e24229b598bc6a76d6a0",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0cpM2ApF9p6/Figure5.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB151",
+      "title": "Learning Structure-Semantic Evolution Trajectories for Graph Domain Adaptation",
+      "paper_url": "https://openreview.net/forum?id=2v7k6Lv4ZU",
+      "figure_number": "1",
+      "sha256": "f4e049d86b2b697c814f77ca30fbc54bd6337aafebd80d17c611513397bd0fc3",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/2v7k6Lv4ZU/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB005",
+      "title": "DiffEdit: Diffusion-based semantic image editing with mask guidance",
+      "paper_url": "https://openreview.net/forum?id=3lge0p5o-M-",
+      "figure_number": "2",
+      "sha256": "0ac1d446e3ca1bf51d7f7d11a77207b7c95d65972296c9bcade1b6603984b0fb",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/3lge0p5o-M-/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB006",
+      "title": "SketchKnitter: Vectorized Sketch Generation with Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=4eJ43EN2g6l",
+      "figure_number": "1",
+      "sha256": "a4a947610bff6a07562451fbd0914faaaa2714122eeddfe14dc2ad18a75775cd",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/4eJ43EN2g6l/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB007",
+      "title": "SketchKnitter: Vectorized Sketch Generation with Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=4eJ43EN2g6l",
+      "figure_number": "2",
+      "sha256": "b168b7cc56d1605ca0e89567f2e5cda27fce9807f11beef375e532a1aaed7b75",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/4eJ43EN2g6l/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB008",
+      "title": "SketchKnitter: Vectorized Sketch Generation with Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=4eJ43EN2g6l",
+      "figure_number": "4",
+      "sha256": "2584eacbb08366028c17daf6a6f994c38c7850a1ad3be2d16c4ad049e6a44dd7",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/4eJ43EN2g6l/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB009",
+      "title": "Energy-based Epistemic Uncertainty for Graph Neural Networks",
+      "paper_url": "https://openreview.net/forum?id=6vNPPtWH1Q",
+      "figure_number": "1",
+      "sha256": "5e3f909d705bb343865a291fbacb647014b2ce5c543ef10f47c54981deed0bc4",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/6vNPPtWH1Q/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB152",
+      "title": "CoDA: From Text-to-Image Diffusion Models to Training-Free Dataset Distillation",
+      "paper_url": "https://openreview.net/forum?id=6ycBM1nsS3",
+      "figure_number": "2",
+      "sha256": "7a301b207a1eb3884a874fa01e6394468d701bd0853fe9725385d1411e2d4b47",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/6ycBM1nsS3/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB153",
+      "title": "Constrained Decoding of Diffusion LLMs with Context-Free Grammars",
+      "paper_url": "https://openreview.net/forum?id=7Sph4KyeYO",
+      "figure_number": "1",
+      "sha256": "58399d419c31e95afe55fe6e6bc947f4bb6f48cc9ed13c1189ed3ff7601b4028",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/7Sph4KyeYO/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB154",
+      "title": "Unified Biomolecular Trajectory Generation via Pretrained Variational Bridge",
+      "paper_url": "https://openreview.net/forum?id=8HH9dBOxwu",
+      "figure_number": "2",
+      "sha256": "df82ff163b6b7a46480834cdced7e9d4bc7d0be01943518205e5b198d7c74c64",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/8HH9dBOxwu/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB155",
+      "title": "VFScale: Intrinsic Reasoning through Verifier-Free Test-time Scalable Diffusion Model",
+      "paper_url": "https://openreview.net/forum?id=8ta0xgtsJK",
+      "figure_number": "2",
+      "sha256": "f023ca7ba7b16001ab15894b9fb0cceeab21d09d38b3e1d8e9bf7b80822bea2f",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/8ta0xgtsJK/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB156",
+      "title": "Temporal Concept Dynamics in Diffusion Models via Prompt-Conditioned Interventions",
+      "paper_url": "https://openreview.net/forum?id=ABjaSsrYPD",
+      "figure_number": "2",
+      "sha256": "d9531efd5943937a0272e4d3bd91147bb19e635b2f96cebec03e417c3df5b38b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/ABjaSsrYPD/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB157",
+      "title": "SERUM: Simple, Efficient, Robust, and Unifying Marking for Diffusion-based Image Generation",
+      "paper_url": "https://openreview.net/forum?id=AiBUm6iKBf",
+      "figure_number": "1",
+      "sha256": "08615b0e5c0881c38c0dcda7bd9d2d4c81f42bd37ca41f72d601902fd6c29ad2",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/AiBUm6iKBf/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB158",
+      "title": "Quartet of Diffusions: Structure-Aware Point Cloud Generation through Part and Symmetry Guidance",
+      "paper_url": "https://openreview.net/forum?id=BT9rsod6Hc",
+      "figure_number": "2",
+      "sha256": "67044748ccdd834b11de79c4a8ddccf2c55f817114232c457773cc242ea3c7fa",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/BT9rsod6Hc/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB159",
+      "title": "TIGaussian: Disentangle Gaussians for Spatial-Awared Text-Image-3D Alignment",
+      "paper_url": "https://openreview.net/forum?id=CbzCID5lkD",
+      "figure_number": "2",
+      "sha256": "c922e6c07c1ff4e98fdcab391fac4f5ebeeae467456b501cce1a9997cc0376aa",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/CbzCID5lkD/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB160",
+      "title": "Triangle Multiplication is All You Need for Biomolecular Structure Representations",
+      "paper_url": "https://openreview.net/forum?id=CrXcfMLR9q",
+      "figure_number": "2",
+      "sha256": "d60c71e09cf03b96e182cf2d8fe8035b88f9d79b2c6e00608227d1da35dfb063",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/CrXcfMLR9q/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB161",
+      "title": "SRT: Super-Resolution for Time Series via Disentangled Rectified Flow",
+      "paper_url": "https://openreview.net/forum?id=I94Eg6cu7P",
+      "figure_number": "2",
+      "sha256": "2821d0b414ed739c39b4bd068189d613cc69295925e5bb6b28f7b72b34f28ece",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/I94Eg6cu7P/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB162",
+      "title": "ERTACache: Error Rectification and Timesteps Adjustment for Efficient Diffusion",
+      "paper_url": "https://openreview.net/forum?id=InvyBiYcK5",
+      "figure_number": "1",
+      "sha256": "92eae24187891be4e01f538dec43eb1c04ce7a52fc184509276b4d1c2f24a36f",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/InvyBiYcK5/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB163",
+      "title": "CL-DPS: A Contrastive Learning Approach to Blind Nonlinear Inverse Problem Solving via Diffusion Posterior Sampling",
+      "paper_url": "https://openreview.net/forum?id=KoLYNHJRBY",
+      "figure_number": "2",
+      "sha256": "6c3f9b52f90667c296e5604bb5aca7bd43e8c9a89fcc85b017ab74b0b10ac8f2",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/KoLYNHJRBY/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB164",
+      "title": "Riemannian Variational Flow Matching for Material and Protein Design",
+      "paper_url": "https://openreview.net/forum?id=NlnDselrtl",
+      "figure_number": "1",
+      "sha256": "38ab56ad3a85b6024a19645f339859e7da1904bf8ae3228cde225b96396399a9",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/NlnDselrtl/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB165",
+      "title": "STEDiff: Revealing the Spatial and Temporal Redundancy of Backdoor Attacks in Text-to-Image Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=O02qsgSUtY",
+      "figure_number": "1",
+      "sha256": "ba8bd030bbdf355472cea4847987567b9c3beb75690a31eea7a0c63f732fb1ce",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/O02qsgSUtY/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB166",
+      "title": "UniCalli: A Unified Diffusion Framework for Column-Level Generation and Recognition of Chinese Calligraphy",
+      "paper_url": "https://openreview.net/forum?id=OSIPdrw56X",
+      "figure_number": "2",
+      "sha256": "4e155e44ebc18d7ac46cc7fea349a77f7922241cc2393d2b182b5b0189bac659",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/OSIPdrw56X/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB017",
+      "title": "Diffusion Posterior Sampling for General Noisy Inverse Problems",
+      "paper_url": "https://openreview.net/forum?id=OnD9zGAGT0k",
+      "figure_number": "2",
+      "sha256": "0751572bff94454dedbf731f0d6b012dbfa3f4f24f1e6f3e1a0577c46160344e",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/OnD9zGAGT0k/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB018",
+      "title": "Diffusion Posterior Sampling for General Noisy Inverse Problems",
+      "paper_url": "https://openreview.net/forum?id=OnD9zGAGT0k",
+      "figure_number": "3",
+      "sha256": "3c0115f7772fd3152918bb7e0ba645322d889a9bd7cc064a33f4e6dcc0781f9b",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/OnD9zGAGT0k/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB167",
+      "title": "TAMMs: Change Understanding and Forecasting in Satellite Image Time Series with Temporal-Aware Multimodal Models",
+      "paper_url": "https://openreview.net/forum?id=PXDFTeIqMd",
+      "figure_number": "1",
+      "sha256": "6a0f1f46c6bc80d7d9fc777dee92a847d956c9988571bcac3e649eae1faeb2cd",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/PXDFTeIqMd/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB168",
+      "title": "TAMMs: Change Understanding and Forecasting in Satellite Image Time Series with Temporal-Aware Multimodal Models",
+      "paper_url": "https://openreview.net/forum?id=PXDFTeIqMd",
+      "figure_number": "2",
+      "sha256": "9e0f79dd71f375cbbebe995925783876ae57b87e124e7fea15834a01cac88345",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/PXDFTeIqMd/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB021",
+      "title": "Flow Matching for Generative Modeling",
+      "paper_url": "https://openreview.net/forum?id=PqvMRDCJT9t",
+      "figure_number": "2",
+      "sha256": "ba6e41cb1cd1d0e1dd4386c1aecf277cec430fd2fe297d93d2db96879ca113b8",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/PqvMRDCJT9t/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB022",
+      "title": "Human Motion Diffusion Model",
+      "paper_url": "https://openreview.net/forum?id=SJ1kSyO2jwu",
+      "figure_number": "2",
+      "sha256": "9c505a857a82524f80e63a07346fa7ef43f2ecef3138e9de8a7f7306ff231475",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/SJ1kSyO2jwu/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB023",
+      "title": "Human Motion Diffusion Model",
+      "paper_url": "https://openreview.net/forum?id=SJ1kSyO2jwu",
+      "figure_number": "3",
+      "sha256": "fd7d6afb5afb78afa19062e628db294d13f64665bf135756591cd07d03f2db69",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/SJ1kSyO2jwu/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB026",
+      "title": "PredLDM: Spatiotemporal Sequence Prediction with Latent Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=TWmnOUzcCo",
+      "figure_number": "1",
+      "sha256": "4de302e005d7d904122dfdea447044a3d99186b194d00d8e1acf22cd764e5619",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/TWmnOUzcCo/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB169",
+      "title": "A2D: Any-Order, Any-Step Safety Alignment for Diffusion Language Models",
+      "paper_url": "https://openreview.net/forum?id=URTnuyQJI1",
+      "figure_number": "2",
+      "sha256": "a41d67a4fa467cb21bfdfc767b4748864ebe3904d7c5e141a6149e4e9096f99c",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/URTnuyQJI1/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB170",
+      "title": "Stroke3D: Lifting 2D strokes into rigged 3D model via latent diffusion models",
+      "paper_url": "https://openreview.net/forum?id=VgOWxor3LV",
+      "figure_number": "1",
+      "sha256": "4010b5d79eb0999a30d43582d237a62c1b3589ed5d5af06eb23e35f6fea20596",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/VgOWxor3LV/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB171",
+      "title": "Stroke3D: Lifting 2D strokes into rigged 3D model via latent diffusion models",
+      "paper_url": "https://openreview.net/forum?id=VgOWxor3LV",
+      "figure_number": "2",
+      "sha256": "fff4ebacc4e73b2fac557b48310ce1ecfea6754f4caf2402dfd466b9639fbc67",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/VgOWxor3LV/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB172",
+      "title": "EA3D: Event-Augmented 3D Diffusion for Generalizable Novel View Synthesis",
+      "paper_url": "https://openreview.net/forum?id=YwawhlWdtm",
+      "figure_number": "1",
+      "sha256": "339033e3b0d80f5fe0ef110cec6724b8a73e735b4c553d05c539b67f9c749627",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/YwawhlWdtm/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB033",
+      "title": "Neural Lagrangian Schr\\\"{o}dinger Bridge: Diffusion Modeling for Population Dynamics",
+      "paper_url": "https://openreview.net/forum?id=d3QNWD_pcFv",
+      "figure_number": "2",
+      "sha256": "096636cb4b9673e212480d80d1e4389473596d645e9d96f1307b7465a9e66d2e",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/d3QNWD_pcFv/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB034",
+      "title": "Unified Gradient-Based Machine Unlearning with Remain Geometry Enhancement",
+      "paper_url": "https://openreview.net/forum?id=dheDf5EpBT",
+      "figure_number": "1",
+      "sha256": "59927ec6aec7322027e40c42feaba20c9601fba16860464380201ddf89012872",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/dheDf5EpBT/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB036",
+      "title": "Adversarial Environment Design via Regret-Guided Diffusion Models",
+      "paper_url": "https://openreview.net/forum?id=eezCLKwx6T",
+      "figure_number": "1",
+      "sha256": "5b999fa381ebc8c5c2bea1b8e06dae496af9252ebf8feebb440d3059e3b539d2",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/eezCLKwx6T/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB037",
+      "title": "Trajectory Flow Matching with Applications to Clinical Time Series Modelling",
+      "paper_url": "https://openreview.net/forum?id=fNakQltI1N",
+      "figure_number": "1",
+      "sha256": "06dfb118bc9ba3fa3159a9ed7158833bdfa83b908ddb23400dc13b145bae7fd5",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/fNakQltI1N/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB173",
+      "title": "Accelerating Diffusion Planners in Offline RL via Reward-Aware Consistency Trajectory Distillation",
+      "paper_url": "https://openreview.net/forum?id=hRuTBS07C7",
+      "figure_number": "1",
+      "sha256": "48a36d3f1ec72aa2c74360ea8a3739aa60a6e1f02d1da842ef1fbfab38ae68ea",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/hRuTBS07C7/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB174",
+      "title": "SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions",
+      "paper_url": "https://openreview.net/forum?id=refcXHU1Nh",
+      "figure_number": "1",
+      "sha256": "e0d3e37750de45df03703e4a995f03e650b8d9fce5cd433efab7b89cb131a6b5",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/refcXHU1Nh/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB175",
+      "title": "Physics vs Distributions: Pareto Optimal Flow Matching with Physics Constraints",
+      "paper_url": "https://openreview.net/forum?id=tAf1KI3d4X",
+      "figure_number": "1",
+      "sha256": "8c1ae8e5d00d1a179aeb7187d8521a0b73a09c005da99af5164211b75d75528f",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/tAf1KI3d4X/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB176",
+      "title": "Gauge Flow Matching: Efficient Constrained Generative Modeling over General Convex Set and Beyond",
+      "paper_url": "https://openreview.net/forum?id=vxq1OnaAMq",
+      "figure_number": "1",
+      "sha256": "b1aa10c831415244997ac1b994307a89922f75234097c0191951c66f62313660",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/vxq1OnaAMq/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB177",
+      "title": "PepTri: Tri-Guided All-Atom Diffusion for Peptide Design via Physics, Evolution, and Mutual Information",
+      "paper_url": "https://openreview.net/forum?id=yQlTgHo1um",
+      "figure_number": "1",
+      "sha256": "e465e973c7ad60983fe596a052bf276e116563a560eb7825a084ed07e5e501ae",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/yQlTgHo1um/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB043",
+      "title": "TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation",
+      "paper_url": "https://openreview.net/forum?id=yRbtFEh2OP",
+      "figure_number": "1",
+      "sha256": "67865974e5e0909fe6dd32c778d6bde68d60faf7219ada951091070f151da96c",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/yRbtFEh2OP/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB178",
+      "title": "TableDART: Dynamic Adaptive Multi-Modal Routing for Table Understanding",
+      "paper_url": "https://openreview.net/forum?id=4aZTiLH3fm",
+      "figure_number": "1",
+      "sha256": "c4af9310ba63115b1355f278cd36152cafa044a00f63f660dd5bbe66e226eddf",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/4aZTiLH3fm/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB046",
+      "title": "A Concept-Centric Approach to Multi-Modality Learning",
+      "paper_url": "https://openreview.net/forum?id=8WAAPP32c7",
+      "figure_number": "1",
+      "sha256": "176436a15bf5abe963627f248ac854b38518abd0b0d50e13be425ee01fca24c4",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/8WAAPP32c7/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB049",
+      "title": "Distilling Model Failures as Directions in Latent Space",
+      "paper_url": "https://openreview.net/forum?id=99RpBVpLiX",
+      "figure_number": "1",
+      "sha256": "3d77ad68f67c706502c0431ad734e5bf621767d77908375aede9364ebac7a311",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/99RpBVpLiX/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB051",
+      "title": "Federated Multimodal Fusion for Action Recognition Leveraging Vision-Language Embeddings and Spatio- Temporal CNNs",
+      "paper_url": "https://openreview.net/forum?id=AobzdtqiMe",
+      "figure_number": "1",
+      "sha256": "642c7a87fd80d5d953853a875181ee1a5fd75e86952ba900c596dc4468a0dd96",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/AobzdtqiMe/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB052",
+      "title": "Augmented Vision-Language Models: A Systematic Review",
+      "paper_url": "https://openreview.net/forum?id=DFnPi77v6J",
+      "figure_number": "1",
+      "sha256": "3a54637023995fa1e21dafe56bb10ec59dfb6a0ed9eefa753ddd30351a861eb9",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/DFnPi77v6J/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB179",
+      "title": "LLaVA-FA: Learning Fourier Approximation for Compressing Large Multimodal Models",
+      "paper_url": "https://openreview.net/forum?id=DYO9cA1uIU",
+      "figure_number": "2",
+      "sha256": "c734a510180ad8e09fa475d04cdec51372353555bd398f8bd10f7e1731d7ace2",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/DYO9cA1uIU/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB055",
+      "title": "UNIFIED-IO: A Unified Model for Vision, Language, and Multi-modal Tasks",
+      "paper_url": "https://openreview.net/forum?id=E01k9048soZ",
+      "figure_number": "2",
+      "sha256": "dcb6886478dc23b7c396d2c5565926c802523508a1fe2f0d5b6ef88bf3f25889",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/E01k9048soZ/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB180",
+      "title": "AdPO: Enhancing the Adversarial Robustness of Large Vision-Language Models with Preference Optimization",
+      "paper_url": "https://openreview.net/forum?id=FEMv4lHJ2C",
+      "figure_number": "2",
+      "sha256": "a5a56fe168d4d22a3fe64f04f87b03b78b9c08200083b233eb248db4d7287386",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/FEMv4lHJ2C/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB056",
+      "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+      "paper_url": "https://openreview.net/forum?id=G2Q2Mh3avow",
+      "figure_number": "16",
+      "sha256": "f940af7199a54235da57fd4f9e3248aaee9a0e7e71ad141308a6352cb8c1e5c2",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/G2Q2Mh3avow/Figure16.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB057",
+      "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+      "paper_url": "https://openreview.net/forum?id=G2Q2Mh3avow",
+      "figure_number": "7",
+      "sha256": "a0991061c9b8e38206956047220288c1490804512896884876579a3e7e4b869f",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/G2Q2Mh3avow/Figure7.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB058",
+      "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+      "paper_url": "https://openreview.net/forum?id=G2Q2Mh3avow",
+      "figure_number": "8",
+      "sha256": "cd0655b44de2cd54450a59113bd7ab8139d85b45512e676673e4fb3ed278b76d",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/G2Q2Mh3avow/Figure8.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB059",
+      "title": "mSOP-765k: A Benchmark For Multi-Modal Structured Output Predictions",
+      "paper_url": "https://openreview.net/forum?id=H7eYL4yFZS",
+      "figure_number": "1",
+      "sha256": "afe374abcee2fe365ad194bb01b91cd61eda3c33fe98a6bdb2d52441aa00caf4",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/H7eYL4yFZS/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB181",
+      "title": "CARL: Preserving Causal Structure in Representation Learning",
+      "paper_url": "https://openreview.net/forum?id=I43IOiimO6",
+      "figure_number": "1",
+      "sha256": "5ddada5b082e4d02bdf3eadce7a70e859924a4dfb1f72d3873410f7dc72d9d3e",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/I43IOiimO6/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB061",
+      "title": "CRoPS: A Training-Free Hallucination Mitigation Framework for Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=KQSoZDPVGX",
+      "figure_number": "1",
+      "sha256": "967acb65c176ebdac47d9810b0564106a36b3efd1f8ce3ff9322f92beecb04c9",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/KQSoZDPVGX/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB062",
+      "title": "VScan: Rethinking Visual Token Reduction for Efficient Large Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=KZYhyilFnt",
+      "figure_number": "1",
+      "sha256": "2b0c08820ffc88ac5c762abbf83427748013e7e69fb94862f07b09026d86cf79",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/KZYhyilFnt/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB182",
+      "title": "PPE: Positional Preservation Embedding for Token Compression in Multimodal Large Language Models",
+      "paper_url": "https://openreview.net/forum?id=OV0AoK7QEr",
+      "figure_number": "2",
+      "sha256": "7edde1a88779a64c849b382f967734141639671190b88e38458b4ee9860bae30",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/OV0AoK7QEr/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB063",
+      "title": "Eyes on the Road, Words in the Changing Skies: Vision-Language Assistance for Autonomous Driving in Transitional Weather",
+      "paper_url": "https://openreview.net/forum?id=PCEDvdVJon",
+      "figure_number": "1",
+      "sha256": "32fbe30b2d203f0c3348ab496d7e26853d9ea682a3c0318d0d3cb0893bf1aec8",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/PCEDvdVJon/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB183",
+      "title": "Inference-Time Dynamic Modality Selection for Incomplete Multimodal Classification",
+      "paper_url": "https://openreview.net/forum?id=PWhDUWRVhM",
+      "figure_number": "2",
+      "sha256": "36feb03d593c27c4602b4aaee8d0b65f18ba7fde5d9eac684430db2c7196ba06",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/PWhDUWRVhM/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB065",
+      "title": "Contrastive Audio-Visual Masked Autoencoder",
+      "paper_url": "https://openreview.net/forum?id=QPtMRyk5rb",
+      "figure_number": "1",
+      "sha256": "ba6e4b713566a16487e82de906e19c9b454cc04149dfa392928d538bd7fca022",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/QPtMRyk5rb/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB184",
+      "title": "MultiMat: Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models",
+      "paper_url": "https://openreview.net/forum?id=QzWXBy83kf",
+      "figure_number": "2",
+      "sha256": "80247c1d49aa1324e551b0fb03b842314df1411206f3e02c7be5af3101718cc8",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/QzWXBy83kf/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB185",
+      "title": "Flatness Guided Test-Time Adaptation for Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=S90g7NE88b",
+      "figure_number": "2",
+      "sha256": "ec5fff1b0791fb8dad85dc7931b027b9cf046e55811b31ea7f05dfe8f974c941",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/S90g7NE88b/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB066",
+      "title": "Unveiling Encoder-Free Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=SpPAB1tmlC",
+      "figure_number": "1",
+      "sha256": "b76be82d6e8c81609e21d1389718fd5d7dca4486671acc4c3294c674af19b2c5",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/SpPAB1tmlC/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB186",
+      "title": "Toward Universal and Transferable Jailbreak Attacks on Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=T5hD0as3jb",
+      "figure_number": "1",
+      "sha256": "a22709f684f8d1a3cd74cec2828ef6616ec12281a2a9bd806ea01affaa3166b1",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/T5hD0as3jb/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB069",
+      "title": "Mechanism-Aware Prediction of Tissue-Specific Drug Activity via Multi-Modal Biological Graphs",
+      "paper_url": "https://openreview.net/forum?id=UDW8m9iQeC",
+      "figure_number": "1",
+      "sha256": "28285f3bd4fcc565229e577b86457f84fcc583f966bfbd35d3aaa416b566102e",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/UDW8m9iQeC/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB187",
+      "title": "AC-Foley: Reference-Audio-Guided Video-to-Audio Synthesis with Acoustic Transfer",
+      "paper_url": "https://openreview.net/forum?id=URPXhnWdBF",
+      "figure_number": "2",
+      "sha256": "6c57ed0932f448dd03c4b6c1f9b9cd63e9be6f5bdae7fe36704642fb3d083ed9",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/URPXhnWdBF/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB188",
+      "title": "Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic Tasks",
+      "paper_url": "https://openreview.net/forum?id=Vjruxvp1Xd",
+      "figure_number": "1",
+      "sha256": "5f5bebe8deb37a537533988ae5945f0903c7e92c309e3e8c60ccb696f3a0dbcf",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/Vjruxvp1Xd/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB189",
+      "title": "OmniField: Conditioned Neural Fields for Robust Multimodal Spatiotemporal Learning",
+      "paper_url": "https://openreview.net/forum?id=VpWDZ3yTBn",
+      "figure_number": "2",
+      "sha256": "9a1d24c46e5918a2ef99debc663f4218e4fb9ff669b96e03ac8ab1124dc3b190",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/VpWDZ3yTBn/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB190",
+      "title": "InternSVG: Towards Unified SVG Tasks with Multimodal Large Language Models",
+      "paper_url": "https://openreview.net/forum?id=YxqnNNs3sf",
+      "figure_number": "2",
+      "sha256": "4ce1936920b37afec4dfcf23cec8cbbef3e04e12c9ff760e25b0bdd7089bd73a",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/YxqnNNs3sf/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB191",
+      "title": "Mordal: Automated Pretrained Model Selection for Vision Language Models",
+      "paper_url": "https://openreview.net/forum?id=ZQiO12xlJq",
+      "figure_number": "2",
+      "sha256": "0130d25f6bb86cddd77ec545a69538c6139ec7ab38ba5912ae56b3a608f9e43d",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/ZQiO12xlJq/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB071",
+      "title": "RT2I-Bench: Evaluating Robustness of Text-to-Image Systems Against Adversarial Attacks",
+      "paper_url": "https://openreview.net/forum?id=ZUiWjEouSf",
+      "figure_number": "1",
+      "sha256": "8935ec001fe01df63d789dc05a4144b5169d662c9d48f37f7e12ead11f959945",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/ZUiWjEouSf/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB192",
+      "title": "Spotlight on Token Perception for Multimodal Reinforcement Learning",
+      "paper_url": "https://openreview.net/forum?id=bRA4lVWJVQ",
+      "figure_number": "1",
+      "sha256": "643a819722ebfbb27b5304277961febd939704290f0d52e310f3dfe27f816cd4",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/bRA4lVWJVQ/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB193",
+      "title": "UniHM: Unified Dexterous Hand Manipulation with Vision Language Model",
+      "paper_url": "https://openreview.net/forum?id=cVX3VqO8BO",
+      "figure_number": "1",
+      "sha256": "28b1038228f52a2e1dedc1584b2d20e3d06824570a5f07f7a531de081f0d9060",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/cVX3VqO8BO/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB194",
+      "title": "UniHM: Unified Dexterous Hand Manipulation with Vision Language Model",
+      "paper_url": "https://openreview.net/forum?id=cVX3VqO8BO",
+      "figure_number": "2",
+      "sha256": "5cdc2c7d0798f860ff8a6c1c9cd64de465fa37a0f2a23eda777ea7210c77c9ea",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/cVX3VqO8BO/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB195",
+      "title": "Safeguarding Multimodal Knowledge Copyright in the RAG-as-a-Service Environment",
+      "paper_url": "https://openreview.net/forum?id=eWBu4tY9ta",
+      "figure_number": "1",
+      "sha256": "f62d313a23bfd37312deefcb28729a140b87359d002d8465436fe97df8e5e7cb",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/eWBu4tY9ta/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB196",
+      "title": "GTR-Bench: Evaluating Geo-Temporal Reasoning in Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=ecJDyT5qIQ",
+      "figure_number": "2",
+      "sha256": "1649974657c13c7af03a63ad485271fb09abe966426ae818ab27a1c909ab1ef4",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/ecJDyT5qIQ/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB197",
+      "title": "Calibrated Information Bottleneck for Trusted Multi-modal Clustering",
+      "paper_url": "https://openreview.net/forum?id=iedlZOdI0d",
+      "figure_number": "1",
+      "sha256": "2726ef1428c009811bc19dc0e51c461120fcdf20a7645b294ed255258654db39",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/iedlZOdI0d/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB198",
+      "title": "Reading Images Like Texts: Sequential Image Understanding in Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=qYcZVezPW7",
+      "figure_number": "1",
+      "sha256": "64eb0471e4a771a61c9790f0228542e52238b448382ac26a3ae7d48340f78b91",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/qYcZVezPW7/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB199",
+      "title": "Efficient Test-Time Scaling for Small Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=rClkte0ZTp",
+      "figure_number": "1",
+      "sha256": "e2357d034d43d30b672c0905817283356476e22d0409c4da1cfbaafe4dc0ba53",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/rClkte0ZTp/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB200",
+      "title": "Delving into Spectral Clustering with Vision-Language Representations",
+      "paper_url": "https://openreview.net/forum?id=s1ea8y8VUL",
+      "figure_number": "1",
+      "sha256": "7dcf0ff50ba215d20dcd990a4235b918f1bdc6b23032e7d51a727ea8010a10ef",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/s1ea8y8VUL/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB201",
+      "title": "PersonaX: Multimodal Datasets with LLM-Inferred Behavior Traits",
+      "paper_url": "https://openreview.net/forum?id=x446ASYlCt",
+      "figure_number": "1",
+      "sha256": "37aae00d830760617703ea53874fe31287354fdbe4795e688008aae8b9d74b35",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/x446ASYlCt/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB080",
+      "title": "PLOT: Prompt Learning with Optimal Transport for Vision-Language Models",
+      "paper_url": "https://openreview.net/forum?id=zqwryBoXYnh",
+      "figure_number": "2",
+      "sha256": "790728efb671f7a2d8a9fe4e1350019af7a414aea1d11eeb192496b311feb20d",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/zqwryBoXYnh/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "multimodal"
+    },
+    {
+      "id": "DB202",
+      "title": "Accelerating Benchmarking of Functional Connectivity Modeling via Structure-aware Core-set Selection",
+      "paper_url": "https://openreview.net/forum?id=0RYazbfSzW",
+      "figure_number": "1",
+      "sha256": "983d0ce738ede2472f7f129a6c5f4cfc5879a755d40e8b153c7e59d514f5d9d8",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/0RYazbfSzW/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB081",
+      "title": "Capturing the Motion of Every Joint: 3D Human Pose and Shape Estimation with Independent Tokens",
+      "paper_url": "https://openreview.net/forum?id=0Vv4H4Ch0la",
+      "figure_number": "2",
+      "sha256": "48b75891122f24d3838493091242c42afcf84529c1fe362a974035441c5cb683",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0Vv4H4Ch0la/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB082",
+      "title": "Capturing the Motion of Every Joint: 3D Human Pose and Shape Estimation with Independent Tokens",
+      "paper_url": "https://openreview.net/forum?id=0Vv4H4Ch0la",
+      "figure_number": "3",
+      "sha256": "9d8bfba99985422ae3c5e5665e06f072dfd2df510ad1c9c10e45e78ea76b3f24",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0Vv4H4Ch0la/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB203",
+      "title": "SimpleFold: Folding Proteins is Simpler than You Think",
+      "paper_url": "https://openreview.net/forum?id=0j0MmK7EMA",
+      "figure_number": "2",
+      "sha256": "b58f262a54866c0a39090ef320a2485cd6b5675fc214bdfd88622a105de08924",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/0j0MmK7EMA/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB204",
+      "title": "LeSTD: LLM Compression via Learning-based Sparse Tensor Decomposition",
+      "paper_url": "https://openreview.net/forum?id=0oHaazjMUX",
+      "figure_number": "2",
+      "sha256": "d4612609cbf68bd2c62855aa658497565bdb38bb0f8a1e9e3750ee8682a79ce0",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/0oHaazjMUX/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB205",
+      "title": "Vulcan: Crafting Compact Class-Specific Vision Transformers For Edge Intelligence",
+      "paper_url": "https://openreview.net/forum?id=0xE0kNdGIz",
+      "figure_number": "2",
+      "sha256": "cc52fbeba81c117ecd499030312f7ec55f043ea620fcd76332e2ade580294edd",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/0xE0kNdGIz/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB206",
+      "title": "DETR-ViP: Detection Transformer with Robust Discriminative Visual Prompts",
+      "paper_url": "https://openreview.net/forum?id=2KKDWERRm3",
+      "figure_number": "2",
+      "sha256": "b0743c4f74b86d4e51e70182054e3a82f17cfe61ad9af3fa244edc3f1ce86e7b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/2KKDWERRm3/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB083",
+      "title": "HiViT: A Simpler and More Efficient Design of Hierarchical Vision Transformer",
+      "paper_url": "https://openreview.net/forum?id=3F6I-0-57SC",
+      "figure_number": "1",
+      "sha256": "f9166142b5af304f51bc11ce8c88bf89466dfebf916d3fbfc005358ba7faa73f",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/3F6I-0-57SC/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB207",
+      "title": "Omni-Weather: Unified Multimodal Foundation Model for Weather Generation and Understanding",
+      "paper_url": "https://openreview.net/forum?id=3WnXsp72v6",
+      "figure_number": "2",
+      "sha256": "18f1b3e481616b0b3cbbacfaa88f3abbca2bf45cb490e0d5d768ab08204ee4f8",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/3WnXsp72v6/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB084",
+      "title": "Cluster-wise Graph Transformer with Dual-granularity Kernelized Attention",
+      "paper_url": "https://openreview.net/forum?id=3j2nasmKkP",
+      "figure_number": "1",
+      "sha256": "51e8219949560970edcc014fcc5370815b58d1bc70713451852285da4326d90d",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/3j2nasmKkP/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB208",
+      "title": "SPREAD: Sampling-based Pareto front Refinement via Efficient Adaptive Diffusion",
+      "paper_url": "https://openreview.net/forum?id=4731mIqv89",
+      "figure_number": "1",
+      "sha256": "8f3de08219375d6447a75c6a909a46d678b76933985fb7f67a137ec84256780b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/4731mIqv89/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB088",
+      "title": "Reinforcement Learning Gradients as Vitamin for Online Finetuning Decision Transformers",
+      "paper_url": "https://openreview.net/forum?id=5l5bhYexYO",
+      "figure_number": "1",
+      "sha256": "bf78ebf9203e28dfc66b660652fb623bc795f924705a8990a4c3ff1a7c2b1c99",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/5l5bhYexYO/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB089",
+      "title": "VICON: Vision In-Context Operator Networks for Multi-Physics Fluid Dynamics Prediction",
+      "paper_url": "https://openreview.net/forum?id=6V3YmHULQ3",
+      "figure_number": "1",
+      "sha256": "623e5f2cb79a4793614c0200e8a9a4c609492c904c571518909e21ef9119c8cf",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/6V3YmHULQ3/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB209",
+      "title": "HistoPrism: Unlocking Functional Pathway Analysis from Pan-Cancer Histology via Gene Expression Prediction",
+      "paper_url": "https://openreview.net/forum?id=6dTHxb9JuA",
+      "figure_number": "1",
+      "sha256": "5c71ad052da82e62d6e7bfbf568deab868f86ce701f302402cea158929ca1f06",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/6dTHxb9JuA/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB210",
+      "title": "Query-Guided Spatial–Temporal–Frequency Interaction for Music Audio–Visual Question Answering",
+      "paper_url": "https://openreview.net/forum?id=8CnU2kchiw",
+      "figure_number": "2",
+      "sha256": "cba2dc69e853062a59157f59a630093afe9bcac5f14744273adf563b98ec3a0a",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/8CnU2kchiw/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB090",
+      "title": "Progress measures for grokking via mechanistic interpretability",
+      "paper_url": "https://openreview.net/forum?id=9XFSbDPmdW",
+      "figure_number": "1",
+      "sha256": "9a2f27bcd1bdb01f76f77ef5e02e651d8bb60c2cd6123a5c44f2ab57494e5205",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9XFSbDPmdW/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB092",
+      "title": "SMART: Self-supervised Multi-task pretrAining with contRol Transformers",
+      "paper_url": "https://openreview.net/forum?id=9piH3Hg8QEf",
+      "figure_number": "1",
+      "sha256": "658607d4e2a8de6295b1ac4cbdbf822f3e4b1cf8683155d4431f08ca2d5891a5",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9piH3Hg8QEf/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB093",
+      "title": "SMART: Self-supervised Multi-task pretrAining with contRol Transformers",
+      "paper_url": "https://openreview.net/forum?id=9piH3Hg8QEf",
+      "figure_number": "2",
+      "sha256": "0c365d73a8f430777b9542b1e6c8acbf7a1daa1063aa195c26f00eb170317eaa",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9piH3Hg8QEf/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB094",
+      "title": "Hidden Markov Transformer for Simultaneous Machine Translation",
+      "paper_url": "https://openreview.net/forum?id=9y0HFvaAYD6",
+      "figure_number": "1",
+      "sha256": "71845d1d0fce57d95d64b0baaecaa23885a79cb51240e0889932b1e7dce84d4b",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9y0HFvaAYD6/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB095",
+      "title": "Hidden Markov Transformer for Simultaneous Machine Translation",
+      "paper_url": "https://openreview.net/forum?id=9y0HFvaAYD6",
+      "figure_number": "2",
+      "sha256": "5d04753c5f393842eb7033ead2bede32bbb929624b09ff8ed6dbc7902bbc0dc0",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9y0HFvaAYD6/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB096",
+      "title": "Hidden Markov Transformer for Simultaneous Machine Translation",
+      "paper_url": "https://openreview.net/forum?id=9y0HFvaAYD6",
+      "figure_number": "7",
+      "sha256": "feb7dc2c59052a76ac9d76168f1433339b08926d7f4955f4f1e55ec36ea87159",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/9y0HFvaAYD6/Figure7.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB098",
+      "title": "Video Prediction Transformers without Recurrence or Convolution",
+      "paper_url": "https://openreview.net/forum?id=Afvhu9Id8m",
+      "figure_number": "1",
+      "sha256": "ee721c4f273d5cfe00878272a3c91d56ff6683561a5cc231a775bfd1b2d543f0",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/Afvhu9Id8m/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB100",
+      "title": "MPCFORMER: FAST, PERFORMANT AND PRIVATE TRANSFORMER INFERENCE WITH MPC",
+      "paper_url": "https://openreview.net/forum?id=CWmvjOEhgH-",
+      "figure_number": "1",
+      "sha256": "74cd4cdea989f3f261a97427d25442865f26f9f8bedd1e33ca4a813e11c37d17",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/CWmvjOEhgH-/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB101",
+      "title": "MPCFORMER: FAST, PERFORMANT AND PRIVATE TRANSFORMER INFERENCE WITH MPC",
+      "paper_url": "https://openreview.net/forum?id=CWmvjOEhgH-",
+      "figure_number": "3",
+      "sha256": "a4e153df87c5263263923f3f7ea47837c37697349959b4695cc78f43bdfba076",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/CWmvjOEhgH-/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB102",
+      "title": "Revisiting adapters with adversarial training",
+      "paper_url": "https://openreview.net/forum?id=HPdxC1THU8T",
+      "figure_number": "1",
+      "sha256": "bcb8c804bbbfa9f4874790704400438db0a1f30c47261ab58dd0efacf05d2250",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/HPdxC1THU8T/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB211",
+      "title": "Householder-Diagonalized Linear Attention (HDLA): Utilizing Enhanced Decay Mechanism for Efficient Sequence Modeling",
+      "paper_url": "https://openreview.net/forum?id=HVFjzaQeig",
+      "figure_number": "1",
+      "sha256": "c2ad6e429310a2199f2257438f8d0345814ae0ee250a9c1e260b4c59db560509",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/HVFjzaQeig/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB103",
+      "title": "Accurate Image Restoration with Attention Retractable Transformer",
+      "paper_url": "https://openreview.net/forum?id=IloMJ5rqfnt",
+      "figure_number": "1",
+      "sha256": "7bfdd8d7a64a143758c1639596539ea4ec61e48d80ea2d18fed80405e70b9972",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IloMJ5rqfnt/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB104",
+      "title": "Accurate Image Restoration with Attention Retractable Transformer",
+      "paper_url": "https://openreview.net/forum?id=IloMJ5rqfnt",
+      "figure_number": "3",
+      "sha256": "989d4fa4f367005adea0f5bae1f9370daf225f4e416a66132d856f6294b0a5cd",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IloMJ5rqfnt/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB105",
+      "title": "Accurate Image Restoration with Attention Retractable Transformer",
+      "paper_url": "https://openreview.net/forum?id=IloMJ5rqfnt",
+      "figure_number": "6",
+      "sha256": "6eda49e47044a31b8509784e8ba824e018d45a42ada7e4b9445f3d7f46557b7a",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IloMJ5rqfnt/Figure6.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB106",
+      "title": "GPViT: A High Resolution Non-Hierarchical Vision Transformer with Group Propagation",
+      "paper_url": "https://openreview.net/forum?id=IowKt5rYWsK",
+      "figure_number": "1",
+      "sha256": "3576d7deaff85fe15ff2f79668ff2da1d328ecbdd02190f787352ca8fc95f4e2",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IowKt5rYWsK/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB107",
+      "title": "GPViT: A High Resolution Non-Hierarchical Vision Transformer with Group Propagation",
+      "paper_url": "https://openreview.net/forum?id=IowKt5rYWsK",
+      "figure_number": "3",
+      "sha256": "07ec538f7f054e249237edde7914afa8b23501914d408a4b85edfddc260fe8b9",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IowKt5rYWsK/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB108",
+      "title": "GPViT: A High Resolution Non-Hierarchical Vision Transformer with Group Propagation",
+      "paper_url": "https://openreview.net/forum?id=IowKt5rYWsK",
+      "figure_number": "4",
+      "sha256": "e1209e5a1f6a4fa8f90454b2d9d846a49ae5002af177130db1e400f1f8a71cd2",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/IowKt5rYWsK/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB109",
+      "title": "Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs",
+      "paper_url": "https://openreview.net/forum?id=KwmPfARgOTD",
+      "figure_number": "1",
+      "sha256": "d5dbec461625841f165c96e2ce3f7fc11eb617159195147a0b9de3a6beded04a",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/KwmPfARgOTD/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB110",
+      "title": "Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs",
+      "paper_url": "https://openreview.net/forum?id=KwmPfARgOTD",
+      "figure_number": "2",
+      "sha256": "13f5247799eb565de11c89c2f173bb68718dca072c43b7e86660a23f1f415ef5",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/KwmPfARgOTD/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB111",
+      "title": "Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs",
+      "paper_url": "https://openreview.net/forum?id=KwmPfARgOTD",
+      "figure_number": "4",
+      "sha256": "83a5165f0e6e17086506adccbcc3ebc56d3bbb8d2f78341d46a626ca627dab82",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/KwmPfARgOTD/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB112",
+      "title": "Mass-Editing Memory in a Transformer",
+      "paper_url": "https://openreview.net/forum?id=MkbcAHIYgyS",
+      "figure_number": "1",
+      "sha256": "be14440066160caa31db28831c9d1b52fdc6cfd85b9275e3b25e4efd334dd204",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/MkbcAHIYgyS/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB113",
+      "title": "Mass-Editing Memory in a Transformer",
+      "paper_url": "https://openreview.net/forum?id=MkbcAHIYgyS",
+      "figure_number": "4",
+      "sha256": "f1ebac00284a9979196d6d5af26b37fb404272ec96dee4dfaa845f2b615b594c",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/MkbcAHIYgyS/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB114",
+      "title": "TRecViT: A Recurrent Video Transformer",
+      "paper_url": "https://openreview.net/forum?id=Mmi46Ytb1H",
+      "figure_number": "1",
+      "sha256": "4e28c320874f868a7e61baa23ad85adeb194d9fb8d0c549308a35e64b8b6fcb5",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/Mmi46Ytb1H/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB212",
+      "title": "TAPTRv3: Spatial and Temporal Context Foster Robust Tracking of Any Point in Long Video",
+      "paper_url": "https://openreview.net/forum?id=N3WAcxTX6J",
+      "figure_number": "1",
+      "sha256": "35bde0327e2964ed9e87c222cb4280e8e428ffec7f27751ef7fc9dcc597b022a",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/N3WAcxTX6J/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB115",
+      "title": "Designing BERT for Convolutional Networks: Sparse and Hierarchical Masked Modeling",
+      "paper_url": "https://openreview.net/forum?id=NRxydtWup1S",
+      "figure_number": "1",
+      "sha256": "dafd27b63dfa0fd8e6a72bef181564d92ab61e1f6609ddd3ec37d368bee9f2d7",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/NRxydtWup1S/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB213",
+      "title": "scDFM: Distributional Flow Matching Model for Robust Single-Cell Perturbation Prediction",
+      "paper_url": "https://openreview.net/forum?id=QSGanMEcUV",
+      "figure_number": "1",
+      "sha256": "3c52267692fd625c418a45f090ebbd364d4abc4039065a02d92a37e0064f49d5",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/QSGanMEcUV/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB214",
+      "title": "CR-Net: Scaling Parameter-Efficient Training with Cross-Layer Low-Rank Structure",
+      "paper_url": "https://openreview.net/forum?id=VVruwk9404",
+      "figure_number": "1",
+      "sha256": "25c14303f8d2e1a0e048b46797f53e5ec64f8402cfb5ba7e1abdd6ca29967081",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/VVruwk9404/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB215",
+      "title": "DiffInk: Glyph- and Style-Aware Latent Diffusion Transformer for Text to Online Handwriting Generation",
+      "paper_url": "https://openreview.net/forum?id=XKOEQFKFdL",
+      "figure_number": "1",
+      "sha256": "395cef3b1ca3124693ad85cb20e9b916fe3e70610b606292e186a15ea5695aa9",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/XKOEQFKFdL/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB216",
+      "title": "Pretraining with Re-parametrized Self-Attention: Unlocking Generalizationin  SNN-Based Neural Decoding Across Time, Brains, and Tasks",
+      "paper_url": "https://openreview.net/forum?id=ZsvGCzpaVD",
+      "figure_number": "1",
+      "sha256": "4690224bb377b013e40f282a5e99e5d4111885d8e1b184974bd2b5565a449584",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/ZsvGCzpaVD/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB217",
+      "title": "How Transformers Learn Causal Structures In-Context: Explainable Mechanism Meets Theoretical Guarantee",
+      "paper_url": "https://openreview.net/forum?id=bpF8zgSt41",
+      "figure_number": "1",
+      "sha256": "ef2d82a28e5a84077cc5fc5518fc6ad0865eeac0803622ae3296586174870c72",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/bpF8zgSt41/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB122",
+      "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+      "paper_url": "https://openreview.net/forum?id=cp5PvcI6w8_",
+      "figure_number": "2",
+      "sha256": "d9d9638a14d1815ad05a585861ae0fd5d6699b98dc8d4b709e345b8cb27bfc23",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/cp5PvcI6w8_/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB123",
+      "title": "Molecule Design by Latent Prompt Transformer",
+      "paper_url": "https://openreview.net/forum?id=dg3tI3c2B1",
+      "figure_number": "1",
+      "sha256": "42446a27b7783c2d610229c2ceafe2c668a054a383b005f1770843cd293d2008",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/dg3tI3c2B1/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB218",
+      "title": "Precise and Interpretable Editing of Code Knowledge in Large Language Models",
+      "paper_url": "https://openreview.net/forum?id=diVf17SNek",
+      "figure_number": "1",
+      "sha256": "cb7870efb8f115ad54f3b5d83825fbb404aa3fb023697d67d702765deb014da5",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/diVf17SNek/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB219",
+      "title": "Understanding and Improving Length Generalization in Hierarchical Sparse Attention Models",
+      "paper_url": "https://openreview.net/forum?id=iHqdSQk6qc",
+      "figure_number": "1",
+      "sha256": "b76af01da27b4e2f5f8bd925aab4fec68bb7f2701bc4a6f92a5e1db9e8c96941",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/iHqdSQk6qc/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB125",
+      "title": "MIMT: Masked Image Modeling Transformer for Video Compression",
+      "paper_url": "https://openreview.net/forum?id=j9m-mVnndbm",
+      "figure_number": "1",
+      "sha256": "a927061b148e9c62df930a639a30b1b60a881b228bbf5c37bf3dedae1f7e7747",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/j9m-mVnndbm/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB126",
+      "title": "MIMT: Masked Image Modeling Transformer for Video Compression",
+      "paper_url": "https://openreview.net/forum?id=j9m-mVnndbm",
+      "figure_number": "2",
+      "sha256": "fda68fc2356af20b9e367fc2ab128d9eb372c6db7503b32065e348f67685e638",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/j9m-mVnndbm/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB220",
+      "title": "LUMINA: Detecting Hallucinations in RAG System with Context–Knowledge Signals",
+      "paper_url": "https://openreview.net/forum?id=oJgNNBNEJM",
+      "figure_number": "1",
+      "sha256": "f4d0bf7173818038e6f393e7d0b4e52128a7a72e7a6ca3fa7659fcde54272b0b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/oJgNNBNEJM/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB221",
+      "title": "The Achilles’ Heel of LLMs: How Altering a Handful of Neurons Can Cripple Language Abilities",
+      "paper_url": "https://openreview.net/forum?id=pJoSE7Cvj0",
+      "figure_number": "1",
+      "sha256": "5b72a1bdac3721bbc7da2647fdca425954595260c3d9846e19c1a88ed6ec7e70",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/pJoSE7Cvj0/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB128",
+      "title": "ULTra: Unveiling Latent Token Interpretability in Transformer-Based Understanding and Segmentation",
+      "paper_url": "https://openreview.net/forum?id=vL3pmJjGDQ",
+      "figure_number": "1",
+      "sha256": "ee2eb5477e4da9ecb6c4356c1b2263de6c27e209fee7a61780c95f6f8ba5c338",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/vL3pmJjGDQ/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB129",
+      "title": "Sparse MoE as the New Dropout: Scaling Dense and Self-Slimmable Transformers",
+      "paper_url": "https://openreview.net/forum?id=w1hwFUb_81",
+      "figure_number": "2",
+      "sha256": "ed7b99dfdd8687d81c5da69113fdcc11d404debc7702ff6f32da297d93f84bd9",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/w1hwFUb_81/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    },
+    {
+      "id": "DB222",
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "paper_url": "https://openreview.net/forum?id=54U3XHf7qq",
+      "figure_number": "1",
+      "sha256": "5ae55be27f5a13c86d61a2ff2550312bd1a07345683f74e7045aeb12161702e1",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/54U3XHf7qq/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB223",
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "paper_url": "https://openreview.net/forum?id=54U3XHf7qq",
+      "figure_number": "2",
+      "sha256": "92d3f2b64dde5ba6b536bdc54bc49c9f3779e574a17ac25e33bff3a3db219dea",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/54U3XHf7qq/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB224",
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "paper_url": "https://openreview.net/forum?id=54U3XHf7qq",
+      "figure_number": "3",
+      "sha256": "d19d5604df160eac6bc177c48ba6ce8e2475d04f90930d23e24e14732298413d",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/54U3XHf7qq/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB225",
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "paper_url": "https://openreview.net/forum?id=88RKxlFUNY",
+      "figure_number": "13",
+      "sha256": "9366d2d5df980094955e005dd41d21d771af3f9558f5adb65c0720ff2177be77",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/88RKxlFUNY/Figure13.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB226",
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "paper_url": "https://openreview.net/forum?id=88RKxlFUNY",
+      "figure_number": "14",
+      "sha256": "b8bd859221afe780288bb1d534adf09247d762f02babcc9495ed42ff4e767caa",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/88RKxlFUNY/Figure14.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB227",
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "paper_url": "https://openreview.net/forum?id=88RKxlFUNY",
+      "figure_number": "2",
+      "sha256": "8cad0ca98deaca8ca1b055b6198cf91cb2290845aa833ebb26c8c02ce6c9212c",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/88RKxlFUNY/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB228",
+      "title": "AutoDrive-R²: Incentivizing Reasoning and Self-Reflection Capacity for VLA Model in Autonomous Driving",
+      "paper_url": "https://openreview.net/forum?id=KVWaCzJrrq",
+      "figure_number": "1",
+      "sha256": "16f7d774dcaf2f3e54a9802a048319edd122467a3fc2b48e88d55e10fc4b3526",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/KVWaCzJrrq/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB229",
+      "title": "On Robustness of Vision-Language-Action Model against Multi-Modal Perturbations",
+      "paper_url": "https://openreview.net/forum?id=cS6xizdYD5",
+      "figure_number": "1",
+      "sha256": "4665ccb1164b00a9f1ff3a0b7b3e86b8c13d7c52272046d9b303db268e724304",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/cS6xizdYD5/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB230",
+      "title": "Action-aware Dynamic Pruning for Efficient Vision-Language-Action Manipulation",
+      "paper_url": "https://openreview.net/forum?id=ea6j8k8Rnw",
+      "figure_number": "3",
+      "sha256": "e7ffe19429fe3c7c061ddbe525405caa69b7a951afcca9eaf370e585efa0cc7b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/ea6j8k8Rnw/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB231",
+      "title": "VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models",
+      "paper_url": "https://openreview.net/forum?id=tc2UsBeODW",
+      "figure_number": "2",
+      "sha256": "cf60cbef501e55fc9e9010a4cbaedb517026c2422c30493378cbc4ca32491173",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/tc2UsBeODW/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB232",
+      "title": "Robust Fine-tuning of Vision-Language-Action Robot Policies via Parameter Merging",
+      "paper_url": "https://openreview.net/forum?id=uWJwQ5SZoM",
+      "figure_number": "3",
+      "sha256": "0b1164077698f37f7b368dc7e5b87172a362b33e11b822ad2a1de1eef2029bd2",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/uWJwQ5SZoM/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB233",
+      "title": "Robust Fine-tuning of Vision-Language-Action Robot Policies via Parameter Merging",
+      "paper_url": "https://openreview.net/forum?id=uWJwQ5SZoM",
+      "figure_number": "4",
+      "sha256": "e86e6b7fc2e3aef83202dacb46c57dc801b52ca1867e10743f296e4a76a3a9cf",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/uWJwQ5SZoM/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "vla"
+    },
+    {
+      "id": "DB234",
+      "title": "Code World Models for General Game Playing",
+      "paper_url": "https://openreview.net/forum?id=1UoB7IWiku",
+      "figure_number": "5",
+      "sha256": "2ff322b8bb40bf542720a94664ec821dea8207e162f6e1e9f72475b8e45f8818",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/1UoB7IWiku/Figure5.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB235",
+      "title": "Deep SPI: Safe Policy Improvement via World Models",
+      "paper_url": "https://openreview.net/forum?id=24C3bSaH3F",
+      "figure_number": "2",
+      "sha256": "ac1c9bc344dcb09673179a4913eb5eea4253920d2ce8c1e051399c64b36aa706",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/24C3bSaH3F/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB236",
+      "title": "Deep SPI: Safe Policy Improvement via World Models",
+      "paper_url": "https://openreview.net/forum?id=24C3bSaH3F",
+      "figure_number": "3",
+      "sha256": "cf73d1bd53daab54e266430e7dee726fdb5ed8f52e9b512d964e674bfa7563a9",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/24C3bSaH3F/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB139",
+      "title": "Planning Goals for Exploration",
+      "paper_url": "https://openreview.net/forum?id=6qeBuZSo7Pr",
+      "figure_number": "2",
+      "sha256": "3a63819547c7f9da645a073da38f92dab3e733124ee143e801861d74be19bcd3",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/6qeBuZSo7Pr/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB140",
+      "title": "Disentangling the Roles of Distinct Cell Classes with Cell-Type Dynamical Systems",
+      "paper_url": "https://openreview.net/forum?id=9sP4oejtjB",
+      "figure_number": "1",
+      "sha256": "23f6fb3a6182522486310e5fe190e58251e129916c81de5a525a9093c295f5bb",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/9sP4oejtjB/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB141",
+      "title": "Powderworld: A Platform for Understanding Generalization via Rich Task Distributions",
+      "paper_url": "https://openreview.net/forum?id=AWZgXGmsbA",
+      "figure_number": "17",
+      "sha256": "90bf13745b57fc472fdc02f78b136e7af982416ff22547c609c0b3fbdeeba250",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/AWZgXGmsbA/Figure17.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB237",
+      "title": "Empowering Multi-Robot Cooperation via Sequential World Models",
+      "paper_url": "https://openreview.net/forum?id=IvUM6UwYCJ",
+      "figure_number": "1",
+      "sha256": "5d5cc627a2afbde1c5d92baba5a63629e7fdd1a18ff23db72f6a84721394288b",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/IvUM6UwYCJ/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB238",
+      "title": "Empowering Multi-Robot Cooperation via Sequential World Models",
+      "paper_url": "https://openreview.net/forum?id=IvUM6UwYCJ",
+      "figure_number": "11",
+      "sha256": "d629f61185f4405435399481b64d943a6f78d1849fffabad50f631ca3b5dfc58",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/IvUM6UwYCJ/Figure11.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB239",
+      "title": "Empowering Multi-Robot Cooperation via Sequential World Models",
+      "paper_url": "https://openreview.net/forum?id=IvUM6UwYCJ",
+      "figure_number": "2",
+      "sha256": "2cd7460ce44d4bdb47472ea3128df65b86a8835f9e2d2e5141748f4dd6854f44",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/IvUM6UwYCJ/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB142",
+      "title": "DiffTORI: Differentiable Trajectory Optimization for Deep Reinforcement and Imitation Learning",
+      "paper_url": "https://openreview.net/forum?id=Mwj57TcHWX",
+      "figure_number": "1",
+      "sha256": "41ad7efca516ade7079ec85f93d8d36e28804e5611a1f9064edb8fca740a0d8e",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/Mwj57TcHWX/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB143",
+      "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+      "paper_url": "https://openreview.net/forum?id=NadTwTODgC",
+      "figure_number": "1",
+      "sha256": "5a0e7964764bcb7bfeef0ff1916af14528985642fd9ac33c14ac4a7d44bfda0c",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/NadTwTODgC/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB144",
+      "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+      "paper_url": "https://openreview.net/forum?id=NadTwTODgC",
+      "figure_number": "9",
+      "sha256": "71a514b4240022858ea7248ad330ff1d158deae56e31839f5cb52b712865ace8",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/NadTwTODgC/Figure9.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB240",
+      "title": "From Observations to Events: Event-Aware World Models for Reinforcement Learning",
+      "paper_url": "https://openreview.net/forum?id=OWkkFaq1IZ",
+      "figure_number": "3",
+      "sha256": "4f0e7b42a54005e21da2df025b6a7bb8575200c7e145fed5f6f143cf63e3d6dc",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/OWkkFaq1IZ/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB241",
+      "title": "From Observations to Events: Event-Aware World Models for Reinforcement Learning",
+      "paper_url": "https://openreview.net/forum?id=OWkkFaq1IZ",
+      "figure_number": "6",
+      "sha256": "04fc8151e043c06b35148611f4587091f906bf37da0f15bc072cafd653cb7d69",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/OWkkFaq1IZ/Figure6.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB145",
+      "title": "Consistency Trajectory Planning: High-Quality and Efficient Trajectory Optimization for Offline Model-Based Reinforcement Learning",
+      "paper_url": "https://openreview.net/forum?id=RVGkT9ISVf",
+      "figure_number": "1",
+      "sha256": "c31a8ea0041953527d292f2cf8de0d8cc0d6670ebcf006f7fded2607c9be0efd",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/RVGkT9ISVf/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB146",
+      "title": "Still Competitive: Revisiting Recurrent Models for Irregular Time Series Prediction",
+      "paper_url": "https://openreview.net/forum?id=YLoZA77QzR",
+      "figure_number": "5",
+      "sha256": "d5194bfc6cb160000dd57b419374ee2b4d353f4ce746d9287f7b3d543a549c29",
+      "original_figure_path": "OpenReview/TMLR/figures/2026/accepted_by_tmlr/YLoZA77QzR/Figure5.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB147",
+      "title": "Evaluating the World Model Implicit in a Generative Model",
+      "paper_url": "https://openreview.net/forum?id=aVK4JFpegy",
+      "figure_number": "1",
+      "sha256": "952ffcabc3c02429ec74f7aa4f279d34b89af69f093686ab9bf964572eb81ed5",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/aVK4JFpegy/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB148",
+      "title": "Evaluating the World Model Implicit in a Generative Model",
+      "paper_url": "https://openreview.net/forum?id=aVK4JFpegy",
+      "figure_number": "2",
+      "sha256": "5991e9e1483ec4502de6a028bf57850a5e62e8493121cd11ba54a1290c74dbf0",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/aVK4JFpegy/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB149",
+      "title": "Evaluating the World Model Implicit in a Generative Model",
+      "paper_url": "https://openreview.net/forum?id=aVK4JFpegy",
+      "figure_number": "3",
+      "sha256": "fbe97739633c0a4abd89da2a35381b5e95b9112b26b5fcf6c058ed5db20dda81",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/aVK4JFpegy/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB242",
+      "title": "Sparse Imagination for Efficient Visual World Model Planning",
+      "paper_url": "https://openreview.net/forum?id=faxcxKINBC",
+      "figure_number": "1",
+      "sha256": "a7cf316cee9dc378d68cc4025314b1d14d46ac6ab882ba47fb7e57e1766235d0",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/faxcxKINBC/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB243",
+      "title": "Sparse Imagination for Efficient Visual World Model Planning",
+      "paper_url": "https://openreview.net/forum?id=faxcxKINBC",
+      "figure_number": "18",
+      "sha256": "226708e8644f8bffeb46a103fd22010e37fd1d49e0904d28ed307c3b1533795e",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/faxcxKINBC/Figure18.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB244",
+      "title": "Sparse Imagination for Efficient Visual World Model Planning",
+      "paper_url": "https://openreview.net/forum?id=faxcxKINBC",
+      "figure_number": "2",
+      "sha256": "f75b7bdc605a1d9ee5280991d9b6c08ae9b0f385c8ba117b9e251d7faaa799f5",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/faxcxKINBC/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB245",
+      "title": "WorldGym: World Model as An Environment for Policy Evaluation",
+      "paper_url": "https://openreview.net/forum?id=hidBHy1CAw",
+      "figure_number": "1",
+      "sha256": "1c7bcdc30c0c5b690ae265a0bc7ae9876a6eca076a0ff8b5f7230bcd35d1d1fa",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/hidBHy1CAw/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB246",
+      "title": "Regularized Latent Dynamics Prediction is a Strong Baseline For Behavioral Foundation Models",
+      "paper_url": "https://openreview.net/forum?id=jdL6WB5jHZ",
+      "figure_number": "4",
+      "sha256": "d210cc6f643846da9ea8b079ceaef6e2574c27cddf61bddf42bd946a23484dca",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/jdL6WB5jHZ/Figure4.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB150",
+      "title": "Input-to-State Stable Coupled Oscillator Networks for Closed-form Model-based Control in Latent Space",
+      "paper_url": "https://openreview.net/forum?id=kXKrLsR4aJ",
+      "figure_number": "1",
+      "sha256": "a05edaff7f73cd66fa7757cadd9470bcc20e0bcbe8db802e5ad3309ee395ce2c",
+      "original_figure_path": "OpenReview/NeurIPS/figures/2024/accept_spotlight/kXKrLsR4aJ/Figure1.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    },
+    {
+      "id": "DB247",
+      "title": "ConsisDrive: Identity-Preserving Driving World Models for Video Generation by Instance Mask",
+      "paper_url": "https://openreview.net/forum?id=zgqFQM8VNe",
+      "figure_number": "2",
+      "sha256": "87c8715e20d1f4c0022083426678c1d9be8873d08ce5cc8776a311cf0d453d62",
+      "original_figure_path": "OpenReview/ICLR/figures/2026/accept_poster/zgqFQM8VNe/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "world_model"
+    }
+  ]
+}

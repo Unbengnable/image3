@@ -1,0 +1,41 @@
+Diffusion Policy — Current Stage 2 contract canary
+
+SCOPE
+Inference: observation conditioning, action denoising, partial execution and replanning.
+Not a complete replacement for paper Figure 2 or a training architecture diagram.
+
+COUNTS AND TIMES
+To = 2 observations: t − 1 and t.
+Tp = 8 predicted actions: t, t + 1, ..., t + 7.
+Ta = 4 executed actions: t, t + 1, t + 2, t + 3.
+Remaining four predicted actions are not executed before the next query.
+Next query is at environment time t + 4, using the latest observation history.
+To/Tp/Ta values are illustrative; no reported experimental settings are asserted.
+k is diffusion iteration; t is environment time; τ is the future-action index.
+Denoising direction: K → ... → k → k − 1 → ... → 0.
+
+LOCKED RELATIONS
+RGB observation history → RGB encoder → image features → condition c_t.
+Proprioception q_t → condition c_t.
+RGB encoding occurs once per policy query; c_t is fixed across its denoising steps.
+Gaussian action noise initializes A_t^K; noisy actions enter the denoiser.
+At the expanded step, A_t^k, c_t and k are inputs to εθ.
+Noise prediction εθ and current noisy A_t^k enter the scheduled update.
+Scheduled update → A_t^(k−1); eventual denoised A_t^0 → predicted timeline.
+First four predicted actions → environment → new observations → next policy query.
+Feedback arrow terminates at observation input, not predicted actions or noise.
+CNN + FiLM and Transformer + cross-attention are alternative backbones.
+
+FORBIDDEN INTERPRETATIONS
+Observations are not diffused and future images are not generated.
+Conditioning does not initialize action noise or become an action trajectory.
+The eight predictions are not all executed open-loop.
+The two backbone options are not serial modules.
+Schematic curves, action glyphs and robot scenes are not measured data.
+No exact DDPM/DDIM equation is shown without the schedule coefficients.
+
+PHYSICAL OUTPUT
+SVG width = 178 mm; height = 117 mm; viewBox = 0 0 1780 1170.
+Both previews derive from the same figure.svg at 300 dpi.
+178 mm target width = 2102 px; 85 mm stress width = 1004 px.
+85 mm is a scaling stress check only; no alternate layout.

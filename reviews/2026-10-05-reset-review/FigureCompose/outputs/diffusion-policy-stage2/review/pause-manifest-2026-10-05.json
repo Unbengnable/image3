@@ -1,0 +1,150 @@
+{
+  "record_date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "work_state": "PAUSED_PENDING_USER_VERIFICATION",
+  "user_verification": "not recorded",
+  "previous_local_acceptance": "ACCEPTED; same Codex review, A/B/C/D PASS",
+  "core_deliverables_unchanged": true,
+  "previous_report_hashes_verified": [
+    "figure.svg",
+    "preview-178mm.png",
+    "preview-85mm.png",
+    "semantic-lock.txt",
+    "caption.md",
+    "acceptance.md"
+  ],
+  "recorded_input_hashes_verified": 8,
+  "files": [
+    {
+      "path": "acceptance.md",
+      "bytes": 9457,
+      "sha256": "b3875fda9fa35ae40a96d6037ecfa006a44a34fb7ead171369f716f053378388"
+    },
+    {
+      "path": "caption.md",
+      "bytes": 1746,
+      "sha256": "a187e268860c00cefce58f3f3b0a06601a1f8245eacc5bf402ae511f9f2851c5"
+    },
+    {
+      "path": "edit-probe/arrow/figure.svg",
+      "bytes": 19465,
+      "sha256": "888b1817b48912e2ac9124edee66675e7ea11fc8ea8b8005005542952897922b"
+    },
+    {
+      "path": "edit-probe/arrow/preview-178mm.png",
+      "bytes": 293958,
+      "sha256": "6befa6613537871df4b54e2d9fe43ef88582f1aa6adbafb299681a0a87986d88"
+    },
+    {
+      "path": "edit-probe/number/figure.svg",
+      "bytes": 19456,
+      "sha256": "65d29bf4d77d097121e2b50260dad0bea295d60c9d2b431fc71f1475a1405e64"
+    },
+    {
+      "path": "edit-probe/number/preview-178mm.png",
+      "bytes": 294254,
+      "sha256": "52387c0141a5fe5b763b696f944a4dfb704c6bbfae5f03c000b913531a4afccd"
+    },
+    {
+      "path": "edit-probe/text/figure.svg",
+      "bytes": 19458,
+      "sha256": "d73057e658de1e7d14ed8b088981b676a6109283434ee7025eb416e9dd34459f"
+    },
+    {
+      "path": "edit-probe/text/preview-178mm.png",
+      "bytes": 294402,
+      "sha256": "88f0c9ef974a82c071768c841fd569684e7276bf916fea960a2161ef990aaf9d"
+    },
+    {
+      "path": "edit-probe/timeline/figure.svg",
+      "bytes": 19456,
+      "sha256": "260da34275020f8ddf853e5c947fa53aa7dcd4a407e1808f4ee8e3ef12042191"
+    },
+    {
+      "path": "edit-probe/timeline/preview-178mm.png",
+      "bytes": 293933,
+      "sha256": "a4be5b4636a0cb8b816b8bc80fd4eb7ef9dd2b2ae40bc5dd9e6597d7a94d7d6b"
+    },
+    {
+      "path": "editability-check.json",
+      "bytes": 8997,
+      "sha256": "247654d5e092de4b3f5de14273e822431eedfff7ac7387ea8ce751bcc7617b43"
+    },
+    {
+      "path": "figure.svg",
+      "bytes": 19424,
+      "sha256": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6"
+    },
+    {
+      "path": "preview-178mm.png",
+      "bytes": 293920,
+      "sha256": "4d5a789ba064fdaa4bedd09acdafe30b87757cbfdb1c0e58876eaf2b9d5eed35"
+    },
+    {
+      "path": "preview-85mm.png",
+      "bytes": 125252,
+      "sha256": "99c98e5a2d6e6ea732ac9aabb7889c5c045aa8ef8a9ae241599313b5d6f96c5d"
+    },
+    {
+      "path": "review/caption-migration.md",
+      "bytes": 3745,
+      "sha256": "38fbe56bacbcc652a242683267f8a84c6666cfc30dfb63405a9418c8d125d239"
+    },
+    {
+      "path": "review/handoff-before-pause-2026-10-05/AGENTS.md",
+      "bytes": 5951,
+      "sha256": "6c05f0acca85ccec85cd28b4159c85c82cef5247f8a388037f273d4fe5c892a4"
+    },
+    {
+      "path": "review/handoff-before-pause-2026-10-05/PROGRESS.md",
+      "bytes": 13398,
+      "sha256": "9e9c6befe1310eb868a321f649798fc98a200c7cec32d6e6eb49ebf7ede3f2c5"
+    },
+    {
+      "path": "review/initial/figure.svg",
+      "bytes": 19028,
+      "sha256": "b67fee692776c0ef70dc8acf77cbca72fc1acefe4840554d01a856a1720a1521"
+    },
+    {
+      "path": "review/initial/preview-178mm.png",
+      "bytes": 294919,
+      "sha256": "3a04d47c3349d8d8c414cd2a582dbf971030f37742f98bfe1fb2f59fe2a29c9f"
+    },
+    {
+      "path": "review/initial/preview-85mm.png",
+      "bytes": 124877,
+      "sha256": "974995f1a8b33f848a89feeb94bf81f8b88771a837bfdf44235b3e2897aace65"
+    },
+    {
+      "path": "review/pause-2026-10-05.md",
+      "bytes": 3326,
+      "sha256": "fab69d618267a5d296d0e1ecf6c9f93c5a3ca4d6d4237d6bd6fd823f635e3a28"
+    },
+    {
+      "path": "review/physical-178mm-at-96ppi.png",
+      "bytes": 71942,
+      "sha256": "9fe35ae6b60d4ee6fe00516e5418659d8f98ed2126ab2e9da8f9132b66d31b5b"
+    },
+    {
+      "path": "review/physical-85mm-at-96ppi.png",
+      "bytes": 28669,
+      "sha256": "77b701e8f361550a65bfa046e85cab56ff444051cc1758989553773e3b09e340"
+    },
+    {
+      "path": "semantic-lock.txt",
+      "bytes": 2185,
+      "sha256": "b6316b95210d00a1803c97199168ce67ad6d4a89a2c706c5d7bfb9532c37fe2c"
+    }
+  ],
+  "handoff_files": {
+    "PROGRESS.md": {
+      "path": "FigureCompose\\PROGRESS.md",
+      "sha256": "17abe8e546afbd3044b9e2e05ab38e1728c4f3cb1029b857b383c61ad4635659"
+    },
+    "AGENTS.md": {
+      "path": "FigureCompose\\AGENTS.md",
+      "sha256": "8488f217b7ba28e008f23a2a5335330e4d630d701513c47d3db5c84fed2e5f61"
+    }
+  },
+  "note": "File-integrity and record check only; no new scientific/visual review or artifact render. The manifest excludes itself."
+}

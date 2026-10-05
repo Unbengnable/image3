@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="117mm" viewBox="0 0 1780 1170" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Diffusion Policy: conditional action diffusion and receding-horizon execution</title>
+  <desc id="figure-description">Illustrative inference overview. Two observations condition a shared noise predictor. Gaussian action noise is denoised from diffusion index K to zero. Eight actions are predicted, four executed, and fresh environment observations supply the next query at robot time t plus four. CNN with FiLM and Transformer with cross-attention are alternatives. Scenes and curves are schematic, not measured data.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, 'DejaVu Sans', sans-serif; font-size: 26px; fill: #17283e; }
+      .heading { font-size: 31px; font-weight: 700; }
+      .math { font-family: 'DejaVu Sans', Arial, sans-serif; font-style: italic; font-size: 30px; }
+      .sub { font-size: 21px; }
+      .sup { font-size: 21px; }
+      .blue { fill: #235b9c; }
+      .purple { fill: #633bb1; }
+      .orange { fill: #b65316; }
+      .edge { fill: none; stroke: #35465a; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+      .condition { fill: none; stroke: #3475b7; stroke-width: 3.2; stroke-linejoin: round; stroke-linecap: round; }
+      .diffusion { fill: none; stroke: #7750bd; stroke-width: 3.2; stroke-linejoin: round; stroke-linecap: round; }
+      .execution { fill: none; stroke: #c96c2d; stroke-width: 3.2; stroke-linejoin: round; stroke-linecap: round; }
+      .grid { stroke: #dfe3eb; stroke-width: 1.4; fill: none; }
+      .curve { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#35465a" /></marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#3475b7" /></marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#7750bd" /></marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#c96c2d" /></marker>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#8d98a5" /><stop offset=".45" stop-color="#f6f7f9" /><stop offset="1" stop-color="#a5afb9" /></linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eee8db" /><stop offset="1" stop-color="#d5c5a9" /></linearGradient>
+    <symbol id="robot-scene" viewBox="0 0 200 130">
+      <rect width="200" height="130" rx="4" fill="#e8edf2" />
+      <path d="M0 47 L200 34 L200 130 L0 130Z" fill="url(#table)" />
+      <ellipse cx="123" cy="110" rx="28" ry="7" fill="#3e4a59" opacity=".14" />
+      <path d="M148 21 L120 45 L140 66 L124 90" fill="none" stroke="#7c8998" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M148 21 L120 45 L140 66 L124 90" fill="none" stroke="url(#metal)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="120" cy="45" r="12" fill="url(#metal)" stroke="#7c8998" stroke-width="1.3" />
+      <circle cx="140" cy="66" r="10" fill="url(#metal)" stroke="#7c8998" stroke-width="1.3" />
+      <rect x="115" y="84" width="18" height="13" rx="4" fill="#424f5e" />
+      <path d="M118 95 L115 108 M130 95 L132 107" stroke="#253446" stroke-width="5" stroke-linecap="round" />
+      <path d="M29 96 L48 91 L61 98 L42 104Z" fill="#548cd6" /><path d="M29 96 L42 104 L42 124 L29 115Z" fill="#3974bd" /><path d="M42 104 L61 98 L61 117 L42 124Z" fill="#235493" />
+    </symbol>
+    <symbol id="red-cube" viewBox="0 0 38 36"><path d="M2 10 L21 4 L35 11 L16 18Z" fill="#df8a5b" /><path d="M2 10 L16 18 L16 34 L2 26Z" fill="#c76237" /><path d="M16 18 L35 11 L35 28 L16 34Z" fill="#a84425" /></symbol>
+    <symbol id="plot-grid" viewBox="0 0 260 130">
+      <rect x="0" y="0" width="260" height="130" fill="#fff" stroke="#bcc3d4" stroke-width="1.5" />
+      <path class="grid" d="M16 20H244 M16 55H244 M16 90H244 M16 15V111 M48.6 15V111 M81.2 15V111 M113.8 15V111 M146.4 15V111 M179 15V111 M211.6 15V111 M244 15V111" />
+      <path d="M16 111H244" fill="none" stroke="#8c97ac" stroke-width="1.6" />
+    </symbol>
+    <symbol id="action-glyph" viewBox="0 0 86 65"><rect x="6" y="5" width="53" height="8" fill="#8454cc" /><rect x="6" y="19" width="36" height="8" fill="#347cc8" /><rect x="6" y="33" width="65" height="8" fill="#3c997b" /><rect x="6" y="47" width="44" height="8" fill="#d88c46" /></symbol>
+  </defs>
+  <rect width="1780" height="1170" fill="#fff" />
+
+  
+  <g id="panel-observation">
+    <rect x="42" y="18" width="977" height="306" rx="8" fill="#f3f8fd" stroke="#c4d5e5" stroke-width="1.7" />
+    <text x="62" y="58" class="heading">a  Observation conditioning</text>
+    <g id="observation-t-minus-1"><use href="#robot-scene" x="80" y="91" width="175" height="114" /><use href="#red-cube" x="210" y="157" width="33" height="31" /><text id="time-observation-previous" x="168" y="237" text-anchor="middle" class="math">t − 1</text></g>
+    <g id="observation-t"><use href="#robot-scene" x="287" y="91" width="175" height="114" /><use href="#red-cube" x="410" y="163" width="33" height="31" /><text x="375" y="237" text-anchor="middle" class="math">t</text></g>
+    <path id="bracket-observation" class="condition" d="M80 251V260H462V251" />
+    <text id="horizon-observation" x="236" y="296">T<tspan class="sub" x="252" y="304">o</tspan><tspan x="267" y="296"> = 2</tspan></text>
+    <path id="edge-observation-encoder" class="condition" d="M463 149H503" marker-end="url(#arrow-blue)" />
+    <rect id="rgb-encoder" x="503" y="107" width="133" height="85" rx="6" fill="#dcecfb" stroke="#7caad1" stroke-width="2" />
+    <text x="569" y="141" text-anchor="middle">RGB</text><text x="569" y="173" text-anchor="middle">encoder</text>
+    <text x="568" y="231" text-anchor="middle" class="blue">Once per query</text>
+    <path id="edge-encoder-features" class="condition" d="M636 149H676" marker-end="url(#arrow-blue)" />
+    <g id="image-features" fill="#78a6da"><rect x="678" y="111" width="25" height="23" /><rect x="678" y="137" width="25" height="23" /><rect x="678" y="163" width="25" height="23" /></g>
+    <path id="edge-features-condition" class="condition" d="M709 149H849" marker-end="url(#arrow-blue)" />
+    <text x="541" y="283" class="math">q<tspan class="sub" x="559" y="291">t</tspan></text>
+    <g id="proprioception" fill="#59a7a1"><rect x="610" y="259" width="24" height="23" /><rect x="638" y="259" width="24" height="23" /><rect x="666" y="259" width="24" height="23" /></g>
+    <path id="edge-proprioception-condition" class="condition" d="M695 271H784V195H849" marker-end="url(#arrow-blue)" />
+    <text x="861" y="97" class="math blue">c<tspan class="sub" x="879" y="105">t</tspan></text>
+    <g id="condition-vector"><rect x="852" y="113" width="37" height="26" fill="#477bb7" /><rect x="852" y="142" width="37" height="26" fill="#709dd2" /><rect x="852" y="171" width="37" height="26" fill="#99bcdf" /><rect x="852" y="200" width="37" height="26" fill="#67aaa6" /><rect x="852" y="229" width="37" height="26" fill="#94c9bc" /></g>
+  </g>
+
+  
+  <g id="panel-backbones">
+    <rect x="1044" y="18" width="694" height="306" rx="8" fill="#f8f5fd" stroke="#d0c4e8" stroke-width="1.7" />
+    <text x="1064" y="58" class="heading">Denoiser: either backbone</text>
+    <rect x="1065" y="82" width="305" height="219" rx="6" fill="#eee8f8" />
+    <rect x="1387" y="82" width="330" height="219" rx="6" fill="#eee8f8" />
+    <g id="cnn" fill="#b8cceb" stroke="#6683b7" stroke-width="2"><path d="M1100 172L1124 153H1337V180H1100Z" /><path d="M1125 146L1149 127H1312V154H1125Z" /><path d="M1150 121L1174 102H1287V129H1150Z" /></g>
+    <text x="1217" y="232" text-anchor="middle" class="purple">CNN + FiLM</text>
+    <text x="1183" y="270" class="math purple">c<tspan class="sub" x="1201" y="278">t</tspan><tspan x="1215" y="270">, k</tspan></text>
+    <g id="transformer" stroke="#6683b7" stroke-width="2" fill="#b8cceb"><rect x="1422" y="136" width="259" height="43" rx="4" /><rect x="1434" y="102" width="24" height="20" /><rect x="1504" y="102" width="24" height="20" /><rect x="1574" y="102" width="24" height="20" /><rect x="1644" y="102" width="24" height="20" /><path d="M1446 122V136 M1516 122V136 M1586 122V136 M1656 122V136" fill="none" /></g>
+    <text x="1552" y="221" text-anchor="middle" class="purple">Transformer</text>
+    <text x="1552" y="256" text-anchor="middle" class="purple">+ cross-attention</text>
+    <text x="1518" y="290" class="math purple">c<tspan class="sub" x="1536" y="298">t</tspan><tspan x="1550" y="290">, k</tspan></text>
+  </g>
+
+  
+  <g id="panel-denoising">
+    <rect x="42" y="344" width="1696" height="442" rx="8" fill="#f6f2fc" stroke="#d1c3e6" stroke-width="1.7" />
+    <text x="62" y="381" class="heading">b  Conditional action denoising</text>
+    <text x="1440" y="381" class="purple">k: diffusion step</text>
+    <path id="edge-condition-bus" class="condition" d="M890 184H1030V389H1138V414" marker-end="url(#arrow-blue)" />
+    <path id="fixed-conditioning-bus" class="condition" d="M82 414H1700" />
+    <rect x="653" y="397" width="460" height="31" fill="#f6f2fc" />
+    <text x="845" y="421" text-anchor="middle" class="blue">Fixed conditioning</text>
+    <text x="983" y="421" class="math blue">c<tspan class="sub" x="1001" y="429">t</tspan></text>
+
+    <g id="sequence-initial" transform="translate(100 463)">
+      <text x="118" y="-14" class="math purple">A<tspan class="sub" x="140" y="-6">t</tspan><tspan class="sup" x="140" y="-29">K</tspan></text>
+      <use href="#plot-grid" width="260" height="130" />
+      <path class="curve" stroke="#8454cc" d="M16 62L28 34L41 92L53 24L66 65L78 39L91 98L103 52L116 21L128 89L141 33L153 73L166 44L178 102L191 31L203 58L216 19L228 91L244 50" />
+      <path class="curve" stroke="#347cc8" d="M16 82L32 42L49 75L65 23L81 94L97 63L114 84L130 42L146 78L162 18L179 56L195 98L211 48L227 61L244 29" />
+      <path class="curve" stroke="#3c997b" d="M16 100L33 75L50 92L67 38L84 60L101 102L118 74L135 88L152 27L169 65L186 90L203 71L220 100L244 53" />
+      <path class="curve" stroke="#d88c46" d="M16 112L38 81L57 97L77 62L96 104L116 74L135 109L155 57L174 93L194 82L213 112L244 96" />
+      <text x="130" y="161" text-anchor="middle">τ: 0 … 7</text>
+    </g>
+    <text x="230" y="674" text-anchor="middle" class="purple">Gaussian</text><text x="230" y="708" text-anchor="middle" class="purple">action noise</text>
+    <path id="edge-initial-current" class="diffusion" d="M369 528H525" stroke-dasharray="5 6" marker-end="url(#arrow-purple)" />
+    <text x="449" y="512" text-anchor="middle" class="math purple">…</text>
+
+    <g id="sequence-current" transform="translate(530 463)">
+      <text x="118" y="-14" class="math purple">A<tspan class="sub" x="140" y="-6">t</tspan><tspan class="sup" x="140" y="-29">k</tspan></text>
+      <use href="#plot-grid" width="260" height="130" />
+      <path class="curve" stroke="#8454cc" d="M16 56L34 32L52 55L70 26L88 63L106 35L124 59L142 30L160 52L178 42L196 65L214 49L232 56L244 46" />
+      <path class="curve" stroke="#347cc8" d="M16 88L34 60L52 71L70 46L88 73L106 52L124 78L142 65L160 81L178 57L196 76L214 66L232 79L244 69" />
+      <path class="curve" stroke="#3c997b" d="M16 103L35 82L54 90L73 67L92 92L111 82L130 100L149 79L168 95L187 87L206 104L225 92L244 99" />
+      <path class="curve" stroke="#d88c46" d="M16 112L45 99L74 112L103 100L132 115L161 106L190 116L219 109L244 116" />
+      <text x="130" y="161" text-anchor="middle">τ: 0 … 7</text>
+    </g>
+    <g id="sequence-next" transform="translate(970 463)">
+      <text x="105" y="-14" class="math purple">A<tspan class="sub" x="127" y="-6">t</tspan><tspan class="sup" x="127" y="-29">k−1</tspan></text>
+      <use href="#plot-grid" width="260" height="130" />
+      <path class="curve" stroke="#8454cc" d="M16 55Q35 25 54 36T92 35T130 42T168 43T206 45T244 45" />
+      <path class="curve" stroke="#347cc8" d="M16 82Q35 58 54 60T92 60T130 68T168 70T206 72T244 71" />
+      <path class="curve" stroke="#3c997b" d="M16 102Q35 86 54 85T92 85T130 94T168 94T206 98T244 96" />
+      <path class="curve" stroke="#d88c46" d="M16 114Q45 110 74 112T132 113T190 115T244 114" />
+      <text x="130" y="161" text-anchor="middle">τ: 0 … 7</text>
+    </g>
+    <path id="edge-next-final" class="diffusion" d="M1239 528H1405" stroke-dasharray="5 6" marker-end="url(#arrow-purple)" />
+    <text x="1323" y="512" text-anchor="middle" class="math purple">…</text>
+    <g id="sequence-final" transform="translate(1410 463)">
+      <text x="118" y="-14" class="math purple">A<tspan class="sub" x="140" y="-6">t</tspan><tspan class="sup" x="140" y="-29">0</tspan></text>
+      <use href="#plot-grid" width="260" height="130" />
+      <path class="curve" stroke="#8454cc" d="M16 53C58 14 77 22 115 33S180 46 244 44" />
+      <path class="curve" stroke="#347cc8" d="M16 83C53 53 79 51 115 62S180 73 244 72" />
+      <path class="curve" stroke="#3c997b" d="M16 103C56 86 79 83 115 91S180 96 244 96" />
+      <path class="curve" stroke="#d88c46" d="M16 115H244" />
+      <text x="130" y="161" text-anchor="middle">τ: 0 … 7</text>
+    </g>
+
+    <path id="edge-fixed-condition-denoiser" class="condition" d="M381 414V699H422" marker-end="url(#arrow-blue)" />
+    <path id="edge-current-denoiser" class="diffusion" d="M761 593V640H739V655" marker-end="url(#arrow-purple)" />
+    <rect id="noise-predictor" x="424" y="658" width="351" height="84" rx="8" fill="#e7def6" stroke="#9c80c8" stroke-width="2" />
+    <text x="599" y="689" text-anchor="middle" class="purple">Shared noise predictor</text>
+    <text id="denoiser-formula" x="499" y="725" class="math purple">ε<tspan class="sub" x="515" y="733">θ</tspan><tspan x="532" y="725">(c</tspan><tspan class="sub" x="559" y="733">t</tspan><tspan x="570" y="725">, A</tspan><tspan class="sub" x="608" y="733">t</tspan><tspan class="sup" x="608" y="710">k</tspan><tspan x="623" y="725">, k)</tspan></text>
+    <path id="edge-noise-prediction-update" class="diffusion" d="M776 701H870" marker-end="url(#arrow-purple)" />
+    <path id="edge-current-update" class="diffusion" d="M791 528H839V670H870" marker-end="url(#arrow-purple)" />
+    <rect id="scheduled-update" x="873" y="658" width="337" height="84" rx="8" fill="#eee8f8" stroke="#9c80c8" stroke-width="2" />
+    <text x="1041" y="690" text-anchor="middle" class="purple">Scheduled update</text>
+    <text x="1041" y="725" text-anchor="middle" class="math purple">k → k − 1</text>
+    <path id="edge-update-next" class="diffusion" d="M1174 657V632H1209V596" marker-end="url(#arrow-purple)" />
+    <text x="1440" y="700" class="purple">Repeat K → 0</text>
+  </g>
+
+  
+  <g id="panel-execution">
+    <rect x="42" y="806" width="1696" height="324" rx="8" fill="#fdf8f2" stroke="#e8d7c2" stroke-width="1.7" />
+    <text x="62" y="842" class="heading">c  Receding-horizon execution</text>
+    <text x="780" y="842" class="orange">t: robot time</text>
+    <g id="predicted-timeline">
+      <rect x="80" y="899" width="431" height="76" rx="5" fill="#fff2e3" stroke="#cf874b" stroke-width="1.8" />
+      <rect x="533" y="899" width="431" height="76" rx="5" fill="#faf7fc" stroke="#c9b5df" stroke-width="1.8" />
+      <g id="action-0" data-time="t" data-executed="true"><use href="#action-glyph" x="90" y="904" width="65" height="65" /><text x="133" y="1007" text-anchor="middle" class="math">t</text></g>
+      <g id="action-1" data-time="t+1" data-executed="true"><use href="#action-glyph" x="198" y="904" width="86" height="65" /><text x="241" y="1007" text-anchor="middle" class="math">t+1</text></g>
+      <g id="action-2" data-time="t+2" data-executed="true"><use href="#action-glyph" x="306" y="904" width="86" height="65" /><text x="349" y="1007" text-anchor="middle" class="math">t+2</text></g>
+      <g id="action-3" data-time="t+3" data-executed="true"><use href="#action-glyph" x="414" y="904" width="86" height="65" /><text x="457" y="1007" text-anchor="middle" class="math">t+3</text></g>
+      <g id="action-4" data-time="t+4" data-executed="false"><g opacity=".48"><use href="#action-glyph" x="543" y="904" width="86" height="65" /></g><text x="586" y="1007" text-anchor="middle" class="math">t+4</text></g>
+      <g id="action-5" data-time="t+5" data-executed="false"><g opacity=".48"><use href="#action-glyph" x="651" y="904" width="86" height="65" /></g><text x="694" y="1007" text-anchor="middle" class="math">t+5</text></g>
+      <g id="action-6" data-time="t+6" data-executed="false"><g opacity=".48"><use href="#action-glyph" x="759" y="904" width="86" height="65" /></g><text x="802" y="1007" text-anchor="middle" class="math">t+6</text></g>
+      <g id="action-7" data-time="t+7" data-executed="false"><g opacity=".48"><use href="#action-glyph" x="867" y="904" width="86" height="65" /></g><text x="910" y="1007" text-anchor="middle" class="math">t+7</text></g>
+    </g>
+    <path id="bracket-execution" class="execution" d="M80 886V863H511V886" />
+    <text id="horizon-execution" x="259" y="889" class="orange">T<tspan class="sub" x="275" y="897">a</tspan><tspan x="290" y="889"> = 4</tspan></text>
+    <path id="edge-execute-environment" class="execution" d="M295 863V855H1153V972H1190" marker-end="url(#arrow-orange)" />
+    <text x="1142" y="901" text-anchor="end" class="orange">Execute</text>
+    <path id="bracket-prediction" class="diffusion" d="M80 1031V1048H964V1031" />
+    <text id="horizon-prediction" x="486" y="1090" class="purple">T<tspan class="sub" x="502" y="1098">p</tspan><tspan x="517" y="1090"> = 8</tspan></text>
+    <text x="749" y="887" text-anchor="middle" class="purple">Replan before execution</text>
+    <g id="environment"><text x="1284" y="880" text-anchor="middle">Environment</text><use href="#robot-scene" x="1193" y="915" width="182" height="118" /><use href="#red-cube" x="1320" y="990" width="33" height="31" /></g>
+    <path id="edge-environment-observations" class="condition" d="M1379 973H1481" marker-end="url(#arrow-blue)" />
+    <g id="fresh-observations"><text x="1581" y="880" text-anchor="middle">New observations</text><use href="#robot-scene" x="1484" y="915" width="190" height="123" /><use href="#red-cube" x="1614" y="987" width="34" height="32" /></g>
+    <text x="1580" y="1090" text-anchor="middle" class="blue">Next query: t + 4</text>
+  </g>
+  <path id="edge-final-timeline" class="diffusion" d="M1669 540H1718V773H1009V936H966" marker-end="url(#arrow-purple)" />
+  <path id="edge-feedback-next-query" class="condition" stroke-width="2.4" style="stroke-width:2.4" d="M1674 975H1695V1150H22V149H76" marker-end="url(#arrow-blue)" />
+</svg>

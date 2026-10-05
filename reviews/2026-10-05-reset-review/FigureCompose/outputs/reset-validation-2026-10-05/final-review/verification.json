@@ -1,0 +1,38 @@
+{
+  "verified_utc": "2026-10-05T13:20:05.872349+00:00",
+  "frozen_candidate_hashes_unchanged": [
+    {
+      "candidate": "X",
+      "kind": "main",
+      "sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+      "native_visible_latent_restored_loss_counts": "consistent"
+    },
+    {
+      "candidate": "X",
+      "kind": "edit",
+      "sha256": "473bfecaaddb80f70090b5c9f609438dc305f87a2f368b49dbc2a327df171377",
+      "native_visible_latent_restored_loss_counts": "consistent"
+    },
+    {
+      "candidate": "Y",
+      "kind": "main",
+      "sha256": "8b4bba428a222781ae5308a7d8573628b5cd9a4be1cde1ef74f0a0d7e307a21a",
+      "native_visible_latent_restored_loss_counts": "consistent"
+    },
+    {
+      "candidate": "Y",
+      "kind": "edit",
+      "sha256": "65b563469ebe915722eec34c7977e9e22e396109601d17917d8856cb47246633",
+      "native_visible_latent_restored_loss_counts": "consistent"
+    }
+  ],
+  "neutral_png_and_caption_byte_identical_to_main": true,
+  "report_whitespace_checked": true,
+  "main_native_visual_compatibility": {
+    "X": "FAIL",
+    "Y": "FAIL"
+  },
+  "no_reviewer_repair": true,
+  "verification_attempts": 2,
+  "first_check_error": "validator accidentally included latent-to-restoration path without data-position; corrected predicate, no artifact changed"
+}

@@ -1,0 +1,1196 @@
+# FigureCompose Stage 1 独立审阅报告与下一步工作建议
+
+**日期：** 2026-10-03  
+**审阅对象：** `zotero-three-cases-2026-10-03`  
+**案例：** FAST、Diffusion Policy、DreamerV3  
+**范围：** Stage 1 PNG 生成与两轮修订；结合论文原图进行后验对照；不包含 Stage 2 SVG 重建验收。
+
+---
+
+# 1. 审阅目的
+
+本轮审阅的核心问题不是判断某一张图是否“好看”，而是判断 FigureCompose 当前主路线是否已经足够稳定，可以停止继续探索新的绘图框架，并进入下一阶段工程化。
+
+重点回答五个问题：
+
+1. 仅依赖自然语言 scientific context、参考图原则和 Codex 规划，是否已经能够跨不同方法生成具有论文图基本表达能力的候选图？
+2. 当前主要瓶颈究竟是科学理解、视觉构图、image generation 本身，还是后处理与可编辑性？
+3. 连续 image editing 是否能够可靠修复错误？
+4. Stage 1 是否应该继续重构？
+5. Stage 2 应该解决哪些问题，又不应该重新变成一个复杂的自研绘图引擎？
+
+---
+
+# 2. 审阅材料与方法
+
+本次独立复审实际查看了审阅包中的：
+
+- 三篇论文的目标原图；
+- 三个案例的最终 `figure.png`；
+- 初稿、第一轮修订稿和最终稿的演化过程；
+- generation prompt；
+- scientific evaluation；
+- Stage 1 / Stage 2 当前约定；
+- archive 与仓库记录。
+
+压缩包 SHA-256 与仓库记录一致：
+
+`1eae2906f20dd016ee0b8b24ed1ad03e56f13491944b3bc43dd5607ebb468393`
+
+本报告中的视觉判断来自实际 PNG，而不是仅复述已有 `REPORT.md`。
+
+需要强调：目标论文原图是在生成完成后用于审阅对照，而不是 Stage 1 image generation 的输入，因此本轮主要考察的是“从方法文字生成合理科研表达”的能力，而不是复刻论文原图的能力。
+
+---
+
+# 3. 总体结论
+
+## 3.1 Stage 1 主路线已经证明可行
+
+当前链路：
+
+**自然语言 / scientific context  
+→ Codex 理解方法  
+→ 选择参考图及视觉原则  
+→ 编写 generation prompt  
+→ 内置 image generation  
+→ 实际 PNG  
+→ 科学与视觉 critique**
+
+已经能够跨三种明显不同的方法生成具有实质信息表达价值的科研图：
+
+- FAST：连续信号、频域、矩阵、离散序列、token；
+- Diffusion Policy：observation、condition、iterative denoising、action horizon、feedback loop；
+- DreamerV3：recurrent latent state、posterior/prior、prediction heads、actor/critic、imagined rollout。
+
+这说明系统已经突破了此前 LocalFigure 最主要的限制：
+
+> 不再只能生成“矩形框 + 箭头”的流程图，而是可以根据方法语义主动选择不同的视觉 representation。
+
+这是本轮最重要的正面结果。
+
+---
+
+# 3.2 但当前输出更接近“高质量科研教学信息图”，而不是成熟论文 method figure
+
+三张生成图具有非常一致的风格特征：
+
+- 大标题；
+- 大面积 panel tint；
+- 完整自然语言解释；
+- 大量辅助标签；
+- 明确的教学阅读顺序；
+- 较大的 visual hierarchy；
+- 对初学者友好的重复解释。
+
+这些特征并非坏事。
+
+对于：
+
+- tutorial；
+- presentation；
+- course note；
+- research explainer；
+
+当前结果已经具有很强实用价值。
+
+但论文 architecture / method figure 优化的目标不同：
+
+> 在有限版面内，以尽可能少的文字表达尽可能准确的模型结构和关系。
+
+当前生成图在这一点上明显过度解释。
+
+因此，下一阶段的问题已经不是：
+
+> “能不能自动画科研图？”
+
+而是：
+
+> **如何从 scientific infographic 收敛成 publication-oriented method figure。**
+
+---
+
+# 3.3 当前最严重的问题不是审美，而是 hard semantic reliability
+
+三例中暴露出两类非常明确、且具有普遍性的失败。
+
+### A. 离散内容一致性错误
+
+FAST 中：
+
+正确 flatten sequence 应为：
+
+`[12, 9, 4, -2, 0, 0, 0, 0]`
+
+但最终图顶部对应表示仍只出现：
+
+`12, 9, 4, -2, 0, 0, 0`
+
+即便：
+
+- prompt 明确给出了 exact matrix；
+- prompt 明确给出了 exact vector；
+- 第一次 critique 已经发现错误；
+- image edit 又进行了第二次修订；
+
+最终仍然存在一个缺失的 `0`。
+
+这表明：
+
+> image generation 对精确数组、计数和重复离散元素的可靠性不足。
+
+这不是 FAST scientific understanding 的问题。
+
+---
+
+### B. 拓扑关系错误
+
+DreamerV3 中：
+
+公式正确表达：
+
+`p(z_t | h_t)`
+
+但最终图缺少清晰的：
+
+`h_t → prior`
+
+视觉连接。
+
+另一个明显问题是 online environment observation 与 replay buffer 的路线仍存在歧义，使读者无法立即确认：
+
+> online inference 当前 observation 的来源究竟是 environment，还是 replay。
+
+这种错误在科研 method figure 中属于硬错误。
+
+即：
+
+> 节点文字可能全部正确，但 graph topology 本身可以错误。
+
+---
+
+# 3.4 多轮 image editing 不能作为最终纠错机制
+
+本轮三个案例都执行：
+
+**generation + edit 1 + edit 2**
+
+实际表现说明 image edit 确实能够：
+
+- 调整方向；
+- 删除错误对象；
+- 修正标签；
+- 改善整体结构；
+- 局部修正关系。
+
+但它不具有确定性。
+
+典型表现包括：
+
+- 修正一个数组时仍可能漏一个元素；
+- 删除错误箭头时可能留下另一处箭头方向问题；
+- 修改 actor/action 后仍可能留下 prior topology；
+- 已写对公式不意味着图中连接也正确。
+
+因此，继续增加：
+
+`edit 3 → edit 4 → edit 5`
+
+不是合理工程路线。
+
+边际收益将快速下降，而且新的编辑仍可能引入新错误。
+
+---
+
+# 4. 三个案例逐项审阅
+
+---
+
+# 4.1 FAST
+
+## 正面表现
+
+FAST 是本轮证明 representation diversity 最直接的案例。
+
+生成图成功组合了：
+
+- continuous action curves；
+- normalization；
+- DCT frequency representation；
+- quantized matrix；
+- frequency-major flatten；
+- integer sequence；
+- BPE tokens；
+- inverse decoding；
+- approximate reconstructed actions。
+
+其中尤其有价值的是 frequency-major flatten inset。
+
+它不是普通流程框，而是针对：
+
+> “为什么是按 frequency column 优先，并跨 action dimensions interleave”
+
+这个容易误解的问题专门创建了局部视觉解释。
+
+这说明 Codex + image generation 已经能够根据科学难点选择表达结构，而不是套用统一模板。
+
+---
+
+## 科学问题
+
+最终图仍存在 exact numeric inconsistency：
+
+矩阵及部分序列表示：
+
+`[12, 9, 4, -2, 0, 0, 0, 0]`
+
+顶部展开表示缺一个 `0`。
+
+这是不可接受的 scientific figure 硬错误。
+
+另外，示意曲线并非由图中的 DCT coefficient 数值真实计算得到。
+
+当前已经注明 illustrative，因此不是错误，但未来应持续保持：
+
+> illustrative representation 与 measured / calculated data 明确区分。
+
+---
+
+## 视觉问题
+
+FAST 最大的问题不是布局，而是信息过多。
+
+当前同时表达：
+
+1. normalization；
+2. DCT；
+3. quantization；
+4. matrix；
+5. flatten；
+6. BPE；
+7. frequency-major 教学 inset；
+8. decoding；
+9. inverse normalization；
+10. approximation caveat。
+
+相比论文原图，其教学内容增加很多。
+
+主要结果是：
+
+- figure height 和 visual density 增加；
+- transform explanation 与 representation 同时占据空间；
+- 多句完整英文进入 figure；
+- 主阅读路径不够紧凑。
+
+### 判断
+
+作为教学图：较好。
+
+作为论文 Figure：需要显著压缩。
+
+---
+
+# 4.2 Diffusion Policy
+
+## 正面表现
+
+这是三例中 Stage 1 最成功的案例。
+
+图成功构造出三个不同层次：
+
+### Observation / conditioning
+
+- RGB history；
+- proprioception；
+- encoder；
+- conditioning vector。
+
+### Diffusion process
+
+- Gaussian action noise；
+- multiple denoising steps；
+- shared denoiser；
+- fixed conditioning；
+- noise-to-clean action trajectories。
+
+### Receding-horizon control
+
+- prediction horizon；
+- execution horizon；
+- unexecuted actions；
+- environment feedback；
+- new observation；
+- replanning。
+
+这些视觉 grammar 明显不同，却能构成一张统一的图。
+
+尤其值得肯定的是：
+
+> 系统没有把“diffusion”错误理解成未来图像生成，而是使用 action trajectory representation。
+
+这证明 scientific understanding 对最终视觉表达确实产生了作用。
+
+---
+
+## 科学表现
+
+在当前限定 scope：
+
+> condition → action denoising → partial execution → observe → replan
+
+中，最终图基本成立。
+
+剩余问题主要是：
+
+- feedback 短箭头头部不够明确；
+- 部分 shared denoiser route 视觉上略混乱；
+- CNN / Transformer 内部细节不足。
+
+最后一点不是错误，而是 scope 选择。
+
+因此不能把当前图称为原论文 Figure 2 的完整替代。
+
+---
+
+## 视觉问题
+
+当前图最大问题是“poster 化”。
+
+典型表现：
+
+- 巨大的底部 feedback loop；
+- 大标题；
+- 三块明显区域；
+- 多句辅助说明；
+- denoiser alternatives 独立占据较大区域；
+- horizon 信息出现多次。
+
+这些设计在 tutorial 中很有效。
+
+但论文图通常会使用更克制的 visual hierarchy。
+
+当前 feedback loop 尤其突出：
+
+它科学上有意义，但视觉权重过高，使“closed-loop replanning”几乎变成了整张图的第一视觉中心。
+
+而真正应该成为第一视觉中心的是：
+
+> conditional action diffusion 本身。
+
+---
+
+## 判断
+
+Diffusion Policy 是下一阶段最适合作为 canary 的案例。
+
+原因：
+
+1. 科学关系已经基本正确；
+2. representation 已经丰富；
+3. 当前问题主要是视觉压缩和 deterministic cleanup；
+4. 不需要重新生成整个构图。
+
+---
+
+# 4.3 DreamerV3
+
+## 正面表现
+
+DreamerV3 是三例中视觉结构最复杂的一张，同时也是最能说明 Stage 1 上限和 Stage 2 必要性的案例。
+
+成功表达：
+
+- replay；
+- encoder；
+- posterior；
+- prior；
+- recurrent state；
+- latent state `(h,z)`；
+- reconstruction/reward/continuation heads；
+- imagined rollout；
+- actor；
+- critic；
+- lambda returns；
+- environment interaction。
+
+Panel a / b / c 的结构是合理的。
+
+特别是 imagined rollout 中：
+
+`state → actor → action → transition → next state`
+
+这种时间展开比传统矩形 pipeline 更接近成熟论文 visual language。
+
+---
+
+## 科学问题
+
+### 1. Prior dependency
+
+虽然文字写出了：
+
+`p(z | h)`
+
+但图中没有足够明确的：
+
+`h_t → prior`
+
+连接。
+
+这是 topology error。
+
+---
+
+### 2. Online observation route
+
+environment interaction 区域的 new observation 路线和 replay buffer 视觉联系过近。
+
+最终图仍可能被理解为：
+
+> 在线 inference 的 observation 从 replay buffer 提供。
+
+这与实际机制不同。
+
+---
+
+### 3. Critic temporal coverage
+
+critic 与 value 的连接主要集中在 rollout 末端附近。
+
+没有充分表达：
+
+> value prediction 与 imagined trajectory 中多个 state 的关系。
+
+当前可以理解核心思想，但作为完整 architecture explanation 仍不够严谨。
+
+---
+
+## 视觉表现
+
+DreamerV3 的整体视觉质量其实不差：
+
+- 配色系统一致；
+- region 区分清楚；
+- latent state glyph 合理；
+- actor 与 critic 色彩可区分；
+- solid / dashed route 有一定区分。
+
+但它暴露了一个关键事实：
+
+> 一张图可以在视觉上“非常像科研图”，同时 scientific topology 仍然错误。
+
+因此以后不能再使用：
+
+> “图看起来已经很专业”
+
+作为科学验收依据。
+
+---
+
+# 5. 跨案例共同发现
+
+---
+
+# 5.1 Representation selection 已经基本成功
+
+三个案例没有退化成统一模板。
+
+实际使用了：
+
+- continuous waveform；
+- spectral bar；
+- matrix；
+- token；
+- latent glyph；
+- iteration chain；
+- temporal rollout；
+- timeline；
+- observation thumbnail；
+- action trajectory；
+- prediction head；
+- recurrent transition。
+
+因此不建议重新建立：
+
+- component engine；
+- graph grammar engine；
+- layout DSL；
+- universal scientific renderer。
+
+Codex + image generation 已经能够完成这一层最难的开放式视觉选择。
+
+---
+
+# 5.2 Prompt 当前过度鼓励 infographic 风格
+
+现有 prompt 中大量出现：
+
+- “Include exact short labels”
+- “Label…”
+- “Define…”
+- “Show…”
+- “Footer…”
+- “Text badge…”
+- “Explicitly demonstrate…”
+
+这些要求单独看都合理。
+
+但累积之后，image generation 会将所有解释直接画入 figure。
+
+结果自然变成：
+
+> explanatory scientific poster。
+
+因此下一步不应主要继续优化：
+
+> wording of individual labels。
+
+而应修改整个 prompt policy：
+
+### 默认优先 paper figure，而不是 tutorial infographic。
+
+---
+
+# 5.3 需要实行 Caption Migration
+
+建议生成前把信息分为两类。
+
+## Figure 内保留
+
+- entity；
+- operator；
+- variable；
+- very short relation；
+- essential state label；
+- necessary legend。
+
+## 移入 caption / surrounding prose
+
+- 完整方法解释；
+- caveat；
+- 为什么这样做；
+- illustrative / not measured 的长说明；
+- architecture alternatives 的详细描述；
+- scope limitation；
+- 教学型自然语言。
+
+目标不是把字体缩小。
+
+而是：
+
+> **真正删除 figure 中不应该存在的句子。**
+
+初步建议将当前三张图的 prose 量减少约 **40–60%**。
+
+---
+
+# 5.4 Image generation 应负责 Soft Visual Layer
+
+适合继续由 image generation 完成：
+
+- overall composition；
+- panel proportion；
+- color hierarchy；
+- background tint；
+- schematic illustration；
+- robot/environment glyph；
+- abstract curves；
+- latent visual metaphor；
+- visual rhythm；
+- rough routing；
+- representation style。
+
+这些是生成模型明显擅长的部分。
+
+---
+
+# 5.5 Hard Semantic Layer 不应继续交给 image generation
+
+以下内容应该进入 deterministic Stage 2：
+
+### Text
+
+- exact labels；
+- symbols；
+- subscripts；
+- token IDs。
+
+### Mathematics
+
+- formula；
+- matrix；
+- vector；
+- coefficient；
+- braces；
+- exact counts。
+
+### Topology
+
+- critical edges；
+- arrow directions；
+- arrow endpoints；
+- branch / merge；
+- feedback path。
+
+### Discrete structures
+
+- timeline ticks；
+- number of actions；
+- number of states；
+- number of tokens；
+- tensor elements。
+
+这应该成为 FigureCompose 的核心职责分工：
+
+> **imagegen 负责视觉构思，SVG 负责科学确定性。**
+
+---
+
+# 6. 对 Stage 1 的阶段判定
+
+## 建议状态
+
+**Stage 1 architecture: VALIDATED / FREEZE**
+
+但这个冻结应理解为：
+
+> 不再修改主链路和重新造 planner/layout engine。
+
+而不是：
+
+> 当前 prompt policy 和 visual style 永久冻结。
+
+---
+
+## 应继续保留的主链路
+
+`Natural-language request`
+
+→ `Codex scientific understanding`
+
+→ `Reference selection`
+
+→ `Visual concept`
+
+→ `Image generation`
+
+→ `Actual image critique`
+
+→ `Stage 2 deterministic reconstruction`
+
+---
+
+## 不建议继续进行的工作
+
+### 1. 不再重新设计 LocalFigure 类型 renderer
+
+没有必要。
+
+---
+
+### 2. 不新增通用 semantic graph / layout engine
+
+除非以后出现 image generation 根本无法表达某类图的证据。
+
+当前没有这种证据。
+
+---
+
+### 3. 不继续靠无限 image edit 修复
+
+最多保留有限 image edit budget。
+
+随后进入 Stage 2。
+
+---
+
+### 4. 不把 PNG 自动 tracing 成完整 SVG 当作目标
+
+像素轮廓不是我们真正需要恢复的东西。
+
+我们需要恢复的是：
+
+> scientific editability。
+
+---
+
+### 5. 不追求 pixel-perfect recreation
+
+Stage 2 的目标不是：
+
+> SVG 看起来和 PNG 每个像素完全一致。
+
+目标应该是：
+
+> 保留生成图优秀的视觉构图，同时把关键科学元素变成可靠、可编辑的 vector structure。
+
+---
+
+# 7. Stage 2 建议定义
+
+Stage 2 不应被定义为：
+
+> PNG → generic vectorization。
+
+建议定义为：
+
+# Semantic Vector Reconstruction
+
+输入：
+
+- `figure.png`
+- scientific context
+- generation prompt
+- selected references
+- critique findings
+
+Codex 查看真实 PNG 后重建必要 SVG 元素。
+
+---
+
+## 7.1 最小 semantic lock
+
+建议在 Stage 1 结束时生成一个很小的 lock list。
+
+它不应该发展成新的 schema 系统。
+
+例如 FAST：
+
+```text
+LOCKED COUNTS
+flatten vector length = 8
+
+LOCKED VALUES
+[12, 9, 4, -2, 0, 0, 0, 0]
+
+LOCKED ORDER
+frequency-major
+dimensions interleaved
+```
+
+Dreamer：
+
+```text
+LOCKED EDGES
+h_t -> prior
+state -> actor
+actor -> action
+action -> RSSM transition
+environment -> new observation
+new observation -> online inference
+
+FORBIDDEN EDGES
+replay -> online current observation
+reward -> critic as state input
+```
+
+Diffusion Policy：
+
+```text
+LOCKED COUNTS
+prediction actions = 8
+executed actions = 4
+observation horizon = 2
+
+LOCKED TOPOLOGY
+observation -> condition
+condition -> denoiser
+action noise -> denoiser
+environment -> new observation
+new observation -> next policy query
+```
+
+semantic lock 只用于：
+
+> 防止 Stage 2 改错关键科学结构。
+
+不应演变成新的复杂 DSL。
+
+---
+
+# 8. 下一轮建议：不要再开三个新案例
+
+当前最合理的下一步不是继续生成 10 张新图。
+
+Stage 1 的主要结论已经足够明显。
+
+建议首先使用：
+
+# Diffusion Policy 作为 Stage 2 canary
+
+因为它：
+
+- Stage 1 scientific core 最完整；
+- 图本身已经较好；
+- 没有 FAST 那种大量 exact coefficient；
+- 没有 Dreamer 那么复杂的 topology；
+- 可以清晰验证 Stage 2 是否真的增加价值。
+
+---
+
+# 9. Diffusion Policy 下一轮具体工作
+
+## Step 1 — Caption migration
+
+不重新生成架构。
+
+先对现有图识别所有 text element。
+
+分为：
+
+- `KEEP_IN_FIGURE`
+- `MOVE_TO_CAPTION`
+- `REMOVE_REDUNDANT`
+
+目标：
+
+> figure prose 减少约一半。
+
+优先删除完整句子，而不是缩小字体。
+
+---
+
+## Step 2 — 建立 minimal semantic lock
+
+至少固定：
+
+- observation horizon；
+- prediction horizon；
+- action horizon；
+- denoising direction；
+- feedback destination；
+- k 与 t 的区别；
+- denoiser alternatives 为并列而非串联。
+
+---
+
+## Step 3 — Stage 2 SVG reconstruction
+
+优先重建：
+
+- 所有文字；
+- horizon bracket；
+- timeline；
+- action ticks；
+- critical arrows；
+- feedback arrow；
+- denoiser route；
+- labels。
+
+不要求重画：
+
+- robot illustration；
+- observation schematic；
+- abstract action curves；
+- decorative texture。
+
+它们可以继续作为独立 raster component。
+
+---
+
+## Step 4 — 实际尺寸渲染
+
+不要只看 1536×1024 大图。
+
+至少需要：
+
+- target publication column width；
+- 100% physical-size equivalent preview；
+- high-DPI raster preview。
+
+检查：
+
+- 最小字体；
+- arrow head；
+- bracket；
+- mathematical label；
+- line crossing；
+- visual hierarchy。
+
+---
+
+## Step 5 — 独立科学复审
+
+最终 SVG 必须重新从零检查：
+
+### Nodes
+
+哪些 scientific entities 出现？
+
+### Edges
+
+每条箭头实际从哪里到哪里？
+
+### Counts
+
+所有 action / state / token 数量是否正确？
+
+### Text
+
+是否出现 invented claim？
+
+### Omission
+
+有没有因为 vector reconstruction 删除关键机制？
+
+不能因为 Stage 1 PNG 已经 review 过，就默认 SVG scientific pass。
+
+---
+
+# 10. Stage 2 验收门
+
+建议不建立一个总分。
+
+使用 hard gates。
+
+---
+
+## Gate A — Scientific correctness
+
+必须全部通过：
+
+- exact values；
+- exact counts；
+- critical topology；
+- directionality；
+- no invented scientific relation；
+- no incorrect representation semantics。
+
+任一失败：
+
+**NOT ACCEPTED**
+
+---
+
+## Gate B — Visual economy
+
+必须确认：
+
+- 没有大段 prose；
+- 没有重复解释；
+- visual hierarchy 与 scientific importance 一致；
+- figure 在目标尺寸下仍可读；
+- feedback / decorative elements 不压过核心机制。
+
+---
+
+## Gate C — Editability
+
+至少：
+
+- text 为真正 text；
+- formula / number 可编辑；
+- key arrows 可编辑；
+- matrices / timelines 可编辑；
+- critical scientific elements 不是整图 raster。
+
+允许局部 raster illustration。
+
+---
+
+## Gate D — Reconstruction fidelity
+
+不是 pixel-perfect。
+
+而是要求：
+
+- visual identity 保留；
+- panel structure 保留；
+- representation grammar 保留；
+- 不因为 vectorization 重新退化成框图。
+
+---
+
+# 11. Stage 2 canary 成功后再进行的泛化测试
+
+Diffusion Policy 通过后：
+
+## Case 2 — FAST
+
+重点验证：
+
+> exact numerical / matrix / token reconstruction。
+
+这是 deterministic content test。
+
+---
+
+## Case 3 — DreamerV3
+
+重点验证：
+
+> complex topology reconstruction。
+
+这是 graph relation test。
+
+---
+
+三例分别代表：
+
+| 案例 | Stage 2 主要压力 |
+|---|---|
+| Diffusion Policy | visual cleanup + timeline + feedback |
+| FAST | discrete values + matrix + exact counts |
+| DreamerV3 | complex scientific topology |
+
+如果这三例全部通过，则 Stage 2 的核心能力已经得到较有代表性的验证。
+
+---
+
+# 12. 此后才值得扩大 benchmark
+
+完成 Stage 2 三案例后，再考虑增加：
+
+- Transformer / Attention；
+- U-Net；
+- VLA；
+- World Model；
+- multimodal architecture；
+- robotics control；
+- biological / neuroscience mechanism figure。
+
+此时测试的重点不再是：
+
+> “能不能生成一张图”
+
+而应该是：
+
+> **不同 figure grammar 是否都能经过相同 Stage 1 → Stage 2 流程稳定进入可编辑、科学可靠状态。**
+
+---
+
+# 13. 对产品定位的建议
+
+经过本轮，FigureCompose 的合理定位已经比最初清晰很多。
+
+不建议定义成：
+
+> Automatic scientific SVG drawing engine
+
+也不建议定义成：
+
+> AI paper figure generator
+
+更准确的定义是：
+
+# Codex-native scientific figure composition and semantic reconstruction workflow
+
+其中：
+
+### Codex
+
+负责：
+
+- scientific understanding；
+- reference selection；
+- composition planning；
+- prompt creation；
+- visual/scientific critique；
+- semantic reconstruction。
+
+### Image generation
+
+负责：
+
+- visual ideation；
+- composition；
+- representation synthesis；
+- illustration；
+- visual style。
+
+### Local deterministic tools
+
+负责：
+
+- SVG/XML；
+- exact text；
+- mathematical notation；
+- matrices；
+- edges；
+- rendering；
+- structural QA。
+
+这种职责分工比“自己重新造一个科研绘图软件”明显更合理。
+
+---
+
+# 14. 最终阶段判断
+
+本轮不支持以下结论：
+
+> FigureCompose 已经能够自动生成投稿级论文图。
+
+目前没有证据支持这一点。
+
+但本轮已经足够支持：
+
+> **FigureCompose Stage 1 已经能够跨不同科学方法，从自然语言内容生成结构丰富、具有实际解释价值、明显超越传统框箭头模板的科研图候选。**
+
+同时也明确证明：
+
+> **纯 image generation 无法可靠承担 exact numerical consistency 和 complex scientific topology。**
+
+因此，继续扩展 Stage 1 或重做 planner/layout framework 的工程收益很低。
+
+下一阶段最值得投入的工作应集中于：
+
+1. paper-figure-oriented prompt policy；
+2. caption migration；
+3. minimal semantic lock；
+4. Codex-assisted deterministic SVG reconstruction；
+5. actual publication-size review；
+6. final scientific topology verification。
+
+---
+
+# 15. 推荐的近期执行顺序
+
+**P0**
+
+冻结 Stage 1 architecture。
+
+**P0**
+
+修改 Stage 1 prompt policy：
+
+> paper figure first，减少 prose，不增加新 planner。
+
+**P0**
+
+以 Diffusion Policy 为 Stage 2 canary。
+
+**P0**
+
+只重建 hard semantic layer，不进行全图 tracing。
+
+**P0**
+
+在真实目标尺寸重新渲染与审阅。
+
+**P1**
+
+在 FAST 上验证 exact numerical structure。
+
+**P1**
+
+在 DreamerV3 上验证 complex topology。
+
+**P1**
+
+三例全部通过后固定 Stage 2 contract。
+
+**P2**
+
+再增加不同领域和不同 figure grammar 的案例测试。
+
+**P2**
+
+最后才考虑自动化 benchmark、批量运行和更复杂的参考检索。
+
+---
+
+# 16. 一句话结论
+
+**FigureCompose 当前最需要做的不是继续提高“AI 画图能力”，而是建立一条极简但可靠的路径，把 imagegen 已经很不错的视觉构图转化为科学关系准确、文字精炼、关键元素可编辑的真正论文 Figure。**
+
+这条路线目前已经足够清晰，可以停止大规模方案探索，进入收敛实现阶段。

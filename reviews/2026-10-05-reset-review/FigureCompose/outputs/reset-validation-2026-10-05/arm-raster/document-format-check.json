@@ -1,0 +1,32 @@
+{
+  "design-decision.md": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  },
+  "generation-prompt.txt": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  },
+  "generation-critique.md": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  },
+  "draft-01-critique.md": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  },
+  "caption.md": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  },
+  "semantic-edit-50percent-caption.md": {
+    "trailing_whitespace_lines": [],
+    "zero_width_or_nbsp_count": 0,
+    "maximum_consecutive_blank_lines": 0
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "coordinator_viewed_utc": "2026-10-05T12:58:47.0187260Z",
+  "references": [
+    {
+      "id": "DB005",
+      "title": "DiffEdit: Diffusion-based semantic image editing with mask guidance",
+      "paper_url": "https://openreview.net/forum?id=3lge0p5o-M-",
+      "figure_number": "2",
+      "sha256": "0ac1d446e3ca1bf51d7f7d11a77207b7c95d65972296c9bcade1b6603984b0fb",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/3lge0p5o-M-/Figure2.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "diffusion_flow"
+    },
+    {
+      "id": "DB082",
+      "title": "Capturing the Motion of Every Joint: 3D Human Pose and Shape Estimation with Independent Tokens",
+      "paper_url": "https://openreview.net/forum?id=0Vv4H4Ch0la",
+      "figure_number": "3",
+      "sha256": "9d8bfba99985422ae3c5e5665e06f072dfd2df510ad1c9c10e45e78ea76b3f24",
+      "original_figure_path": "OpenReview/ICLR/figures/2023/accept_notable_top_25/0Vv4H4Ch0la/Figure3.png",
+      "rights": "original paper rights; no blanket image reuse license asserted",
+      "topic": "transformer"
+    }
+  ],
+  "author_pixels_supplied": false,
+  "use": "one coordinator inspection, textual abstraction; no figure layouts or assets passed",
+  "scientific_source": "https://arxiv.org/html/2111.06377v3#S3",
+  "source_version": "v3, 2021-12-19",
+  "coordinator_exposure": "HTML includes Figure 1 caption, parent saw caption text; no target image opened before generation",
+  "fresh_scope": "new to completed FigureCompose cases, familiar canonical method to model possible",
+  "protected_source_files": [
+    {
+      "path": "reference-principles.txt",
+      "sha256": "CDB1B6C8E44AA4A6A6500FCF77A42CA0C6342F25F87838730952F1E6DEEA222D"
+    },
+    {
+      "path": "request.txt",
+      "sha256": "34AD5A01A641B456196DFA8FF4A2C7F2F4DD483577FB180CC16F8A7876D4E944"
+    },
+    {
+      "path": "scientific-context.md",
+      "sha256": "8CD0D5B35CB197F0916F1AA70722C5B22E4909926ECAF8F3E784F46C918F0801"
+    },
+    {
+      "path": "semantic-edit-request.txt",
+      "sha256": "E18644DF212A2454B5AF51DEFD83993BC06780A8CDE459BC7D2A5971897210EA"
+    }
+  ]
+}

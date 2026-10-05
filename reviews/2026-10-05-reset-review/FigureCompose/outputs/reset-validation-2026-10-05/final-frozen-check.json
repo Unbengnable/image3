@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-10-05T13:20:36.382055+00:00",
+  "source_freezes": [
+    {
+      "path": "arm-vector/final.svg",
+      "same": true
+    },
+    {
+      "path": "arm-vector/edit/final.svg",
+      "same": true
+    },
+    {
+      "path": "arm-raster/final.svg",
+      "same": true
+    },
+    {
+      "path": "arm-raster/semantic-edit-50percent.svg",
+      "same": true
+    }
+  ],
+  "neutral_copies": [
+    {
+      "label": "X",
+      "png_matches_frozen_main": true,
+      "caption_matches_frozen_main": true
+    },
+    {
+      "label": "Y",
+      "png_matches_frozen_main": true,
+      "caption_matches_frozen_main": true
+    }
+  ]
+}

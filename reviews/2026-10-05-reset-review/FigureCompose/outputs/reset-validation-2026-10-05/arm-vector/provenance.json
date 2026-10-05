@@ -1,0 +1,241 @@
+{
+  "arm": "V",
+  "artifact_freeze_utc": "2026-10-05T13:06:17+00:00",
+  "manifest_utc": "2026-10-05T13:10:23.544741+00:00",
+  "pre_svg_design_hash": "65279979fb9fcc5daa0df53a6aa1ce47c2844ba736142fa655916c4f264ec462",
+  "pre_svg_design_hashed_last_write_utc": "2026-10-05T12:59:05+00:00",
+  "inputs": [
+    {
+      "path": "FigureCompose\\AGENTS.md",
+      "sha256": "8488f217b7ba28e008f23a2a5335330e4d630d701513c47d3db5c84fed2e5f61",
+      "bytes": 6482,
+      "file_last_write_utc": "2026-10-05T12:25:02.215344+00:00",
+      "file_creation_utc": "2026-10-02T15:42:24.241396+00:00"
+    },
+    {
+      "path": "FigureCompose\\PROGRESS.md",
+      "sha256": "ca4a173a89ba3cb9d43a8e6ab794a3612800253775954a5af56b1785f1c05242",
+      "bytes": 14875,
+      "file_last_write_utc": "2026-10-05T12:58:47.233174+00:00",
+      "file_creation_utc": "2026-10-04T03:40:08.010945+00:00"
+    },
+    {
+      "path": "FigureCompose\\README.md",
+      "sha256": "eaf0f5b76091ff0a1d8f4b4851d8aecb0a33e9d85fdd25a5bc703d7c995f8d47",
+      "bytes": 7397,
+      "file_last_write_utc": "2026-10-04T04:18:32.302387+00:00",
+      "file_creation_utc": "2026-10-02T15:53:12.285406+00:00"
+    },
+    {
+      "path": "FigureCompose\\STAGE2-CONTRACT.md",
+      "sha256": "bb0c2bc27ae70ca882f50fb46e0af5d27c60f736db57be3eb0fb559490ed17bc",
+      "bytes": 3697,
+      "file_last_write_utc": "2026-10-04T04:18:32.303456+00:00",
+      "file_creation_utc": "2026-10-03T13:30:10.482606+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\PROTOCOL.md",
+      "sha256": "0f206544bcf7d3b66361535f1ec51ab354d9c26b89394a739a3addcae33f8b7f",
+      "bytes": 6716,
+      "file_last_write_utc": "2026-10-05T12:56:14.369763+00:00",
+      "file_creation_utc": "2026-10-05T12:56:14.369763+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\request.txt",
+      "sha256": "34ad5a01a641b456196dfa8ff4a2c7f2f4dd483577fb180cc16f8a7876d4e944",
+      "bytes": 604,
+      "file_last_write_utc": "2026-10-05T12:56:14.370651+00:00",
+      "file_creation_utc": "2026-10-05T12:56:14.370651+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\scientific-context.md",
+      "sha256": "8cd0d5b35cb197f0916f1aa70722c5b22e4909926ecaf8f3e784f46c918f0801",
+      "bytes": 1717,
+      "file_last_write_utc": "2026-10-05T12:56:14.370651+00:00",
+      "file_creation_utc": "2026-10-05T12:56:14.370651+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\reference-principles.txt",
+      "sha256": "cdb1b6c8e44aa4a6a6500fcf77a42ca0c6342f25f87838730952f1e6deea222d",
+      "bytes": 668,
+      "file_last_write_utc": "2026-10-05T12:56:14.371647+00:00",
+      "file_creation_utc": "2026-10-05T12:56:14.371647+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\semantic-edit-request.txt",
+      "sha256": "e18644df212a2454b5af51defd83993bc06780a8cde459bc7d2a5971897210ea",
+      "bytes": 590,
+      "file_last_write_utc": "2026-10-05T12:56:14.372654+00:00",
+      "file_creation_utc": "2026-10-05T12:56:14.372654+00:00"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\AUTHOR-NOTES.md",
+      "sha256": "2f5515b2fb1623c47981082f9da9827ff981cfb709f4d96ebb0f15360e425ef6",
+      "bytes": 4000,
+      "file_last_write_utc": "2026-10-05T13:06:17.774651+00:00",
+      "file_creation_utc": "2026-10-05T13:06:17.774105+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\caption.md",
+      "sha256": "b259a5a8676c6f2c1c0826524fa8406d8b72a400672009d843cd5085343ee456",
+      "bytes": 1333,
+      "file_last_write_utc": "2026-10-05T13:06:17.773036+00:00",
+      "file_creation_utc": "2026-10-05T13:06:17.773036+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\cost.json",
+      "sha256": "e88bd21706fc0f28db438f1d5100c08f71047d795bc294849704f5eca5e138c7",
+      "bytes": 1290,
+      "file_last_write_utc": "2026-10-05T13:10:23.545271+00:00",
+      "file_creation_utc": "2026-10-05T13:10:23.545271+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\criticism.md",
+      "sha256": "6ac90ab6d7aa706e7e1bfd044108592c22a951bb416d0fef6bf0fbbf66ffd3cc",
+      "bytes": 1422,
+      "file_last_write_utc": "2026-10-05T13:03:39.412416+00:00",
+      "file_creation_utc": "2026-10-05T13:03:39.412416+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\design-decision.md",
+      "sha256": "65279979fb9fcc5daa0df53a6aa1ce47c2844ba736142fa655916c4f264ec462",
+      "bytes": 2341,
+      "file_last_write_utc": "2026-10-05T12:59:05.662340+00:00",
+      "file_creation_utc": "2026-10-05T12:58:40.354539+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-01-178mm.png",
+      "sha256": "465e884af327f7676a4c55f768b0f773bd18030ff087aaef5218e727faff7970",
+      "bytes": 148120,
+      "file_last_write_utc": "2026-10-05T13:02:46.464761+00:00",
+      "file_creation_utc": "2026-10-05T13:02:46.345535+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-01-render-repair-178mm.png",
+      "sha256": "65624a13557ad35d8a787945ac018bdd95463bd01e6749eb12b93581da93d0c3",
+      "bytes": 149528,
+      "file_last_write_utc": "2026-10-05T13:03:57.872573+00:00",
+      "file_creation_utc": "2026-10-05T13:03:57.752820+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-01-render-repair.svg",
+      "sha256": "f60506fdf33a2c2eb63de26968b5230a7b1ac4b78b75ce7ff388dd2aa98acd87",
+      "bytes": 13752,
+      "file_last_write_utc": "2026-10-05T13:03:57.545578+00:00",
+      "file_creation_utc": "2026-10-05T13:03:40.167570+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-01.svg",
+      "sha256": "7f08d3c1cf11a006e494079c14a70aedc442ea3a1186682aa305cb7f6a33846b",
+      "bytes": 13256,
+      "file_last_write_utc": "2026-10-05T13:02:45.121964+00:00",
+      "file_creation_utc": "2026-10-05T13:02:45.120935+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-02-178mm.png",
+      "sha256": "ca823a280f138c02f1547c687975e305184a9d79ffbcf58860989b34ecbb7b8d",
+      "bytes": 150517,
+      "file_last_write_utc": "2026-10-05T13:04:52.556595+00:00",
+      "file_creation_utc": "2026-10-05T13:04:52.432390+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\draft-02.svg",
+      "sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+      "bytes": 14803,
+      "file_last_write_utc": "2026-10-05T13:04:51.141701+00:00",
+      "file_creation_utc": "2026-10-05T13:04:51.015518+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\before-178mm.png",
+      "sha256": "ca823a280f138c02f1547c687975e305184a9d79ffbcf58860989b34ecbb7b8d",
+      "bytes": 150517,
+      "file_last_write_utc": "2026-10-05T13:04:52.556595+00:00",
+      "file_creation_utc": "2026-10-05T13:07:38.228900+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\before.svg",
+      "sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+      "bytes": 14803,
+      "file_last_write_utc": "2026-10-05T13:04:51.141701+00:00",
+      "file_creation_utc": "2026-10-05T13:07:38.225893+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\caption.md",
+      "sha256": "b25266c371a27d7a74d510d484c88a9c2294bf7561c8c0c8ba71a2356f67bce8",
+      "bytes": 1369,
+      "file_last_write_utc": "2026-10-05T13:09:26.195083+00:00",
+      "file_creation_utc": "2026-10-05T13:09:26.194075+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\evidence.md",
+      "sha256": "1218035ac789eb010fca57349ed31d2dc18157aa3c0cb6f9c61b2ce5cb5629ea",
+      "bytes": 1521,
+      "file_last_write_utc": "2026-10-05T13:09:26.196083+00:00",
+      "file_creation_utc": "2026-10-05T13:09:26.196083+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\final.svg",
+      "sha256": "473bfecaaddb80f70090b5c9f609438dc305f87a2f368b49dbc2a327df171377",
+      "bytes": 18362,
+      "file_last_write_utc": "2026-10-05T13:07:39.435462+00:00",
+      "file_creation_utc": "2026-10-05T13:07:39.434461+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\edit\\preview-178mm.png",
+      "sha256": "8e996ef138ea323ea77cbfeb685d9f71379cfc686d738e7bc2cf75a7c300ea68",
+      "bytes": 164594,
+      "file_last_write_utc": "2026-10-05T13:07:39.788429+00:00",
+      "file_creation_utc": "2026-10-05T13:07:39.659186+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\final.svg",
+      "sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+      "bytes": 14803,
+      "file_last_write_utc": "2026-10-05T13:04:51.141701+00:00",
+      "file_creation_utc": "2026-10-05T13:06:17.417835+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\operations.md",
+      "sha256": "ecc4cf0c256f727ae27974dba2992c51a211afd8068463d5497a2282b54bc240",
+      "bytes": 2329,
+      "file_last_write_utc": "2026-10-05T13:09:26.197555+00:00",
+      "file_creation_utc": "2026-10-05T13:09:26.196083+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\preview-178mm.png",
+      "sha256": "ca823a280f138c02f1547c687975e305184a9d79ffbcf58860989b34ecbb7b8d",
+      "bytes": 150517,
+      "file_last_write_utc": "2026-10-05T13:04:52.556595+00:00",
+      "file_creation_utc": "2026-10-05T13:06:17.421713+00:00"
+    },
+    {
+      "path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-vector\\self-check.json",
+      "sha256": "ee5bc2cebb36c0cdbfe60e0627816de889167ac54eb26f12602fcab0be783dd1",
+      "bytes": 2412,
+      "file_last_write_utc": "2026-10-05T13:09:27.023604+00:00",
+      "file_creation_utc": "2026-10-05T13:09:27.023604+00:00"
+    }
+  ],
+  "exposure": {
+    "scientific_source": "common paraphrase only",
+    "reference_images_viewed": [],
+    "reference_principles": "common/reference-principles.txt only",
+    "target_paper_images_viewed": [],
+    "target_paper_captions_viewed_by_author": false,
+    "target_paper_captions_visible_to_coordinator": true,
+    "other_arm_files_viewed": [],
+    "old_case_figures_viewed": [],
+    "model_prior_knowledge": "unknown; project-fresh is not model-unseen",
+    "shared_filesystem_not_os_sandbox": true
+  },
+  "viewed_images": [
+    "draft-01-178mm.png",
+    "draft-02-178mm.png",
+    "edit/preview-178mm.png"
+  ],
+  "final_preview_is_byte_identical_copy_of_inspected_revision": true,
+  "no_reviewer_driven_repairs": true,
+  "acceptance": "PENDING_EXTERNAL_REVIEW"
+}

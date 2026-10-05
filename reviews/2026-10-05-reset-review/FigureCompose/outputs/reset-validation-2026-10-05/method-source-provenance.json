@@ -1,0 +1,8 @@
+{
+  "url": "https://arxiv.org/html/2111.06377v3#S3",
+  "html_sha256": "a1a07aac4eb9704ad8378673695a38944386bb5b2c82b2eb4c27a59d44ff3a38",
+  "extracted_sha256": "e8ccd564cd129422a1bfdd02bb3af020868a7af4559aea42f3d543e393b2543c",
+  "chars": 5136,
+  "figures": "not fetched; HTML figure elements removed",
+  "extraction": "stdlib HTMLParser; previous bs4 attempt unavailable, no install"
+}

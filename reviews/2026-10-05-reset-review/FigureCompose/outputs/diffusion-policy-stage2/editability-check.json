@@ -1,0 +1,288 @@
+{
+  "element_counts": {
+    "svg": 1,
+    "title": 1,
+    "desc": 1,
+    "defs": 1,
+    "style": 1,
+    "marker": 4,
+    "path": 56,
+    "linearGradient": 2,
+    "stop": 5,
+    "symbol": 4,
+    "rect": 36,
+    "ellipse": 1,
+    "circle": 2,
+    "g": 30,
+    "text": 53,
+    "use": 20,
+    "tspan": 28
+  },
+  "text": [
+    "a  Observation conditioning",
+    "t − 1",
+    "t",
+    "To = 2",
+    "RGB",
+    "encoder",
+    "Once per query",
+    "qt",
+    "ct",
+    "Denoiser: either backbone",
+    "CNN + FiLM",
+    "ct, k",
+    "Transformer",
+    "+ cross-attention",
+    "ct, k",
+    "b  Conditional action denoising",
+    "k: diffusion step",
+    "Fixed conditioning",
+    "ct",
+    "AtK",
+    "τ: 0 … 7",
+    "Gaussian",
+    "action noise",
+    "…",
+    "Atk",
+    "τ: 0 … 7",
+    "Atk−1",
+    "τ: 0 … 7",
+    "…",
+    "At0",
+    "τ: 0 … 7",
+    "Shared noise predictor",
+    "εθ(ct, Atk, k)",
+    "Scheduled update",
+    "k → k − 1",
+    "Repeat K → 0",
+    "c  Receding-horizon execution",
+    "t: robot time",
+    "t",
+    "t+1",
+    "t+2",
+    "t+3",
+    "t+4",
+    "t+5",
+    "t+6",
+    "t+7",
+    "Ta = 4",
+    "Execute",
+    "Tp = 8",
+    "Replan before execution",
+    "Environment",
+    "New observations",
+    "Next query: t + 4"
+  ],
+  "vector_count": 95,
+  "note": "Structural check only. Accuracy, raster coverage and visual fidelity require image review.",
+  "edit_probe": {
+    "text": {
+      "passed": true,
+      "change": {
+        "before": "RGB",
+        "after": "Image"
+      },
+      "difference_bbox": [
+        631,
+        144,
+        713,
+        173
+      ],
+      "changed_pixels": 1387,
+      "source": "edit-probe/text/figure.svg",
+      "render": "edit-probe/text/preview-178mm.png"
+    },
+    "number": {
+      "passed": true,
+      "change": {
+        "before": " = 4",
+        "after": " = 3",
+        "intent": "deliberately invalid probe only; never promoted to final"
+      },
+      "difference_bbox": [
+        377,
+        1027,
+        394,
+        1050
+      ],
+      "changed_pixels": 276,
+      "source": "edit-probe/number/figure.svg",
+      "render": "edit-probe/number/preview-178mm.png"
+    },
+    "arrow": {
+      "passed": true,
+      "change": {
+        "before_path": "M1379 973H1481",
+        "after_path": "M1379 973H1430V946H1481"
+      },
+      "difference_bbox": [
+        1686,
+        1110,
+        1751,
+        1156
+      ],
+      "changed_pixels": 764,
+      "source": "edit-probe/arrow/figure.svg",
+      "render": "edit-probe/arrow/preview-178mm.png"
+    },
+    "timeline": {
+      "passed": true,
+      "change": {
+        "action": "action-0",
+        "before_width": "86",
+        "after_width": "65"
+      },
+      "difference_bbox": [
+        111,
+        1073,
+        191,
+        1133
+      ],
+      "changed_pixels": 2462,
+      "source": "edit-probe/timeline/figure.svg",
+      "render": "edit-probe/timeline/preview-178mm.png"
+    }
+  },
+  "physical_output": {
+    "svg_width_mm": 178,
+    "svg_height_mm": 117,
+    "viewBox": [
+      0,
+      0,
+      1780,
+      1170
+    ],
+    "render_engine": "CairoSVG 2.9.1",
+    "dpi": 300,
+    "rounding_rule": "round(mm / 25.4 * 300)",
+    "same_source_for_both_previews": true,
+    "source_sha256": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6",
+    "normal_font_pt": 7.370078740157481,
+    "math_font_pt": 8.503937007874017,
+    "subscript_superscript_pt": 5.952755905511812,
+    "main_stroke_mm": 0.32,
+    "feedback_stroke_mm": 0.24,
+    "critical_arrowhead_mm": 1.1,
+    "stress_scale": 0.47752808988764045,
+    "normal_font_pt_at_85mm": 3.51941962310891,
+    "previews": {
+      "preview-178mm.png": {
+        "pixels": [
+          2102,
+          1382
+        ],
+        "dpi_metadata": [
+          299.9994,
+          299.9994
+        ]
+      },
+      "preview-85mm.png": {
+        "pixels": [
+          1004,
+          660
+        ],
+        "dpi_metadata": [
+          299.9994,
+          299.9994
+        ]
+      }
+    }
+  },
+  "locked_counts": {
+    "observations": 2,
+    "predicted_actions": 8,
+    "executed_actions": 4,
+    "unexecuted_before_replanning": 4,
+    "ordered_environment_times": [
+      "t",
+      "t+1",
+      "t+2",
+      "t+3",
+      "t+4",
+      "t+5",
+      "t+6",
+      "t+7"
+    ]
+  },
+  "input_files": {
+    "figure.png": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\figure.png",
+      "sha256": "6639ee5ed7525cbfa98473e35cc76ca2d06470871bdfa871ad1258099aefe1a1",
+      "access": "read only"
+    },
+    "request.txt": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\request.txt",
+      "sha256": "07452eb121ed094f737d157849d3ebd8c56d414f396f1594db2486874b27a8c1",
+      "access": "read only"
+    },
+    "context.md": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\context.md",
+      "sha256": "115261db9f971aed22782d1c7982eb5c5620ba73b0408a859e92f77abdacf63d",
+      "access": "read only"
+    },
+    "generation-prompt.txt": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\generation-prompt.txt",
+      "sha256": "7df96d5d6717e0da540e9595008d6fc9c252e9f63776ef7f594cc1f93cd429b9",
+      "access": "read only"
+    },
+    "selected-references.json": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\selected-references.json",
+      "sha256": "26e158a26ab4e8d572b5f4979d5b60fdcf5a28cc4a5563f040006b2cba9ba78d",
+      "access": "read only"
+    },
+    "evaluation.json": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\evaluation.json",
+      "sha256": "ca334676e1c89967ebe2b9c07d9585f87c72045f55d927f7fa6d8e5cb9eacc7e",
+      "access": "read only"
+    },
+    "method-source-pages.txt": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\method-source-pages.txt",
+      "sha256": "37cda33360f6a3a0d238dd0a1bb7e441ac610bfc1b0a71fd19666d45d9de7d85",
+      "access": "read only"
+    },
+    "reference-use.md": {
+      "path": "FigureCompose\\outputs\\zotero-three-cases\\diffusion-policy\\reference-use.md",
+      "sha256": "5b7452abd0eb286e87c41f13ec6732e7a82e8f8765614ec24dda417d10652be7",
+      "access": "read only"
+    }
+  },
+  "provenance": "Codex-authored one-off SVG; existing run.py check_svg, stdlib XML, CairoSVG and Pillow. All vector illustrations; no model service, raster wrapping, automatic tracing or new drawing script.",
+  "scientific_review": {
+    "status": "PASS",
+    "method": "manual fresh count/topology/notation review against preserved method text; same Codex",
+    "evidence": "acceptance.md, gate A table",
+    "scope": "observation conditioning, action denoising, partial execution and replanning"
+  },
+  "visual_review": {
+    "status": "PASS at 178 mm",
+    "method": "actual original PNG versus final SVG render; final 178/85 mm 300 dpi previews and nominal 96 ppi equivalents viewed",
+    "visual_economy": "PASS",
+    "composition_preservation": "PASS",
+    "stress_85mm": "LIMITED: normal labels 3.52 pt, sub/superscripts 2.84 pt; not comfortable full-detail reading",
+    "evidence": "acceptance.md, review/caption-migration.md"
+  },
+  "native_editor_test": "not performed",
+  "independent_reviewer": "not performed; authored and reviewed by the same Codex",
+  "gates": {
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS",
+    "D": "PASS"
+  },
+  "final_status": "ACCEPTED",
+  "review_limits": [
+    "Same Codex authored and reviewed; no independent reviewer",
+    "No native design-editor import",
+    "No printed proof or calibrated physical monitor",
+    "Inference overview only; not full paper Figure 2",
+    "No broad automation or benchmark-success claim"
+  ],
+  "final_artifact_sha256": {
+    "figure.svg": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6",
+    "preview-178mm.png": "4d5a789ba064fdaa4bedd09acdafe30b87757cbfdb1c0e58876eaf2b9d5eed35",
+    "preview-85mm.png": "99c98e5a2d6e6ea732ac9aabb7889c5c045aa8ef8a9ae241599313b5d6f96c5d",
+    "semantic-lock.txt": "b6316b95210d00a1803c97199168ce67ad6d4a89a2c706c5d7bfb9532c37fe2c",
+    "caption.md": "a187e268860c00cefce58f3f3b0a06601a1f8245eacc5bf402ae511f9f2851c5",
+    "acceptance.md": "b3875fda9fa35ae40a96d6037ecfa006a44a34fb7ead171369f716f053378388"
+  }
+}

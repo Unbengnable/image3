@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-05T13:11:54.371713+00:00",
+  "evidence_scope": "XML structure only; no scientific or visual acceptance inferred",
+  "files": [
+    {
+      "path": "arm-vector/final.svg",
+      "sha256": "56ee9cb4ded0fec24517dd658bf104b6c0c634d85a7b4daf52166f5aca056bd3",
+      "width": "178mm",
+      "height": "82mm",
+      "viewBox": "0 0 1780 820",
+      "text_elements": 51,
+      "image_elements": 0,
+      "external_image_hrefs": []
+    },
+    {
+      "path": "arm-vector/edit/final.svg",
+      "sha256": "473bfecaaddb80f70090b5c9f609438dc305f87a2f368b49dbc2a327df171377",
+      "width": "178mm",
+      "height": "82mm",
+      "viewBox": "0 0 1780 820",
+      "text_elements": 63,
+      "image_elements": 0,
+      "external_image_hrefs": []
+    },
+    {
+      "path": "arm-raster/final.svg",
+      "sha256": "8b4bba428a222781ae5308a7d8573628b5cd9a4be1cde1ef74f0a0d7e307a21a",
+      "width": "178mm",
+      "height": "99.68mm",
+      "viewBox": "0 0 1000 560",
+      "text_elements": 114,
+      "image_elements": 2,
+      "external_image_hrefs": []
+    },
+    {
+      "path": "arm-raster/semantic-edit-50percent.svg",
+      "sha256": "65b563469ebe915722eec34c7977e9e22e396109601d17917d8856cb47246633",
+      "width": "178mm",
+      "height": "99.68mm",
+      "viewBox": "0 0 1000 560",
+      "text_elements": 122,
+      "image_elements": 2,
+      "external_image_hrefs": []
+    }
+  ]
+}

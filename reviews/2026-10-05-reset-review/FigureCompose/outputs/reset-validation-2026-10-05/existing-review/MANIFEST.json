@@ -1,0 +1,62 @@
+{
+  "reader-first.md": {
+    "bytes": 3916,
+    "sha256": "dbcdfa262c54f0a32ea6e88e9e460d64b5c3e8317b841de0bf578f89ed020aa6"
+  },
+  "REVIEW.md": {
+    "bytes": 8164,
+    "sha256": "12da68f96b7c3f733d6d2b098026dfa53878da91cb254e19f73f6fd9436f2c5a"
+  },
+  "source-preview-178mm.png": {
+    "bytes": 293959,
+    "sha256": "ecab4fb7e8ddeee1984330c19d3cd0ff56604a9f92093980847b9dac0c7b4230"
+  },
+  "source-review.md": {
+    "bytes": 6941,
+    "sha256": "7e2f510924e85cb48715b930d800edb5818330ceb45736bc73d35b08019e428f"
+  },
+  "edit/caption.md": {
+    "bytes": 1937,
+    "sha256": "93bc852c8bcdaf0d5e3b3d77a85dda398dc886793fdcedbe0ba584468e82067a"
+  },
+  "edit/check.json": {
+    "bytes": 657,
+    "sha256": "03650b2f89adbfe064868b65241dd23b99a01f35cb55aa12ce53027bb4fe30e0"
+  },
+  "edit/figure.svg": {
+    "bytes": 19636,
+    "sha256": "7f14b4d82fb697dda6e99421d2e0f98e7e0013248cc648b666eb405a5f6003d5"
+  },
+  "edit/preview-178mm.png": {
+    "bytes": 294429,
+    "sha256": "3ff86ee845cdd54b7b636a98018e956174dce2196ad6de04ea327b94b1d73c2a"
+  },
+  "input/caption.md": {
+    "bytes": 1746,
+    "sha256": "a187e268860c00cefce58f3f3b0a06601a1f8245eacc5bf402ae511f9f2851c5"
+  },
+  "input/figure.png": {
+    "bytes": 293920,
+    "sha256": "4d5a789ba064fdaa4bedd09acdafe30b87757cbfdb1c0e58876eaf2b9d5eed35"
+  },
+  "native-editor/check.json": {
+    "bytes": 673,
+    "sha256": "a20e4856c64a5e97d09ad3a969764e266a1779a44d6099cf8703c181746a1e21"
+  },
+  "native-editor/input-copy.svg": {
+    "bytes": 19424,
+    "sha256": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6"
+  },
+  "native-editor/input-copy_out.svg": {
+    "bytes": 30786,
+    "sha256": "af3afd40f6411e5edc702ae63a17248308f4e64b3e07d13cedf77f55601ba2ff"
+  },
+  "native-editor/roundtrip-178mm.png": {
+    "bytes": 338497,
+    "sha256": "0c09c75b7d0efd2055e2e1978b12023bb5a88c5fde90f4ad8b3932c82fb7f299"
+  },
+  "native-editor/roundtrip.svg": {
+    "bytes": 30786,
+    "sha256": "af3afd40f6411e5edc702ae63a17248308f4e64b3e07d13cedf77f55601ba2ff"
+  }
+}

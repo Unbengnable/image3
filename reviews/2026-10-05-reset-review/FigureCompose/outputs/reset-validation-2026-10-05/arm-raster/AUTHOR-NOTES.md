@@ -1,0 +1,17 @@
+# Arm R author notes
+
+Delivered final.svg, preview-178mm.png and caption.md; the main artifact is frozen. The separate 50% masking edit is semantic-edit-50percent.svg, semantic-edit-50percent-preview.png and semantic-edit-50percent-caption.md. Draft, actual generated PNG, prompts, critiques, registration, hashes, crop assets and evidence remain in this directory.
+
+One built-in imagegen generation was used, without reference image paths or prior images. No targeted image edit, API fallback, package installation or pipeline change was used. The actual generated candidate contains scientific errors: three visible encoder-output blocks despite a four-latent label, restoration annotation after decoding, and gray hidden targets in the loss expression. Stage 1 is therefore author-assessed science FAIL. SVG repairs do not revise that result.
+
+The editable SVG reconstructs all scientific text, row-major numbers, mask placement, sparse patch selection, latent and auxiliary token counts, restored decoder positions, encoder/decoder blocks, arrows and spatial supervision outlines. Two embedded raster assets are local sailboat-scene crops of the author's generated PNG; the whole diagram is not wrapped. Raster numbers are occluded with native numbers; baked scene grid lines remain incidental texture beneath the native grid geometry. Neither illustration is real MAE inference or a reconstruction-quality measurement.
+
+Actual main and edit renders were inspected. The source width is 178 mm, height 99.68 mm, viewBox 1000 by 560. Main labels are about 7.06 pt, headings 8.07 pt and patch/token indices 6.06 pt. The 2102 by 1177 previews carry 300 dpi metadata. One SVG draft and one consolidated scientific/visual revision were used; no syntax/render repair was needed. Three render attempts succeeded: draft, frozen main and semantic copy.
+
+Author self-checks found consistent main counts and loss positions after repair; editability-evidence.json records actual native elements and verifies the frozen main hashes. These checks are not acceptance or independent review. Native editor import, physical print proof and human readability evaluation are NOT_TESTED. Indices are smaller than ordinary labels; print readability remains an auditor judgment.
+
+Only abstract common reference principles were provided to this author. No old figure outputs, source reference image pixels, target-paper figure pixels or other arm were opened. The coordinator disclosed access to target-paper captions during packet preparation; the author saw the paraphrased packet only. Prior model knowledge of MAE cannot be measured. The shared filesystem was an instruction boundary, not an OS isolation boundary.
+
+The first observed machine timestamp and pre-artifact design registration are preserved. Wall time from registration is measurable; exact active thinking time, token usage and subscription monetary cost are unknown. Imagegen call metadata, file timestamps and SHA-256 values are in cost-provenance.json. No tool failures occurred in generation or rendering. The initial discovery shell returned exit 1 because its final rg search had no matches; it did not block the work.
+
+Document formatting was checked before writing against the user's format rules and checked again after delivery files were written. Plain paragraphs, limited headings and no alignment whitespace were used; formulas, paths and semantic numbers are protected. No DOCX was created, so DOCX page rendering does not apply.

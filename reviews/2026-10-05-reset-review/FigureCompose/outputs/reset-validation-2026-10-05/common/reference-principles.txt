@@ -1,0 +1,4 @@
+Two existing references were inspected once by the coordinator. Authors receive only these abstract visual principles:
+1. Let transformations of spatial image content make the operation visible; short operator labels can sit between representations.
+2. Use consistent colors to distinguish image content, latent representations and auxiliary tokens, with stronger grouping inside a mechanism than between mechanisms.
+Do not inherit reference layouts, scientific components, assets, coordinates or repeated panel arrangements. The reference images and target-paper figures are withheld until final audit. These principles are visual guidance, not scientific authority.

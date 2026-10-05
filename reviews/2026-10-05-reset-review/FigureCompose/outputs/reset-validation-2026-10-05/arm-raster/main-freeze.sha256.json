@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "8B4BBA428A222781AE5308A7D8573628B5CD9A4BE1CDE1EF74F0A0D7E307A21A",
+    "Path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-raster\\final.svg"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C7D5DEC287FDE7BEF56A82C67F05FE16976CCC36102D8FB7699CDF49C7650012",
+    "Path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-raster\\preview-178mm.png"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F356AD9557AFFFEFAF591DF509E0C095B4CEDDD9B8FBA864FDBAB3DDCCDA86D7",
+    "Path": "FigureCompose\\outputs\\reset-validation-2026-10-05\\arm-raster\\caption.md"
+  }
+]

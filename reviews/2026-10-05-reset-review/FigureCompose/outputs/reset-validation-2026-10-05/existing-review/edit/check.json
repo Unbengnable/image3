@@ -1,0 +1,35 @@
+{
+  "source_svg_sha256": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6",
+  "edited_svg_sha256": "7f14b4d82fb697dda6e99421d2e0f98e7e0013248cc648b666eb405a5f6003d5",
+  "edit_replacements": 10,
+  "executed_actions": [
+    0,
+    1,
+    2
+  ],
+  "pale_actions": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "To": 2,
+  "Tp": 8,
+  "Ta": 3,
+  "execute_source_x": 241.5,
+  "execution_region": [
+    80,
+    403
+  ],
+  "deferred_region": [
+    425,
+    964
+  ],
+  "next_query": "t+3",
+  "native_text_count": 53,
+  "image_count": 0,
+  "render_attempts": 2,
+  "consolidated_corrections": 0,
+  "syntax_repairs": 0
+}

@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-05T13:14:13.066634+00:00",
+  "all_same": true,
+  "files": [
+    {
+      "path": "..\\FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\reference-principles.txt",
+      "same": true,
+      "sha256": "cdb1b6c8e44aa4a6a6500fcf77a42ca0c6342f25f87838730952f1e6deea222d"
+    },
+    {
+      "path": "..\\FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\request.txt",
+      "same": true,
+      "sha256": "34ad5a01a641b456196dfa8ff4a2c7f2f4dd483577fb180cc16f8a7876d4e944"
+    },
+    {
+      "path": "..\\FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\scientific-context.md",
+      "same": true,
+      "sha256": "8cd0d5b35cb197f0916f1aa70722c5b22e4909926ecaf8f3e784f46c918f0801"
+    },
+    {
+      "path": "..\\FigureCompose\\outputs\\reset-validation-2026-10-05\\common\\semantic-edit-request.txt",
+      "same": true,
+      "sha256": "e18644df212a2454b5af51defd83993bc06780a8cde459bc7d2a5971897210ea"
+    }
+  ]
+}

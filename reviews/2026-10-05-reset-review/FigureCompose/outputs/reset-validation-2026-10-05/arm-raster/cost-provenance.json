@@ -1,0 +1,207 @@
+{
+  "arm": "R",
+  "observed_first_machine_timestamp_utc": "2026-10-05T12:58:06.6680944Z",
+  "design_registered_utc": "2026-10-05T12:58:55.3520957Z",
+  "author_end_utc": "2026-10-05T13:09:26.346008+00:00",
+  "wall_seconds_from_design_registration": 630.993913,
+  "exact_active_thinking_seconds": null,
+  "token_usage": null,
+  "subscription_monetary_cost": null,
+  "paid_api_cost": 0,
+  "known_cost_limitations": "Token accounting, active thinking time and subscription marginal monetary cost are not exposed to this author. paid_api_cost is zero because no paid API was called.",
+  "imagegen": {
+    "started_utc": "2026-10-05 12:59:04 UTC",
+    "ended_utc": "2026-10-05 12:59:58 UTC",
+    "tool": "built-in image_gen",
+    "calls": 1,
+    "edit_calls": 0,
+    "reference_images": 0,
+    "output_hint": "Generated images are saved to LOCAL_CODEX\\generated_images\\01a10c24-3e1f-7d82-b87a-3eb3c15b2e48 as LOCAL_CODEX\\generated_images\\01a10c24-3e1f-7d82-b87a-3eb3c15b2e48\\exec-3739497e-c329-4efe-89d7-0f022af3cc24.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "prompt_path": "generation-prompt.txt"
+  },
+  "imagegen_generation_calls": 1,
+  "imagegen_edit_calls": 0,
+  "svg_drafts": 1,
+  "consolidated_science_visual_revisions": 1,
+  "syntax_render_repairs": 0,
+  "render_attempts": 3,
+  "render_successes": 3,
+  "render_failures": 0,
+  "source_generated_image": "LOCAL_CODEX/generated_images/01a10c24-3e1f-7d82-b87a-3eb3c15b2e48/exec-3739497e-c329-4efe-89d7-0f022af3cc24.png",
+  "renderer": "existing AutoFigure-Edit/.venv/Scripts/python.exe with CairoSVG and Pillow; no model pipeline invoked",
+  "reference_exposure": {
+    "principles_only": true,
+    "source_reference_pixels": false,
+    "target_figure_pixels": false,
+    "old_case_outputs_opened": false,
+    "other_arm_opened": false,
+    "coordinator_target_caption_exposure_disclosed": true,
+    "model_prior_knowledge": "unknown"
+  },
+  "read_files": [
+    "AGENTS.md",
+    "PROGRESS.md",
+    "README.md",
+    "STAGE2-CONTRACT.md",
+    "outputs/reset-validation-2026-10-05/PROTOCOL.md",
+    "outputs/reset-validation-2026-10-05/common/request.txt",
+    "outputs/reset-validation-2026-10-05/common/scientific-context.md",
+    "outputs/reset-validation-2026-10-05/common/reference-principles.txt",
+    "outputs/reset-validation-2026-10-05/common/semantic-edit-request.txt",
+    "LOCAL_CODEX/skills/.system/imagegen/SKILL.md"
+  ],
+  "actual_images_viewed": [
+    "generation-01.png",
+    "draft-01-preview.png",
+    "preview-178mm.png",
+    "semantic-edit-50percent-preview.png"
+  ],
+  "tool_failures": [],
+  "nonblocking_discovery_exit": "Initial combined read/discovery command exited 1 because final rg file glob search had no match; read output was available.",
+  "files": [
+    {
+      "path": "AUTHOR-NOTES.md",
+      "sha256": "b7d89a5a6e630f5b828ec0710708136bb4c34fa5d36e61b5c81fd3aef67acdcd",
+      "bytes": 3491,
+      "modified_utc": "2026-10-05T13:09:25.535524+00:00"
+    },
+    {
+      "path": "caption.md",
+      "sha256": "f356ad9557afffefaf591df509e0c095b4ceddd9b8fba864fdbab3ddccda86d7",
+      "bytes": 1011,
+      "modified_utc": "2026-10-05T13:05:30.989949+00:00"
+    },
+    {
+      "path": "design-decision.md",
+      "sha256": "4925571b21552a74fca24ea8d3691880c6e878dc969941f2696237a8ded45e06",
+      "bytes": 1700,
+      "modified_utc": "2026-10-05T12:58:55.351408+00:00"
+    },
+    {
+      "path": "design-decision.registered-utc.txt",
+      "sha256": "7cd4601b4e836ec7c0cb901c112c9214d03504e738c5a701de8ecab4c50320a8",
+      "bytes": 30,
+      "modified_utc": "2026-10-05T12:58:55.355340+00:00"
+    },
+    {
+      "path": "design-decision.sha256.json",
+      "sha256": "1a81c31e0e43b091ce632fcfd279bb8eece6dc8995ed4126e8006fea7fc18955",
+      "bytes": 260,
+      "modified_utc": "2026-10-05T12:58:55.374756+00:00"
+    },
+    {
+      "path": "document-format-check.json",
+      "sha256": "335f571b7fe24ac7687bc468dfa2d442d242f5870d533cb6740eaf0a4a65c11c",
+      "bytes": 914,
+      "modified_utc": "2026-10-05T13:07:59.428465+00:00"
+    },
+    {
+      "path": "draft-01-critique.md",
+      "sha256": "8b65287ac5c3473224e779a827d7e4a32cb86507434078205d32e1372e6f1cf0",
+      "bytes": 1001,
+      "modified_utc": "2026-10-05T13:04:54.248853+00:00"
+    },
+    {
+      "path": "draft-01-preview.png",
+      "sha256": "b13c7f1f29db87ae5b2f0e060b5bdb76017be554111d3c2ba0d2b74718322698",
+      "bytes": 736478,
+      "modified_utc": "2026-10-05T13:03:41.427597+00:00"
+    },
+    {
+      "path": "draft-01.svg",
+      "sha256": "e4de22bcab1098f8c2acaf208eb3b1a1ca5a7e59576b54d1449805e8fe524279",
+      "bytes": 593716,
+      "modified_utc": "2026-10-05T13:03:39.962126+00:00"
+    },
+    {
+      "path": "editability-evidence.json",
+      "sha256": "ba47a36d2b5a3905fdd49635e74d39dd110e8e12546749831dd2304e4dc97644",
+      "bytes": 6709,
+      "modified_utc": "2026-10-05T13:07:59.427471+00:00"
+    },
+    {
+      "path": "final.svg",
+      "sha256": "8b4bba428a222781ae5308a7d8573628b5cd9a4be1cde1ef74f0a0d7e307a21a",
+      "bytes": 593698,
+      "modified_utc": "2026-10-05T13:04:54.300402+00:00"
+    },
+    {
+      "path": "generation-01.png",
+      "sha256": "52fa43db6337fc9a24e36c1183483a506a526781f887372f6409629730c10416",
+      "bytes": 1573109,
+      "modified_utc": "2026-10-05T12:59:58.909577+00:00"
+    },
+    {
+      "path": "generation-critique.md",
+      "sha256": "aa8780ec349f18775e0591336edfc85113c349ba4f5735af6caeaa2beec1eb9a",
+      "bytes": 1446,
+      "modified_utc": "2026-10-05T13:01:17.892268+00:00"
+    },
+    {
+      "path": "generation-prompt.txt",
+      "sha256": "70d04c9b716dd8dfabf51fff57c796a96677e51b3ac584b5531cce91ee6a43a0",
+      "bytes": 2589,
+      "modified_utc": "2026-10-05T12:58:55.375745+00:00"
+    },
+    {
+      "path": "imagegen-call.json",
+      "sha256": "a65a8aadb09558b1047e9e919c54060287215e9cbff4b760bae733e6da9a3cd7",
+      "bytes": 777,
+      "modified_utc": "2026-10-05T13:00:13.265378+00:00"
+    },
+    {
+      "path": "main-freeze.sha256.json",
+      "sha256": "d489896fab30472ce5f529d0bd08617277ffd7eebb50c1edd009b3f2f6cd5dc7",
+      "bytes": 800,
+      "modified_utc": "2026-10-05T13:05:31.759612+00:00"
+    },
+    {
+      "path": "main-frozen-utc.txt",
+      "sha256": "1d3973ec35d0dfc06c5a3968b9f43410348338f3fc1fbeab092f7e647c3fb616",
+      "bytes": 30,
+      "modified_utc": "2026-10-05T13:05:31.765443+00:00"
+    },
+    {
+      "path": "preview-178mm.png",
+      "sha256": "c7d5dec287fde7bef56a82c67f05fe16976ccc36102d8fb7699cdf49c7650012",
+      "bytes": 729994,
+      "modified_utc": "2026-10-05T13:04:55.878361+00:00"
+    },
+    {
+      "path": "sailboat-original-crop.png",
+      "sha256": "b87f4e7dbcf60bd5eb5bc01ab7f2a69cd17d82413cf4303e4d473fe483f2d800",
+      "bytes": 290441,
+      "modified_utc": "2026-10-05T13:01:17.794671+00:00"
+    },
+    {
+      "path": "sailboat-prediction-crop.png",
+      "sha256": "cf694942896f298d7c23376290920f2b0bde147171fe5215d370764649c1dc96",
+      "bytes": 131285,
+      "modified_utc": "2026-10-05T13:01:17.804995+00:00"
+    },
+    {
+      "path": "semantic-edit-50percent-caption.md",
+      "sha256": "97a57e69df631dbaa17181cfa25dfc3f89b5e8124e32510c1c13e864267070f6",
+      "bytes": 930,
+      "modified_utc": "2026-10-05T13:06:53.614063+00:00"
+    },
+    {
+      "path": "semantic-edit-50percent-preview.png",
+      "sha256": "a20689756e31142d0497da678449c7bbc3c517aeaec8c930f3cd485f9a7aa7ab",
+      "bytes": 783961,
+      "modified_utc": "2026-10-05T13:06:55.070338+00:00"
+    },
+    {
+      "path": "semantic-edit-50percent.svg",
+      "sha256": "65b563469ebe915722eec34c7977e9e22e396109601d17917d8856cb47246633",
+      "bytes": 595447,
+      "modified_utc": "2026-10-05T13:06:53.568738+00:00"
+    },
+    {
+      "path": "semantic-edit-evidence.md",
+      "sha256": "2a72db642633ce99dbd61ac82dc437f3dfb61c717872b8c46a431cb52962ab7d",
+      "bytes": 1226,
+      "modified_utc": "2026-10-05T13:09:25.533583+00:00"
+    }
+  ]
+}

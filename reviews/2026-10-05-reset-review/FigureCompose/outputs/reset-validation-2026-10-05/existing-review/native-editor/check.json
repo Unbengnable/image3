@@ -1,0 +1,19 @@
+{
+  "version": "Inkscape 1.4.4 (dcaf3e7, 2026-05-05)",
+  "operation": "CLI parse and plain-SVG save, then PNG export from saved copy",
+  "interactive_editing": "NOT_TESTED",
+  "native_text_count": 53,
+  "image_count": 0,
+  "action_ids_preserved": true,
+  "executed_flags_preserved": true,
+  "render_size": [
+    2102,
+    1382
+  ],
+  "input_sha256": "ea4b45ded38650397cdf9477805a1e0f59b2fba69c068249c00848a1ccd669f6",
+  "saved_svg_sha256": "af3afd40f6411e5edc702ae63a17248308f4e64b3e07d13cedf77f55601ba2ff",
+  "initial_argument_syntax_failure": true,
+  "syntax_only_repairs": 1,
+  "successful_native_exports": 2,
+  "native_export_invocations_total": 4
+}
